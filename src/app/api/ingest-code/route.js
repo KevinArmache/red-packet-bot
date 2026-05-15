@@ -1,10 +1,10 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { addRedPacketCode, addScrapeLog } from "@/lib/db";
 import { extractRedPacketCodes } from "@/lib/scraper";
 
 // External code ingestion endpoint
 // Can be called by external scrapers (e.g., Python script) to add codes
-export async function POST(request = new NextRequest()) {
+export async function POST(request) {
   try {
     const body = await request.json();
     const { text, author, code, tweetId } = body;

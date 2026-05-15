@@ -1,44 +1,35 @@
-import { Geist, Geist_Mono } from "next/font/google";
-// import { Analytics } from "@vercel/analytics/next";
-
+import { Geist } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+// Geist Mono est retiré — il cause un bug Turbopack dans Next.js 16
+// (Cannot resolve @vercel/turbopack-next/internal/font/google/font)
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist-sans",
+});
 
 export const metadata = {
   title: "Red Packet Monitor",
   description: "Monitor and claim Binance Red Packets from Twitter",
-  generator: "v0.app",
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html
       lang="fr"
-      className={`${_geist.variable} ${_geistMono.variable} bg-background`}
+      className={`${geist.variable}`}
       suppressHydrationWarning
     >
-      <body className="font-sans antialiased bg-background">
-        {children}
-        {/* {process.env.NODE_ENV === "production" && <Analytics />} */}
+      <body className="font-sans antialiased bg-background" suppressHydrationWarning={true}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

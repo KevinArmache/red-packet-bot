@@ -1,6 +1,6 @@
 "use client";
 
-import { useTransition } from "react";
+import { useState, useTransition } from "react";
 import { Switch } from "@/components/ui/switch";
 import {
   Select,
@@ -23,51 +23,59 @@ import { toast } from "sonner";
 
 export function SettingsForm({ settings }) {
   const [isPending, startTransition] = useTransition();
+  const [scrapingEnabled, setScrapingEnabled] = useState(
+    settings.scrapingEnabled,
+  );
+  const [testMode, setTestMode] = useState(settings.testMode);
+  const [interval, setInterval] = useState(
+    settings.scrapeIntervalMinutes.toString(),
+  );
 
-  const handleSubmit = (formData) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     startTransition(async () => {
+      // On construit le FormData manuellement car Switch n'est pas un input natif
+      const formData = new FormData();
+      formData.set("scraping_enabled", scrapingEnabled ? "true" : "false");
+      formData.set("scrape_interval_minutes", interval);
+      formData.set("test_mode", testMode ? "true" : "false");
+
       const result = await updateSettings(formData);
       if (result.success) {
-        toast.success("Settings saved");
+        toast.success("Paramètres sauvegardés");
       } else {
-        toast.error("Failed to save");
+        toast.error("Échec de la sauvegarde");
       }
     });
   };
 
   return (
-    <form action={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <FieldGroup>
         <Field className="flex items-center justify-between rounded-lg border p-4">
           <div className="flex flex-col gap-0.5">
-            <FieldLabel htmlFor="scraping_enabled">Enable Scraping</FieldLabel>
+            <FieldLabel>Activer le scraping</FieldLabel>
             <FieldDescription>
-              Auto-scrape monitored accounts for red packet codes.
+              Scraper automatiquement les comptes surveillés.
             </FieldDescription>
           </div>
           <Switch
             id="scraping_enabled"
-            name="scraping_enabled"
-            value="true"
-            defaultChecked={settings.scrapingEnabled}
+            checked={scrapingEnabled}
+            onCheckedChange={setScrapingEnabled}
           />
         </Field>
 
         <Field className="flex items-center justify-between rounded-lg border p-4">
           <div className="flex flex-col gap-0.5">
-            <FieldLabel htmlFor="scrape_interval_minutes">
-              Scrape Interval
-            </FieldLabel>
+            <FieldLabel>Intervalle de scraping</FieldLabel>
             <FieldDescription>
-              How often to check for new tweets.
+              Fréquence de vérification des nouveaux tweets.
             </FieldDescription>
           </div>
-          <Select
-            name="scrape_interval_minutes"
-            defaultValue={settings.scrapeIntervalMinutes.toString()}
-          >
+          <Select value={interval} onValueChange={setInterval}>
             <SelectTrigger className="w-[100px]">
-              <SelectValue placeholder="Interval" />
+              <SelectValue placeholder="Intervalle" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
@@ -82,16 +90,15 @@ export function SettingsForm({ settings }) {
 
         <Field className="flex items-center justify-between rounded-lg border p-4">
           <div className="flex flex-col gap-0.5">
-            <FieldLabel htmlFor="test_mode">Test Mode</FieldLabel>
+            <FieldLabel>Mode test</FieldLabel>
             <FieldDescription>
-              Simulate Binance API (no real claims).
+              Simule l'API Binance (aucun vrai claim effectué).
             </FieldDescription>
           </div>
           <Switch
             id="test_mode"
-            name="test_mode"
-            value="true"
-            defaultChecked={settings.testMode}
+            checked={testMode}
+            onCheckedChange={setTestMode}
           />
         </Field>
       </FieldGroup>
@@ -99,7 +106,7 @@ export function SettingsForm({ settings }) {
       <div className="mt-4">
         <Button type="submit" disabled={isPending}>
           {isPending ? <Spinner className="size-4" /> : null}
-          Save Settings
+          Sauvegarder
         </Button>
       </div>
     </form>

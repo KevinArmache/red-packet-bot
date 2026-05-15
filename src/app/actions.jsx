@@ -62,16 +62,37 @@ export async function getCodes() {
 export async function verifyCode(id) {
   const code = getCodeById(id);
   if (!code) {
-    return { success: false, error: "Code not found" };
+    return { success: false, error: "Code introuvable" };
   }
 
-  addScrapeLog("info", `Verifying code: ${code.code}`);
+  addScrapeLog("info", `Vérification du code: ${code.code}`);
   const result = await verifyGiftCard(code.code);
 
   if (result.success && result.data) {
+    if (result.data.alreadyClaimed) {
+      // Le code a été racheté pendant la vérification
+      updateCodeStatus(
+        id,
+        "claimed",
+        JSON.stringify(result.data),
+        result.data.token,
+        parseFloat(result.data.amount),
+      );
+      recordClaimAttempt(id, true);
+      addScrapeLog("info", `Code ${code.code} racheté automatiquement lors de la vérification`);
+      revalidatePath("/");
+      return {
+        success: true,
+        valid: true,
+        claimed: true,
+        token: result.data.token,
+        amount: result.data.amount,
+      };
+    }
+
     const newStatus = result.data.valid ? "valid" : "invalid";
     updateCodeStatus(id, newStatus);
-    addScrapeLog("info", `Code ${code.code} is ${newStatus}`);
+    addScrapeLog("info", `Code ${code.code} est ${newStatus}`);
     revalidatePath("/");
     return {
       success: true,
@@ -81,20 +102,20 @@ export async function verifyCode(id) {
     };
   }
 
-  addScrapeLog("warn", `Verify failed: ${result.error}`);
+  addScrapeLog("warn", `Vérification échouée: ${result.error}`);
   return {
     success: false,
-    error: result.error || "Verification failed",
+    error: result.error || "Vérification échouée",
     errorCode: result.code,
   };
 }
 
 export async function claimCode(id) {
   const failedAttempts = getFailedClaimAttemptsLast24Hours();
-  if (failedAttempts >= 5) {
+  if (failedAttempts >= 4) {
     return {
       success: false,
-      error: "Daily limit reached (5 failed attempts). Try again in 24h.",
+      error: "Limite journalière atteinte (4 échecs). Réessayez dans 24h.",
       blocked: true,
     };
   }

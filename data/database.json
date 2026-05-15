@@ -1,0 +1,5472 @@
+{
+  "monitored_accounts": [
+    {
+      "id": 1,
+      "username": "muhammadtari55",
+      "created_at": "2026-05-15T19:52:09.000Z",
+      "last_scraped_at": "2026-05-15T20:56:20.263Z"
+    },
+    {
+      "id": 2,
+      "username": "binance",
+      "created_at": "2026-05-15T20:17:40.780Z",
+      "last_scraped_at": "2026-05-15T20:55:30.776Z"
+    },
+    {
+      "id": 3,
+      "username": "cz_binance",
+      "created_at": "2026-05-15T20:18:00.328Z",
+      "last_scraped_at": "2026-05-15T20:55:53.069Z"
+    }
+  ],
+  "red_packet_codes": [
+    {
+      "id": 1,
+      "code": "BPDBTEST76194906",
+      "tweet_text": "Test tweet from /api/test",
+      "tweet_id": "test-1778876194906",
+      "author": "test",
+      "detected_at": "2026-05-15T20:16:34.908Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 2,
+      "code": "BPDBTEST76588719",
+      "tweet_text": "Test tweet from /api/test",
+      "tweet_id": "test-1778876588719",
+      "author": "test",
+      "detected_at": "2026-05-15T20:23:08.720Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 3,
+      "code": "BPTEST12345678",
+      "tweet_text": "Binance Lunar New Year! Grab your red packet BPTEST12345678 before it expires! #Binancebina",
+      "tweet_id": null,
+      "author": "nce",
+      "detected_at": "2026-05-15T20:34:24.941Z",
+      "status": "claimed",
+      "claim_result": "{\"referenceNo\":\"TEST-REF-1778877318001\",\"identityNo\":\"TEST-ID-1778877318001\",\"token\":\"USDT\",\"amount\":\"1.00000000\"}",
+      "claimed_asset": "USDT",
+      "claimed_amount": 1
+    },
+    {
+      "id": 4,
+      "code": "BPNAANK34X",
+      "tweet_text": "Today Red Packet Codes PFJY6HOV RHD6AW9 BPNAANK34X 5LLGAKW1 BPWW78B144",
+      "tweet_id": null,
+      "author": "test",
+      "detected_at": "2026-05-15T20:55:00.547Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 5,
+      "code": "BPWW78B144",
+      "tweet_text": "Today Red Packet Codes PFJY6HOV RHD6AW9 BPNAANK34X 5LLGAKW1 BPWW78B144",
+      "tweet_id": null,
+      "author": "test",
+      "detected_at": "2026-05-15T20:55:00.551Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 6,
+      "code": "PFJY6HOV",
+      "tweet_text": "Today Red Packet Codes PFJY6HOV RHD6AW9 BPNAANK34X 5LLGAKW1 BPWW78B144",
+      "tweet_id": null,
+      "author": "test",
+      "detected_at": "2026-05-15T20:55:00.553Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 7,
+      "code": "RHD6AW9",
+      "tweet_text": "Today Red Packet Codes PFJY6HOV RHD6AW9 BPNAANK34X 5LLGAKW1 BPWW78B144",
+      "tweet_id": null,
+      "author": "test",
+      "detected_at": "2026-05-15T20:55:00.555Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 8,
+      "code": "5LLGAKW1",
+      "tweet_text": "Today Red Packet Codes PFJY6HOV RHD6AW9 BPNAANK34X 5LLGAKW1 BPWW78B144",
+      "tweet_id": null,
+      "author": "test",
+      "detected_at": "2026-05-15T20:55:00.558Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 9,
+      "code": "79EF4NNG",
+      "tweet_text": "Tweet Muhammadtari55 15-16 May 2026",
+      "tweet_id": "tweet-20260515",
+      "author": "Muhammadtari55",
+      "detected_at": "2026-05-15T20:55:00.794Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 10,
+      "code": "0BR6E70Z",
+      "tweet_text": "Tweet Muhammadtari55 15-16 May 2026",
+      "tweet_id": "tweet-20260515",
+      "author": "Muhammadtari55",
+      "detected_at": "2026-05-15T20:55:00.918Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 11,
+      "code": "ST35MVOK",
+      "tweet_text": "Tweet Muhammadtari55 15-16 May 2026",
+      "tweet_id": "tweet-20260515",
+      "author": "Muhammadtari55",
+      "detected_at": "2026-05-15T20:55:01.172Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 12,
+      "code": "LCTUC1CJ",
+      "tweet_text": "Tweet Muhammadtari55 15-16 May 2026",
+      "tweet_id": "tweet-20260515",
+      "author": "Muhammadtari55",
+      "detected_at": "2026-05-15T20:55:01.270Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 13,
+      "code": "HFODK4T1",
+      "tweet_text": "Tweet Muhammadtari55 15-16 May 2026",
+      "tweet_id": "tweet-20260515",
+      "author": "Muhammadtari55",
+      "detected_at": "2026-05-15T20:55:01.351Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 14,
+      "code": "QEDPV4AZ",
+      "tweet_text": "Tweet Muhammadtari55 15-16 May 2026",
+      "tweet_id": "tweet-20260515",
+      "author": "Muhammadtari55",
+      "detected_at": "2026-05-15T20:55:01.442Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 15,
+      "code": "Y5CY0FLM",
+      "tweet_text": "Tweet Muhammadtari55 15-16 May 2026",
+      "tweet_id": "tweet-20260515",
+      "author": "Muhammadtari55",
+      "detected_at": "2026-05-15T20:55:01.528Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 16,
+      "code": "KHLLE2R",
+      "tweet_text": "Tweet Muhammadtari55 15-16 May 2026",
+      "tweet_id": "tweet-20260515",
+      "author": "Muhammadtari55",
+      "detected_at": "2026-05-15T20:55:01.615Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 17,
+      "code": "QNPQJGJB",
+      "tweet_text": "Tweet Muhammadtari55 15-16 May 2026",
+      "tweet_id": "tweet-20260515",
+      "author": "Muhammadtari55",
+      "detected_at": "2026-05-15T20:55:01.693Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 18,
+      "code": "2BLIRBY1",
+      "tweet_text": "Tweet Muhammadtari55 15-16 May 2026",
+      "tweet_id": "tweet-20260515",
+      "author": "Muhammadtari55",
+      "detected_at": "2026-05-15T20:55:01.769Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 19,
+      "code": "EGBFC3UD",
+      "tweet_text": "Tweet Muhammadtari55 15-16 May 2026",
+      "tweet_id": "tweet-20260515",
+      "author": "Muhammadtari55",
+      "detected_at": "2026-05-15T20:55:01.873Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 20,
+      "code": "9EE035BF",
+      "tweet_text": "Tweet Muhammadtari55 15-16 May 2026",
+      "tweet_id": "tweet-20260515",
+      "author": "Muhammadtari55",
+      "detected_at": "2026-05-15T20:55:01.954Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 21,
+      "code": "F1MH6598",
+      "tweet_text": "Tweet Muhammadtari55 15-16 May 2026",
+      "tweet_id": "tweet-20260515",
+      "author": "Muhammadtari55",
+      "detected_at": "2026-05-15T20:55:02.034Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 22,
+      "code": "RI1D6AW9",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) PFJY6HOV RI1D6AW9 79EF4NNG 0BR6E70Z ST35MVOK LCTUC1CJ HFODK4T1 QEDPV4AZ Y5CY0FLM KI1LLE2R QNPQJGJB 2BLIRBYI EGBFC3UD 9EE035BF E1MH6598 5LLGAKW1 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-0",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.757Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 23,
+      "code": "KI1LLE2R",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) PFJY6HOV RI1D6AW9 79EF4NNG 0BR6E70Z ST35MVOK LCTUC1CJ HFODK4T1 QEDPV4AZ Y5CY0FLM KI1LLE2R QNPQJGJB 2BLIRBYI EGBFC3UD 9EE035BF E1MH6598 5LLGAKW1 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-0",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.779Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 24,
+      "code": "2BLIRBYI",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) PFJY6HOV RI1D6AW9 79EF4NNG 0BR6E70Z ST35MVOK LCTUC1CJ HFODK4T1 QEDPV4AZ Y5CY0FLM KI1LLE2R QNPQJGJB 2BLIRBYI EGBFC3UD 9EE035BF E1MH6598 5LLGAKW1 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-0",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.783Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 25,
+      "code": "E1MH6598",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) PFJY6HOV RI1D6AW9 79EF4NNG 0BR6E70Z ST35MVOK LCTUC1CJ HFODK4T1 QEDPV4AZ Y5CY0FLM KI1LLE2R QNPQJGJB 2BLIRBYI EGBFC3UD 9EE035BF E1MH6598 5LLGAKW1 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-0",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.792Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 26,
+      "code": "S50NMNXU",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S50NMNXU R97KE2J6 RB58I0AA BK88A2BZ UCU7JBBS J715LDU8 BK9YLDY4 EUW60WDH BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-1",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.805Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 27,
+      "code": "R97KE2J6",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S50NMNXU R97KE2J6 RB58I0AA BK88A2BZ UCU7JBBS J715LDU8 BK9YLDY4 EUW60WDH BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-1",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.810Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 28,
+      "code": "RB58I0AA",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S50NMNXU R97KE2J6 RB58I0AA BK88A2BZ UCU7JBBS J715LDU8 BK9YLDY4 EUW60WDH BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-1",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.814Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 29,
+      "code": "BK88A2BZ",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S50NMNXU R97KE2J6 RB58I0AA BK88A2BZ UCU7JBBS J715LDU8 BK9YLDY4 EUW60WDH BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-1",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.819Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 30,
+      "code": "UCU7JBBS",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S50NMNXU R97KE2J6 RB58I0AA BK88A2BZ UCU7JBBS J715LDU8 BK9YLDY4 EUW60WDH BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-1",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.826Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 31,
+      "code": "J715LDU8",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S50NMNXU R97KE2J6 RB58I0AA BK88A2BZ UCU7JBBS J715LDU8 BK9YLDY4 EUW60WDH BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-1",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.831Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 32,
+      "code": "BK9YLDY4",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S50NMNXU R97KE2J6 RB58I0AA BK88A2BZ UCU7JBBS J715LDU8 BK9YLDY4 EUW60WDH BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-1",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.836Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 33,
+      "code": "EUW60WDH",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S50NMNXU R97KE2J6 RB58I0AA BK88A2BZ UCU7JBBS J715LDU8 BK9YLDY4 EUW60WDH BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-1",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.840Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 34,
+      "code": "BANANAS31",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S50NMNXU R97KE2J6 RB58I0AA BK88A2BZ UCU7JBBS J715LDU8 BK9YLDY4 EUW60WDH BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-1",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.845Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 35,
+      "code": "BPSMBKM23R",
+      "tweet_text": "💥Today's Red Packet Binance Codes 16_31 May 2026🔥💯 🆔 153620785 BPNAANK34X BPSMBKM23R BPWW78B144",
+      "tweet_id": "nitter-nitter.net-2",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.853Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 36,
+      "code": "C8W5BSPQ",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) C8W5BSPQ ZE30TTJZ A7FL6TB8 6N761JCQ IAWQ1MIK UN5V853K SARI55FF G8U8YDB6 1TIFYXWW TY1RRSGE BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-3",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.867Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 37,
+      "code": "ZE30TTJZ",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) C8W5BSPQ ZE30TTJZ A7FL6TB8 6N761JCQ IAWQ1MIK UN5V853K SARI55FF G8U8YDB6 1TIFYXWW TY1RRSGE BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-3",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.872Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 38,
+      "code": "A7FL6TB8",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) C8W5BSPQ ZE30TTJZ A7FL6TB8 6N761JCQ IAWQ1MIK UN5V853K SARI55FF G8U8YDB6 1TIFYXWW TY1RRSGE BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-3",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.877Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 39,
+      "code": "6N761JCQ",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) C8W5BSPQ ZE30TTJZ A7FL6TB8 6N761JCQ IAWQ1MIK UN5V853K SARI55FF G8U8YDB6 1TIFYXWW TY1RRSGE BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-3",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.882Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 40,
+      "code": "IAWQ1MIK",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) C8W5BSPQ ZE30TTJZ A7FL6TB8 6N761JCQ IAWQ1MIK UN5V853K SARI55FF G8U8YDB6 1TIFYXWW TY1RRSGE BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-3",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.887Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 41,
+      "code": "UN5V853K",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) C8W5BSPQ ZE30TTJZ A7FL6TB8 6N761JCQ IAWQ1MIK UN5V853K SARI55FF G8U8YDB6 1TIFYXWW TY1RRSGE BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-3",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.893Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 42,
+      "code": "SARI55FF",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) C8W5BSPQ ZE30TTJZ A7FL6TB8 6N761JCQ IAWQ1MIK UN5V853K SARI55FF G8U8YDB6 1TIFYXWW TY1RRSGE BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-3",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.900Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 43,
+      "code": "G8U8YDB6",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) C8W5BSPQ ZE30TTJZ A7FL6TB8 6N761JCQ IAWQ1MIK UN5V853K SARI55FF G8U8YDB6 1TIFYXWW TY1RRSGE BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-3",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.906Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 44,
+      "code": "1TIFYXWW",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) C8W5BSPQ ZE30TTJZ A7FL6TB8 6N761JCQ IAWQ1MIK UN5V853K SARI55FF G8U8YDB6 1TIFYXWW TY1RRSGE BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-3",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.914Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 45,
+      "code": "TY1RRSGE",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) C8W5BSPQ ZE30TTJZ A7FL6TB8 6N761JCQ IAWQ1MIK UN5V853K SARI55FF G8U8YDB6 1TIFYXWW TY1RRSGE BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-3",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.920Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 46,
+      "code": "03XC87TE",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 03XC87TE VWEM2U4K ROWA05SN 9UPZB2E1 P3KHGF5A EFES91KH BJP511U7 63YRB3B4 L4PEHM2H O0ZSLFPO SXUXQ6CD 3X51K1LI BUAB772R 9XOVXWGS X5WWLZW3 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-4",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.937Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 47,
+      "code": "VWEM2U4K",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 03XC87TE VWEM2U4K ROWA05SN 9UPZB2E1 P3KHGF5A EFES91KH BJP511U7 63YRB3B4 L4PEHM2H O0ZSLFPO SXUXQ6CD 3X51K1LI BUAB772R 9XOVXWGS X5WWLZW3 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-4",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.944Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 48,
+      "code": "ROWA05SN",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 03XC87TE VWEM2U4K ROWA05SN 9UPZB2E1 P3KHGF5A EFES91KH BJP511U7 63YRB3B4 L4PEHM2H O0ZSLFPO SXUXQ6CD 3X51K1LI BUAB772R 9XOVXWGS X5WWLZW3 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-4",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.949Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 49,
+      "code": "9UPZB2E1",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 03XC87TE VWEM2U4K ROWA05SN 9UPZB2E1 P3KHGF5A EFES91KH BJP511U7 63YRB3B4 L4PEHM2H O0ZSLFPO SXUXQ6CD 3X51K1LI BUAB772R 9XOVXWGS X5WWLZW3 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-4",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.955Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 50,
+      "code": "P3KHGF5A",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 03XC87TE VWEM2U4K ROWA05SN 9UPZB2E1 P3KHGF5A EFES91KH BJP511U7 63YRB3B4 L4PEHM2H O0ZSLFPO SXUXQ6CD 3X51K1LI BUAB772R 9XOVXWGS X5WWLZW3 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-4",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.961Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 51,
+      "code": "EFES91KH",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 03XC87TE VWEM2U4K ROWA05SN 9UPZB2E1 P3KHGF5A EFES91KH BJP511U7 63YRB3B4 L4PEHM2H O0ZSLFPO SXUXQ6CD 3X51K1LI BUAB772R 9XOVXWGS X5WWLZW3 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-4",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.966Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 52,
+      "code": "BJP511U7",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 03XC87TE VWEM2U4K ROWA05SN 9UPZB2E1 P3KHGF5A EFES91KH BJP511U7 63YRB3B4 L4PEHM2H O0ZSLFPO SXUXQ6CD 3X51K1LI BUAB772R 9XOVXWGS X5WWLZW3 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-4",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.971Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 53,
+      "code": "63YRB3B4",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 03XC87TE VWEM2U4K ROWA05SN 9UPZB2E1 P3KHGF5A EFES91KH BJP511U7 63YRB3B4 L4PEHM2H O0ZSLFPO SXUXQ6CD 3X51K1LI BUAB772R 9XOVXWGS X5WWLZW3 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-4",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.977Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 54,
+      "code": "L4PEHM2H",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 03XC87TE VWEM2U4K ROWA05SN 9UPZB2E1 P3KHGF5A EFES91KH BJP511U7 63YRB3B4 L4PEHM2H O0ZSLFPO SXUXQ6CD 3X51K1LI BUAB772R 9XOVXWGS X5WWLZW3 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-4",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.982Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 55,
+      "code": "O0ZSLFPO",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 03XC87TE VWEM2U4K ROWA05SN 9UPZB2E1 P3KHGF5A EFES91KH BJP511U7 63YRB3B4 L4PEHM2H O0ZSLFPO SXUXQ6CD 3X51K1LI BUAB772R 9XOVXWGS X5WWLZW3 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-4",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.987Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 56,
+      "code": "SXUXQ6CD",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 03XC87TE VWEM2U4K ROWA05SN 9UPZB2E1 P3KHGF5A EFES91KH BJP511U7 63YRB3B4 L4PEHM2H O0ZSLFPO SXUXQ6CD 3X51K1LI BUAB772R 9XOVXWGS X5WWLZW3 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-4",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.992Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 57,
+      "code": "3X51K1LI",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 03XC87TE VWEM2U4K ROWA05SN 9UPZB2E1 P3KHGF5A EFES91KH BJP511U7 63YRB3B4 L4PEHM2H O0ZSLFPO SXUXQ6CD 3X51K1LI BUAB772R 9XOVXWGS X5WWLZW3 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-4",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:18.997Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 58,
+      "code": "BUAB772R",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 03XC87TE VWEM2U4K ROWA05SN 9UPZB2E1 P3KHGF5A EFES91KH BJP511U7 63YRB3B4 L4PEHM2H O0ZSLFPO SXUXQ6CD 3X51K1LI BUAB772R 9XOVXWGS X5WWLZW3 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-4",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.002Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 59,
+      "code": "9XOVXWGS",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 03XC87TE VWEM2U4K ROWA05SN 9UPZB2E1 P3KHGF5A EFES91KH BJP511U7 63YRB3B4 L4PEHM2H O0ZSLFPO SXUXQ6CD 3X51K1LI BUAB772R 9XOVXWGS X5WWLZW3 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-4",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.009Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 60,
+      "code": "X5WWLZW3",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 03XC87TE VWEM2U4K ROWA05SN 9UPZB2E1 P3KHGF5A EFES91KH BJP511U7 63YRB3B4 L4PEHM2H O0ZSLFPO SXUXQ6CD 3X51K1LI BUAB772R 9XOVXWGS X5WWLZW3 BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-4",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.014Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 61,
+      "code": "76WIHK7L",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 76WIHK7L IQT547PY 9VAPN1U5 RLKDG35T Q79AD8S6 HLNPJVAU 9BFL9WLK BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-5",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.059Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 62,
+      "code": "IQT547PY",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 76WIHK7L IQT547PY 9VAPN1U5 RLKDG35T Q79AD8S6 HLNPJVAU 9BFL9WLK BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-5",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.066Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 63,
+      "code": "9VAPN1U5",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 76WIHK7L IQT547PY 9VAPN1U5 RLKDG35T Q79AD8S6 HLNPJVAU 9BFL9WLK BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-5",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.074Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 64,
+      "code": "RLKDG35T",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 76WIHK7L IQT547PY 9VAPN1U5 RLKDG35T Q79AD8S6 HLNPJVAU 9BFL9WLK BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-5",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.081Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 65,
+      "code": "Q79AD8S6",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 76WIHK7L IQT547PY 9VAPN1U5 RLKDG35T Q79AD8S6 HLNPJVAU 9BFL9WLK BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-5",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.090Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 66,
+      "code": "9BFL9WLK",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 76WIHK7L IQT547PY 9VAPN1U5 RLKDG35T Q79AD8S6 HLNPJVAU 9BFL9WLK BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-5",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.098Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 67,
+      "code": "VCUGWB9P",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) VCUGWB9P BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-6",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.121Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 68,
+      "code": "WJLM97KH",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) WJLM97KH TPI3I4LK C6GLF94J J5X679DU F54C7QJ2 VCGKYX61 V12ZOJ74 BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-7",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.143Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 69,
+      "code": "TPI3I4LK",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) WJLM97KH TPI3I4LK C6GLF94J J5X679DU F54C7QJ2 VCGKYX61 V12ZOJ74 BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-7",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.151Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 70,
+      "code": "C6GLF94J",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) WJLM97KH TPI3I4LK C6GLF94J J5X679DU F54C7QJ2 VCGKYX61 V12ZOJ74 BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-7",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.159Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 71,
+      "code": "J5X679DU",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) WJLM97KH TPI3I4LK C6GLF94J J5X679DU F54C7QJ2 VCGKYX61 V12ZOJ74 BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-7",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.167Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 72,
+      "code": "F54C7QJ2",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) WJLM97KH TPI3I4LK C6GLF94J J5X679DU F54C7QJ2 VCGKYX61 V12ZOJ74 BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-7",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.200Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 73,
+      "code": "VCGKYX61",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) WJLM97KH TPI3I4LK C6GLF94J J5X679DU F54C7QJ2 VCGKYX61 V12ZOJ74 BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-7",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.205Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 74,
+      "code": "V12ZOJ74",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) WJLM97KH TPI3I4LK C6GLF94J J5X679DU F54C7QJ2 VCGKYX61 V12ZOJ74 BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-7",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.211Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 75,
+      "code": "51SS7UA0",
+      "tweet_text": "51SS7UA0 BPWW78B144",
+      "tweet_id": "nitter-nitter.net-8",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.225Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 76,
+      "code": "FLN22KGE",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) FZLROYCC FLN22KGE C43Q8TTE P9B8DFMU 8TKU94LG YQU94CXI KZP1VDNJ 727Z1MIT BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-9",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.239Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 77,
+      "code": "C43Q8TTE",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) FZLROYCC FLN22KGE C43Q8TTE P9B8DFMU 8TKU94LG YQU94CXI KZP1VDNJ 727Z1MIT BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-9",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.247Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 78,
+      "code": "P9B8DFMU",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) FZLROYCC FLN22KGE C43Q8TTE P9B8DFMU 8TKU94LG YQU94CXI KZP1VDNJ 727Z1MIT BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-9",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.252Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 79,
+      "code": "8TKU94LG",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) FZLROYCC FLN22KGE C43Q8TTE P9B8DFMU 8TKU94LG YQU94CXI KZP1VDNJ 727Z1MIT BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-9",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.258Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 80,
+      "code": "YQU94CXI",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) FZLROYCC FLN22KGE C43Q8TTE P9B8DFMU 8TKU94LG YQU94CXI KZP1VDNJ 727Z1MIT BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-9",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.264Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 81,
+      "code": "KZP1VDNJ",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) FZLROYCC FLN22KGE C43Q8TTE P9B8DFMU 8TKU94LG YQU94CXI KZP1VDNJ 727Z1MIT BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-9",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.271Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 82,
+      "code": "727Z1MIT",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) FZLROYCC FLN22KGE C43Q8TTE P9B8DFMU 8TKU94LG YQU94CXI KZP1VDNJ 727Z1MIT BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-9",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.279Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 83,
+      "code": "HFRV6BA3",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) HFRV6BA3 490RRZ41 EM0EP4PK PRRA80GD KN58X060 4O92KKAP NVQGMUUW BPWW78B144",
+      "tweet_id": "nitter-nitter.net-10",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.297Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 84,
+      "code": "490RRZ41",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) HFRV6BA3 490RRZ41 EM0EP4PK PRRA80GD KN58X060 4O92KKAP NVQGMUUW BPWW78B144",
+      "tweet_id": "nitter-nitter.net-10",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.304Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 85,
+      "code": "EM0EP4PK",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) HFRV6BA3 490RRZ41 EM0EP4PK PRRA80GD KN58X060 4O92KKAP NVQGMUUW BPWW78B144",
+      "tweet_id": "nitter-nitter.net-10",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.310Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 86,
+      "code": "PRRA80GD",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) HFRV6BA3 490RRZ41 EM0EP4PK PRRA80GD KN58X060 4O92KKAP NVQGMUUW BPWW78B144",
+      "tweet_id": "nitter-nitter.net-10",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.317Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 87,
+      "code": "KN58X060",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) HFRV6BA3 490RRZ41 EM0EP4PK PRRA80GD KN58X060 4O92KKAP NVQGMUUW BPWW78B144",
+      "tweet_id": "nitter-nitter.net-10",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.325Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 88,
+      "code": "4O92KKAP",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) HFRV6BA3 490RRZ41 EM0EP4PK PRRA80GD KN58X060 4O92KKAP NVQGMUUW BPWW78B144",
+      "tweet_id": "nitter-nitter.net-10",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.333Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 89,
+      "code": "S8HWHMMS",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S8HWHMMS YUDQLYV2 1EQGMT06 QT13Y5K5 XY4NQ1UE F15YL3PB D7SGCY0F BPWW78B144",
+      "tweet_id": "nitter-nitter.net-11",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.360Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 90,
+      "code": "YUDQLYV2",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S8HWHMMS YUDQLYV2 1EQGMT06 QT13Y5K5 XY4NQ1UE F15YL3PB D7SGCY0F BPWW78B144",
+      "tweet_id": "nitter-nitter.net-11",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.370Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 91,
+      "code": "1EQGMT06",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S8HWHMMS YUDQLYV2 1EQGMT06 QT13Y5K5 XY4NQ1UE F15YL3PB D7SGCY0F BPWW78B144",
+      "tweet_id": "nitter-nitter.net-11",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.376Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 92,
+      "code": "QT13Y5K5",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S8HWHMMS YUDQLYV2 1EQGMT06 QT13Y5K5 XY4NQ1UE F15YL3PB D7SGCY0F BPWW78B144",
+      "tweet_id": "nitter-nitter.net-11",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.384Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 93,
+      "code": "XY4NQ1UE",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S8HWHMMS YUDQLYV2 1EQGMT06 QT13Y5K5 XY4NQ1UE F15YL3PB D7SGCY0F BPWW78B144",
+      "tweet_id": "nitter-nitter.net-11",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.392Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 94,
+      "code": "F15YL3PB",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S8HWHMMS YUDQLYV2 1EQGMT06 QT13Y5K5 XY4NQ1UE F15YL3PB D7SGCY0F BPWW78B144",
+      "tweet_id": "nitter-nitter.net-11",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.401Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 95,
+      "code": "D7SGCY0F",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) S8HWHMMS YUDQLYV2 1EQGMT06 QT13Y5K5 XY4NQ1UE F15YL3PB D7SGCY0F BPWW78B144",
+      "tweet_id": "nitter-nitter.net-11",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.408Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 96,
+      "code": "8V2XCL21",
+      "tweet_text": "8V2XCL21 86P9Z6J3 BPWW78B144",
+      "tweet_id": "nitter-nitter.net-12",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.422Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 97,
+      "code": "86P9Z6J3",
+      "tweet_text": "8V2XCL21 86P9Z6J3 BPWW78B144",
+      "tweet_id": "nitter-nitter.net-12",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.429Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 98,
+      "code": "DD0J5CVO",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) DD0J5CVO WNSNOWDJ HGT2ZBBF CZ4LX1PJ U9ILU20G 2YJJB2IV GX5H62LD EEXWQIU6 JF4ZEY74 SS0VW1WW LZ3NJW8L BDLADDJG 5ZCIPVMP BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-13",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.447Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 99,
+      "code": "HGT2ZBBF",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) DD0J5CVO WNSNOWDJ HGT2ZBBF CZ4LX1PJ U9ILU20G 2YJJB2IV GX5H62LD EEXWQIU6 JF4ZEY74 SS0VW1WW LZ3NJW8L BDLADDJG 5ZCIPVMP BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-13",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.455Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 100,
+      "code": "CZ4LX1PJ",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) DD0J5CVO WNSNOWDJ HGT2ZBBF CZ4LX1PJ U9ILU20G 2YJJB2IV GX5H62LD EEXWQIU6 JF4ZEY74 SS0VW1WW LZ3NJW8L BDLADDJG 5ZCIPVMP BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-13",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.464Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 101,
+      "code": "U9ILU20G",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) DD0J5CVO WNSNOWDJ HGT2ZBBF CZ4LX1PJ U9ILU20G 2YJJB2IV GX5H62LD EEXWQIU6 JF4ZEY74 SS0VW1WW LZ3NJW8L BDLADDJG 5ZCIPVMP BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-13",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.469Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 102,
+      "code": "2YJJB2IV",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) DD0J5CVO WNSNOWDJ HGT2ZBBF CZ4LX1PJ U9ILU20G 2YJJB2IV GX5H62LD EEXWQIU6 JF4ZEY74 SS0VW1WW LZ3NJW8L BDLADDJG 5ZCIPVMP BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-13",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.476Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 103,
+      "code": "GX5H62LD",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) DD0J5CVO WNSNOWDJ HGT2ZBBF CZ4LX1PJ U9ILU20G 2YJJB2IV GX5H62LD EEXWQIU6 JF4ZEY74 SS0VW1WW LZ3NJW8L BDLADDJG 5ZCIPVMP BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-13",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.484Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 104,
+      "code": "EEXWQIU6",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) DD0J5CVO WNSNOWDJ HGT2ZBBF CZ4LX1PJ U9ILU20G 2YJJB2IV GX5H62LD EEXWQIU6 JF4ZEY74 SS0VW1WW LZ3NJW8L BDLADDJG 5ZCIPVMP BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-13",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.491Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 105,
+      "code": "JF4ZEY74",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) DD0J5CVO WNSNOWDJ HGT2ZBBF CZ4LX1PJ U9ILU20G 2YJJB2IV GX5H62LD EEXWQIU6 JF4ZEY74 SS0VW1WW LZ3NJW8L BDLADDJG 5ZCIPVMP BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-13",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.499Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 106,
+      "code": "SS0VW1WW",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) DD0J5CVO WNSNOWDJ HGT2ZBBF CZ4LX1PJ U9ILU20G 2YJJB2IV GX5H62LD EEXWQIU6 JF4ZEY74 SS0VW1WW LZ3NJW8L BDLADDJG 5ZCIPVMP BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-13",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.508Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 107,
+      "code": "LZ3NJW8L",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) DD0J5CVO WNSNOWDJ HGT2ZBBF CZ4LX1PJ U9ILU20G 2YJJB2IV GX5H62LD EEXWQIU6 JF4ZEY74 SS0VW1WW LZ3NJW8L BDLADDJG 5ZCIPVMP BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-13",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.517Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 108,
+      "code": "5ZCIPVMP",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) DD0J5CVO WNSNOWDJ HGT2ZBBF CZ4LX1PJ U9ILU20G 2YJJB2IV GX5H62LD EEXWQIU6 JF4ZEY74 SS0VW1WW LZ3NJW8L BDLADDJG 5ZCIPVMP BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-13",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.526Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 109,
+      "code": "8QBGGFJ0",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 8QBGGFJ0 TK4Y5E75 0KZTUZB1 RYY4ULJ0 U5TNS1YC 59H79O6X P2O1A564 BJKHG8KR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-14",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.547Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 110,
+      "code": "TK4Y5E75",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 8QBGGFJ0 TK4Y5E75 0KZTUZB1 RYY4ULJ0 U5TNS1YC 59H79O6X P2O1A564 BJKHG8KR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-14",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.554Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 111,
+      "code": "0KZTUZB1",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 8QBGGFJ0 TK4Y5E75 0KZTUZB1 RYY4ULJ0 U5TNS1YC 59H79O6X P2O1A564 BJKHG8KR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-14",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.563Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 112,
+      "code": "RYY4ULJ0",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 8QBGGFJ0 TK4Y5E75 0KZTUZB1 RYY4ULJ0 U5TNS1YC 59H79O6X P2O1A564 BJKHG8KR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-14",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.570Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 113,
+      "code": "U5TNS1YC",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 8QBGGFJ0 TK4Y5E75 0KZTUZB1 RYY4ULJ0 U5TNS1YC 59H79O6X P2O1A564 BJKHG8KR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-14",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.576Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 114,
+      "code": "59H79O6X",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 8QBGGFJ0 TK4Y5E75 0KZTUZB1 RYY4ULJ0 U5TNS1YC 59H79O6X P2O1A564 BJKHG8KR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-14",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.582Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 115,
+      "code": "P2O1A564",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 8QBGGFJ0 TK4Y5E75 0KZTUZB1 RYY4ULJ0 U5TNS1YC 59H79O6X P2O1A564 BJKHG8KR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-14",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.590Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 116,
+      "code": "BJKHG8KR",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 8QBGGFJ0 TK4Y5E75 0KZTUZB1 RYY4ULJ0 U5TNS1YC 59H79O6X P2O1A564 BJKHG8KR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-14",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.598Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 117,
+      "code": "3247CV8A",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 3247CV8A AVOLCHC4 ARZH5WXP KAZ1Q16X TIY343WU U6TGII1A F5D4IV5K BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-15",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.619Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 118,
+      "code": "AVOLCHC4",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 3247CV8A AVOLCHC4 ARZH5WXP KAZ1Q16X TIY343WU U6TGII1A F5D4IV5K BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-15",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.626Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 119,
+      "code": "ARZH5WXP",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 3247CV8A AVOLCHC4 ARZH5WXP KAZ1Q16X TIY343WU U6TGII1A F5D4IV5K BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-15",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.634Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 120,
+      "code": "KAZ1Q16X",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 3247CV8A AVOLCHC4 ARZH5WXP KAZ1Q16X TIY343WU U6TGII1A F5D4IV5K BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-15",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.643Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 121,
+      "code": "TIY343WU",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 3247CV8A AVOLCHC4 ARZH5WXP KAZ1Q16X TIY343WU U6TGII1A F5D4IV5K BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-15",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.651Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 122,
+      "code": "U6TGII1A",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 3247CV8A AVOLCHC4 ARZH5WXP KAZ1Q16X TIY343WU U6TGII1A F5D4IV5K BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-15",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.658Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 123,
+      "code": "F5D4IV5K",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 3247CV8A AVOLCHC4 ARZH5WXP KAZ1Q16X TIY343WU U6TGII1A F5D4IV5K BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-15",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.666Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 124,
+      "code": "TM0O460V",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) TM0O460V RU2QGBV5 QR3T8AM8 SLSP4FTQ MOHVW4N8 XI4RO55Q F4FTJ8F5 R7K6NWO9 UTOY2QOH D9IBXGOU YHR7ENGX 8WAFYCDC D4VAV3HA 7PV0IOS3 Z4OF685G BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-16",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.688Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 125,
+      "code": "RU2QGBV5",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) TM0O460V RU2QGBV5 QR3T8AM8 SLSP4FTQ MOHVW4N8 XI4RO55Q F4FTJ8F5 R7K6NWO9 UTOY2QOH D9IBXGOU YHR7ENGX 8WAFYCDC D4VAV3HA 7PV0IOS3 Z4OF685G BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-16",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.697Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 126,
+      "code": "QR3T8AM8",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) TM0O460V RU2QGBV5 QR3T8AM8 SLSP4FTQ MOHVW4N8 XI4RO55Q F4FTJ8F5 R7K6NWO9 UTOY2QOH D9IBXGOU YHR7ENGX 8WAFYCDC D4VAV3HA 7PV0IOS3 Z4OF685G BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-16",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.704Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 127,
+      "code": "SLSP4FTQ",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) TM0O460V RU2QGBV5 QR3T8AM8 SLSP4FTQ MOHVW4N8 XI4RO55Q F4FTJ8F5 R7K6NWO9 UTOY2QOH D9IBXGOU YHR7ENGX 8WAFYCDC D4VAV3HA 7PV0IOS3 Z4OF685G BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-16",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.711Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 128,
+      "code": "MOHVW4N8",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) TM0O460V RU2QGBV5 QR3T8AM8 SLSP4FTQ MOHVW4N8 XI4RO55Q F4FTJ8F5 R7K6NWO9 UTOY2QOH D9IBXGOU YHR7ENGX 8WAFYCDC D4VAV3HA 7PV0IOS3 Z4OF685G BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-16",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.720Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 129,
+      "code": "XI4RO55Q",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) TM0O460V RU2QGBV5 QR3T8AM8 SLSP4FTQ MOHVW4N8 XI4RO55Q F4FTJ8F5 R7K6NWO9 UTOY2QOH D9IBXGOU YHR7ENGX 8WAFYCDC D4VAV3HA 7PV0IOS3 Z4OF685G BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-16",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.727Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 130,
+      "code": "F4FTJ8F5",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) TM0O460V RU2QGBV5 QR3T8AM8 SLSP4FTQ MOHVW4N8 XI4RO55Q F4FTJ8F5 R7K6NWO9 UTOY2QOH D9IBXGOU YHR7ENGX 8WAFYCDC D4VAV3HA 7PV0IOS3 Z4OF685G BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-16",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.737Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 131,
+      "code": "R7K6NWO9",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) TM0O460V RU2QGBV5 QR3T8AM8 SLSP4FTQ MOHVW4N8 XI4RO55Q F4FTJ8F5 R7K6NWO9 UTOY2QOH D9IBXGOU YHR7ENGX 8WAFYCDC D4VAV3HA 7PV0IOS3 Z4OF685G BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-16",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.746Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 132,
+      "code": "UTOY2QOH",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) TM0O460V RU2QGBV5 QR3T8AM8 SLSP4FTQ MOHVW4N8 XI4RO55Q F4FTJ8F5 R7K6NWO9 UTOY2QOH D9IBXGOU YHR7ENGX 8WAFYCDC D4VAV3HA 7PV0IOS3 Z4OF685G BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-16",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.754Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 133,
+      "code": "D9IBXGOU",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) TM0O460V RU2QGBV5 QR3T8AM8 SLSP4FTQ MOHVW4N8 XI4RO55Q F4FTJ8F5 R7K6NWO9 UTOY2QOH D9IBXGOU YHR7ENGX 8WAFYCDC D4VAV3HA 7PV0IOS3 Z4OF685G BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-16",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.763Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 134,
+      "code": "YHR7ENGX",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) TM0O460V RU2QGBV5 QR3T8AM8 SLSP4FTQ MOHVW4N8 XI4RO55Q F4FTJ8F5 R7K6NWO9 UTOY2QOH D9IBXGOU YHR7ENGX 8WAFYCDC D4VAV3HA 7PV0IOS3 Z4OF685G BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-16",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.770Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 135,
+      "code": "8WAFYCDC",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) TM0O460V RU2QGBV5 QR3T8AM8 SLSP4FTQ MOHVW4N8 XI4RO55Q F4FTJ8F5 R7K6NWO9 UTOY2QOH D9IBXGOU YHR7ENGX 8WAFYCDC D4VAV3HA 7PV0IOS3 Z4OF685G BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-16",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.779Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 136,
+      "code": "D4VAV3HA",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) TM0O460V RU2QGBV5 QR3T8AM8 SLSP4FTQ MOHVW4N8 XI4RO55Q F4FTJ8F5 R7K6NWO9 UTOY2QOH D9IBXGOU YHR7ENGX 8WAFYCDC D4VAV3HA 7PV0IOS3 Z4OF685G BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-16",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.788Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 137,
+      "code": "7PV0IOS3",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) TM0O460V RU2QGBV5 QR3T8AM8 SLSP4FTQ MOHVW4N8 XI4RO55Q F4FTJ8F5 R7K6NWO9 UTOY2QOH D9IBXGOU YHR7ENGX 8WAFYCDC D4VAV3HA 7PV0IOS3 Z4OF685G BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-16",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.797Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 138,
+      "code": "Z4OF685G",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) TM0O460V RU2QGBV5 QR3T8AM8 SLSP4FTQ MOHVW4N8 XI4RO55Q F4FTJ8F5 R7K6NWO9 UTOY2QOH D9IBXGOU YHR7ENGX 8WAFYCDC D4VAV3HA 7PV0IOS3 Z4OF685G BPWW78B144 Scan QR Code",
+      "tweet_id": "nitter-nitter.net-16",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.805Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 139,
+      "code": "JDZ94SDI",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) JDZ94SDI 90DCRDPO 8PXETLZ4 2NMZIUC1 YMCL1UKP RWQDHPCL H6JB60RU KYTSWKJZ GCZJ497Y BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-17",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.825Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 140,
+      "code": "90DCRDPO",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) JDZ94SDI 90DCRDPO 8PXETLZ4 2NMZIUC1 YMCL1UKP RWQDHPCL H6JB60RU KYTSWKJZ GCZJ497Y BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-17",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.833Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 141,
+      "code": "8PXETLZ4",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) JDZ94SDI 90DCRDPO 8PXETLZ4 2NMZIUC1 YMCL1UKP RWQDHPCL H6JB60RU KYTSWKJZ GCZJ497Y BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-17",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.842Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 142,
+      "code": "2NMZIUC1",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) JDZ94SDI 90DCRDPO 8PXETLZ4 2NMZIUC1 YMCL1UKP RWQDHPCL H6JB60RU KYTSWKJZ GCZJ497Y BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-17",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.849Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 143,
+      "code": "YMCL1UKP",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) JDZ94SDI 90DCRDPO 8PXETLZ4 2NMZIUC1 YMCL1UKP RWQDHPCL H6JB60RU KYTSWKJZ GCZJ497Y BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-17",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.861Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 144,
+      "code": "H6JB60RU",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) JDZ94SDI 90DCRDPO 8PXETLZ4 2NMZIUC1 YMCL1UKP RWQDHPCL H6JB60RU KYTSWKJZ GCZJ497Y BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-17",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.871Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 145,
+      "code": "GCZJ497Y",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) JDZ94SDI 90DCRDPO 8PXETLZ4 2NMZIUC1 YMCL1UKP RWQDHPCL H6JB60RU KYTSWKJZ GCZJ497Y BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-17",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.884Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 146,
+      "code": "CEO4C7H2",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) CEO4C7H2 IBZTZULQ P22EIAYU E29QKLBQ INWI4F5S SJHP067T P6XFFWM8 AOM43TBC BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-18",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.922Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 147,
+      "code": "P22EIAYU",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) CEO4C7H2 IBZTZULQ P22EIAYU E29QKLBQ INWI4F5S SJHP067T P6XFFWM8 AOM43TBC BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-18",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.938Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 148,
+      "code": "E29QKLBQ",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) CEO4C7H2 IBZTZULQ P22EIAYU E29QKLBQ INWI4F5S SJHP067T P6XFFWM8 AOM43TBC BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-18",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.950Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 149,
+      "code": "INWI4F5S",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) CEO4C7H2 IBZTZULQ P22EIAYU E29QKLBQ INWI4F5S SJHP067T P6XFFWM8 AOM43TBC BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-18",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.971Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 150,
+      "code": "SJHP067T",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) CEO4C7H2 IBZTZULQ P22EIAYU E29QKLBQ INWI4F5S SJHP067T P6XFFWM8 AOM43TBC BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-18",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.987Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 151,
+      "code": "P6XFFWM8",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) CEO4C7H2 IBZTZULQ P22EIAYU E29QKLBQ INWI4F5S SJHP067T P6XFFWM8 AOM43TBC BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-18",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:19.999Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 152,
+      "code": "AOM43TBC",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15_16 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) CEO4C7H2 IBZTZULQ P22EIAYU E29QKLBQ INWI4F5S SJHP067T P6XFFWM8 AOM43TBC BPWW78B144 Scan QR Code & Get FREE $BANANAS31🔥..",
+      "tweet_id": "nitter-nitter.net-18",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.014Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 153,
+      "code": "0PUUJBDS",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.050Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 154,
+      "code": "LNOK0OZ1",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.062Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 155,
+      "code": "J5NXMO0J",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.076Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 156,
+      "code": "8ZH80JQF",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.092Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 157,
+      "code": "78WE0IMY",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.106Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 158,
+      "code": "9K7WCM33",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.120Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 159,
+      "code": "THS1B34S",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.133Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 160,
+      "code": "TFZV6M07",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.143Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 161,
+      "code": "IZSZY1IH",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.155Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 162,
+      "code": "IZWNNI6X",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.163Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 163,
+      "code": "CO4H5FYX",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.173Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 164,
+      "code": "RSGS3ZVE",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.182Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 165,
+      "code": "1DSU4B0M",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.190Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 166,
+      "code": "QZ58SC1K",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.200Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 167,
+      "code": "AROKN57X",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.210Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 168,
+      "code": "PCSXL061",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.219Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 169,
+      "code": "NQQV5K85",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.230Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 170,
+      "code": "VTN35H5N",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.242Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    },
+    {
+      "id": 171,
+      "code": "GO27GWMR",
+      "tweet_text": "💥Today's Red Packet Binance Codes 15 May 2026🔥💯 🆔 153620785 BPNAANK34X ( Big Gift May 2026🔥) 0PUUJBDS LNOK0OZ1 J5NXMO0J 8ZH80JQF 78WE0IMY 9K7WCM33 THS1B34S TFZV6M07 IZSZY1IH IZWNNI6X CO4H5FYX RSGS3ZVE 1DSU4B0M QZ58SC1K AROKN57X PCSXL061 NQQV5K85 VTN35H5N GO27GWMR BPWW78B144",
+      "tweet_id": "nitter-nitter.net-19",
+      "author": "muhammadtari55",
+      "detected_at": "2026-05-15T20:56:20.252Z",
+      "status": "unverified",
+      "claim_result": null,
+      "claimed_asset": null,
+      "claimed_amount": null
+    }
+  ],
+  "claim_attempts": [
+    {
+      "id": 1,
+      "code_id": 3,
+      "attempted_at": "2026-05-15T20:35:18.013Z",
+      "success": true,
+      "error_message": null
+    }
+  ],
+  "scrape_logs": [
+    {
+      "id": 1,
+      "timestamp": "2026-05-15T19:05:59.797Z",
+      "level": "info",
+      "message": "Manual scrape triggered",
+      "details": null
+    },
+    {
+      "id": 2,
+      "timestamp": "2026-05-15T19:05:59.802Z",
+      "level": "warn",
+      "message": "No accounts to monitor - add accounts in Settings first",
+      "details": null
+    },
+    {
+      "id": 3,
+      "timestamp": "2026-05-15T19:49:36.910Z",
+      "level": "info",
+      "message": "Manual scrape triggered",
+      "details": null
+    },
+    {
+      "id": 4,
+      "timestamp": "2026-05-15T19:49:37.134Z",
+      "level": "warn",
+      "message": "No accounts to monitor - add accounts in Settings first",
+      "details": null
+    },
+    {
+      "id": 5,
+      "timestamp": "2026-05-15T19:52:09.001Z",
+      "level": "info",
+      "message": "Added account: @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 6,
+      "timestamp": "2026-05-15T19:52:13.915Z",
+      "level": "info",
+      "message": "Manual scrape triggered",
+      "details": null
+    },
+    {
+      "id": 7,
+      "timestamp": "2026-05-15T19:52:13.921Z",
+      "level": "info",
+      "message": "Starting scrape of 1 accounts",
+      "details": null
+    },
+    {
+      "id": 8,
+      "timestamp": "2026-05-15T19:52:13.921Z",
+      "level": "info",
+      "message": "Scraping @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 9,
+      "timestamp": "2026-05-15T19:52:13.923Z",
+      "level": "info",
+      "message": "Fetching from nitter.poast.org",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 10,
+      "timestamp": "2026-05-15T19:52:15.857Z",
+      "level": "warn",
+      "message": "Nitter nitter.poast.org returned 403",
+      "details": null
+    },
+    {
+      "id": 11,
+      "timestamp": "2026-05-15T19:52:15.858Z",
+      "level": "info",
+      "message": "Fetching from nitter.privacydev.net",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 12,
+      "timestamp": "2026-05-15T19:52:16.453Z",
+      "level": "warn",
+      "message": "Nitter nitter.privacydev.net failed: fetch failed",
+      "details": null
+    },
+    {
+      "id": 13,
+      "timestamp": "2026-05-15T19:52:18.741Z",
+      "level": "info",
+      "message": "Fetching from nitter.1d4.us",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 14,
+      "timestamp": "2026-05-15T19:52:19.142Z",
+      "level": "warn",
+      "message": "Nitter nitter.1d4.us failed: fetch failed",
+      "details": null
+    },
+    {
+      "id": 15,
+      "timestamp": "2026-05-15T19:52:22.777Z",
+      "level": "info",
+      "message": "Fetching from nitter.kavin.rocks",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 16,
+      "timestamp": "2026-05-15T19:52:24.452Z",
+      "level": "warn",
+      "message": "Nitter nitter.kavin.rocks returned 502",
+      "details": null
+    },
+    {
+      "id": 17,
+      "timestamp": "2026-05-15T19:52:24.454Z",
+      "level": "info",
+      "message": "Nitter failed for @muhammadtari55, trying syndication",
+      "details": null
+    },
+    {
+      "id": 18,
+      "timestamp": "2026-05-15T19:52:26.402Z",
+      "level": "warn",
+      "message": "No tweets found for @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 19,
+      "timestamp": "2026-05-15T19:52:26.403Z",
+      "level": "info",
+      "message": "Scrape complete. Found 0 codes from 0 accounts",
+      "details": null
+    },
+    {
+      "id": 20,
+      "timestamp": "2026-05-15T20:01:18.645Z",
+      "level": "info",
+      "message": "Manual scrape triggered",
+      "details": null
+    },
+    {
+      "id": 21,
+      "timestamp": "2026-05-15T20:01:18.650Z",
+      "level": "info",
+      "message": "Starting scrape of 1 accounts",
+      "details": null
+    },
+    {
+      "id": 22,
+      "timestamp": "2026-05-15T20:01:18.651Z",
+      "level": "info",
+      "message": "Scraping @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 23,
+      "timestamp": "2026-05-15T20:01:18.652Z",
+      "level": "info",
+      "message": "Fetching from nitter.poast.org",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 24,
+      "timestamp": "2026-05-15T20:01:20.201Z",
+      "level": "warn",
+      "message": "Nitter nitter.poast.org returned 403",
+      "details": null
+    },
+    {
+      "id": 25,
+      "timestamp": "2026-05-15T20:01:20.206Z",
+      "level": "info",
+      "message": "Fetching from nitter.privacydev.net",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 26,
+      "timestamp": "2026-05-15T20:01:20.224Z",
+      "level": "warn",
+      "message": "Nitter nitter.privacydev.net failed: fetch failed",
+      "details": null
+    },
+    {
+      "id": 27,
+      "timestamp": "2026-05-15T20:01:25.016Z",
+      "level": "info",
+      "message": "Fetching from nitter.1d4.us",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 28,
+      "timestamp": "2026-05-15T20:01:25.327Z",
+      "level": "warn",
+      "message": "Nitter nitter.1d4.us failed: fetch failed",
+      "details": null
+    },
+    {
+      "id": 29,
+      "timestamp": "2026-05-15T20:01:30.037Z",
+      "level": "info",
+      "message": "Fetching from nitter.kavin.rocks",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 30,
+      "timestamp": "2026-05-15T20:01:31.546Z",
+      "level": "warn",
+      "message": "Nitter nitter.kavin.rocks returned 502",
+      "details": null
+    },
+    {
+      "id": 31,
+      "timestamp": "2026-05-15T20:01:31.548Z",
+      "level": "info",
+      "message": "Nitter failed for @muhammadtari55, trying syndication",
+      "details": null
+    },
+    {
+      "id": 32,
+      "timestamp": "2026-05-15T20:01:33.596Z",
+      "level": "warn",
+      "message": "No tweets found for @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 33,
+      "timestamp": "2026-05-15T20:01:33.597Z",
+      "level": "info",
+      "message": "Scrape complete. Found 0 codes from 0 accounts",
+      "details": null
+    },
+    {
+      "id": 34,
+      "timestamp": "2026-05-15T20:04:09.823Z",
+      "level": "info",
+      "message": "Manual scrape triggered",
+      "details": null
+    },
+    {
+      "id": 35,
+      "timestamp": "2026-05-15T20:04:09.829Z",
+      "level": "info",
+      "message": "Starting scrape of 1 accounts",
+      "details": null
+    },
+    {
+      "id": 36,
+      "timestamp": "2026-05-15T20:04:09.830Z",
+      "level": "info",
+      "message": "Scraping @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 37,
+      "timestamp": "2026-05-15T20:04:09.831Z",
+      "level": "info",
+      "message": "Fetching from nitter.poast.org",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 38,
+      "timestamp": "2026-05-15T20:04:14.697Z",
+      "level": "warn",
+      "message": "Nitter nitter.poast.org returned 403",
+      "details": null
+    },
+    {
+      "id": 39,
+      "timestamp": "2026-05-15T20:04:14.698Z",
+      "level": "info",
+      "message": "Fetching from nitter.privacydev.net",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 40,
+      "timestamp": "2026-05-15T20:04:14.711Z",
+      "level": "warn",
+      "message": "Nitter nitter.privacydev.net failed: fetch failed",
+      "details": null
+    },
+    {
+      "id": 41,
+      "timestamp": "2026-05-15T20:04:18.702Z",
+      "level": "info",
+      "message": "Fetching from nitter.1d4.us",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 42,
+      "timestamp": "2026-05-15T20:04:18.971Z",
+      "level": "warn",
+      "message": "Nitter nitter.1d4.us failed: fetch failed",
+      "details": null
+    },
+    {
+      "id": 43,
+      "timestamp": "2026-05-15T20:04:21.374Z",
+      "level": "info",
+      "message": "Fetching from nitter.kavin.rocks",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 44,
+      "timestamp": "2026-05-15T20:04:23.197Z",
+      "level": "warn",
+      "message": "Nitter nitter.kavin.rocks returned 502",
+      "details": null
+    },
+    {
+      "id": 45,
+      "timestamp": "2026-05-15T20:04:23.199Z",
+      "level": "info",
+      "message": "Nitter failed for @muhammadtari55, trying syndication",
+      "details": null
+    },
+    {
+      "id": 46,
+      "timestamp": "2026-05-15T20:04:33.214Z",
+      "level": "warn",
+      "message": "Syndication fetch failed: The operation was aborted due to timeout",
+      "details": null
+    },
+    {
+      "id": 47,
+      "timestamp": "2026-05-15T20:04:33.217Z",
+      "level": "warn",
+      "message": "No tweets found for @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 48,
+      "timestamp": "2026-05-15T20:04:33.219Z",
+      "level": "info",
+      "message": "Scrape complete. Found 0 codes from 0 accounts",
+      "details": null
+    },
+    {
+      "id": 49,
+      "timestamp": "2026-05-15T20:06:09.027Z",
+      "level": "info",
+      "message": "Settings updated",
+      "details": null
+    },
+    {
+      "id": 50,
+      "timestamp": "2026-05-15T20:16:34.918Z",
+      "level": "info",
+      "message": "Test DB depuis /api/test",
+      "details": null
+    },
+    {
+      "id": 51,
+      "timestamp": "2026-05-15T20:17:40.789Z",
+      "level": "info",
+      "message": "Added account: @binance",
+      "details": null
+    },
+    {
+      "id": 52,
+      "timestamp": "2026-05-15T20:18:00.333Z",
+      "level": "info",
+      "message": "Added account: @cz_binance",
+      "details": null
+    },
+    {
+      "id": 53,
+      "timestamp": "2026-05-15T20:18:49.270Z",
+      "level": "info",
+      "message": "Manual scrape triggered",
+      "details": null
+    },
+    {
+      "id": 54,
+      "timestamp": "2026-05-15T20:18:49.296Z",
+      "level": "info",
+      "message": "Démarrage du scraping — 3 compte(s)",
+      "details": null
+    },
+    {
+      "id": 55,
+      "timestamp": "2026-05-15T20:18:49.504Z",
+      "level": "info",
+      "message": "Scraping @binance...",
+      "details": null
+    },
+    {
+      "id": 56,
+      "timestamp": "2026-05-15T20:18:49.518Z",
+      "level": "warn",
+      "message": "TWITTER_BEARER_TOKEN non configuré — source Twitter API v2 ignorée",
+      "details": null
+    },
+    {
+      "id": 57,
+      "timestamp": "2026-05-15T20:18:49.850Z",
+      "level": "info",
+      "message": "API v2 vide, tentative Nitter pour @binance",
+      "details": null
+    },
+    {
+      "id": 58,
+      "timestamp": "2026-05-15T20:18:49.852Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.poast.org",
+      "details": "Username: binance"
+    },
+    {
+      "id": 59,
+      "timestamp": "2026-05-15T20:18:51.663Z",
+      "level": "warn",
+      "message": "Nitter nitter.poast.org → HTTP 403",
+      "details": null
+    },
+    {
+      "id": 60,
+      "timestamp": "2026-05-15T20:18:51.701Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.privacydev.net",
+      "details": "Username: binance"
+    },
+    {
+      "id": 61,
+      "timestamp": "2026-05-15T20:18:51.792Z",
+      "level": "warn",
+      "message": "Nitter nitter.privacydev.net erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 62,
+      "timestamp": "2026-05-15T20:18:53.158Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.lucabased.space",
+      "details": "Username: binance"
+    },
+    {
+      "id": 63,
+      "timestamp": "2026-05-15T20:18:53.664Z",
+      "level": "warn",
+      "message": "Nitter nitter.lucabased.space erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 64,
+      "timestamp": "2026-05-15T20:18:54.473Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.net",
+      "details": "Username: binance"
+    },
+    {
+      "id": 65,
+      "timestamp": "2026-05-15T20:18:55.697Z",
+      "level": "warn",
+      "message": "Nitter nitter.net bloqué ou vide",
+      "details": null
+    },
+    {
+      "id": 66,
+      "timestamp": "2026-05-15T20:18:55.700Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.42l.fr",
+      "details": "Username: binance"
+    },
+    {
+      "id": 67,
+      "timestamp": "2026-05-15T20:19:03.554Z",
+      "level": "warn",
+      "message": "Nitter nitter.42l.fr → HTTP 503",
+      "details": null
+    },
+    {
+      "id": 68,
+      "timestamp": "2026-05-15T20:19:03.559Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.mint.lgbt",
+      "details": "Username: binance"
+    },
+    {
+      "id": 69,
+      "timestamp": "2026-05-15T20:19:03.860Z",
+      "level": "warn",
+      "message": "Nitter nitter.mint.lgbt erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 70,
+      "timestamp": "2026-05-15T20:19:05.024Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.bus-hit.me",
+      "details": "Username: binance"
+    },
+    {
+      "id": 71,
+      "timestamp": "2026-05-15T20:19:05.394Z",
+      "level": "warn",
+      "message": "Nitter nitter.bus-hit.me erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 72,
+      "timestamp": "2026-05-15T20:19:06.518Z",
+      "level": "info",
+      "message": "Nitter vide, tentative Twitter mobile pour @binance",
+      "details": null
+    },
+    {
+      "id": 73,
+      "timestamp": "2026-05-15T20:19:12.045Z",
+      "level": "info",
+      "message": "Tentative oEmbed pour @binance",
+      "details": null
+    },
+    {
+      "id": 74,
+      "timestamp": "2026-05-15T20:19:16.425Z",
+      "level": "info",
+      "message": "Scraping @cz_binance...",
+      "details": null
+    },
+    {
+      "id": 75,
+      "timestamp": "2026-05-15T20:19:16.429Z",
+      "level": "warn",
+      "message": "TWITTER_BEARER_TOKEN non configuré — source Twitter API v2 ignorée",
+      "details": null
+    },
+    {
+      "id": 76,
+      "timestamp": "2026-05-15T20:19:16.454Z",
+      "level": "info",
+      "message": "API v2 vide, tentative Nitter pour @cz_binance",
+      "details": null
+    },
+    {
+      "id": 77,
+      "timestamp": "2026-05-15T20:19:16.617Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.poast.org",
+      "details": "Username: cz_binance"
+    },
+    {
+      "id": 78,
+      "timestamp": "2026-05-15T20:19:18.543Z",
+      "level": "warn",
+      "message": "Nitter nitter.poast.org → HTTP 403",
+      "details": null
+    },
+    {
+      "id": 79,
+      "timestamp": "2026-05-15T20:19:18.546Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.privacydev.net",
+      "details": "Username: cz_binance"
+    },
+    {
+      "id": 80,
+      "timestamp": "2026-05-15T20:19:18.556Z",
+      "level": "warn",
+      "message": "Nitter nitter.privacydev.net erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 81,
+      "timestamp": "2026-05-15T20:19:20.105Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.lucabased.space",
+      "details": "Username: cz_binance"
+    },
+    {
+      "id": 82,
+      "timestamp": "2026-05-15T20:19:20.379Z",
+      "level": "warn",
+      "message": "Nitter nitter.lucabased.space erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 83,
+      "timestamp": "2026-05-15T20:19:21.293Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.net",
+      "details": "Username: cz_binance"
+    },
+    {
+      "id": 84,
+      "timestamp": "2026-05-15T20:19:24.614Z",
+      "level": "warn",
+      "message": "Nitter nitter.net bloqué ou vide",
+      "details": null
+    },
+    {
+      "id": 85,
+      "timestamp": "2026-05-15T20:19:24.619Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.42l.fr",
+      "details": "Username: cz_binance"
+    },
+    {
+      "id": 86,
+      "timestamp": "2026-05-15T20:19:30.787Z",
+      "level": "warn",
+      "message": "Nitter nitter.42l.fr → HTTP 503",
+      "details": null
+    },
+    {
+      "id": 87,
+      "timestamp": "2026-05-15T20:19:30.843Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.mint.lgbt",
+      "details": "Username: cz_binance"
+    },
+    {
+      "id": 88,
+      "timestamp": "2026-05-15T20:19:31.246Z",
+      "level": "warn",
+      "message": "Nitter nitter.mint.lgbt erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 89,
+      "timestamp": "2026-05-15T20:19:31.910Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.bus-hit.me",
+      "details": "Username: cz_binance"
+    },
+    {
+      "id": 90,
+      "timestamp": "2026-05-15T20:19:32.283Z",
+      "level": "warn",
+      "message": "Nitter nitter.bus-hit.me erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 91,
+      "timestamp": "2026-05-15T20:19:33.026Z",
+      "level": "info",
+      "message": "Nitter vide, tentative Twitter mobile pour @cz_binance",
+      "details": null
+    },
+    {
+      "id": 92,
+      "timestamp": "2026-05-15T20:19:36.104Z",
+      "level": "info",
+      "message": "Tentative oEmbed pour @cz_binance",
+      "details": null
+    },
+    {
+      "id": 93,
+      "timestamp": "2026-05-15T20:19:40.238Z",
+      "level": "info",
+      "message": "Scraping @muhammadtari55...",
+      "details": null
+    },
+    {
+      "id": 94,
+      "timestamp": "2026-05-15T20:19:40.241Z",
+      "level": "warn",
+      "message": "TWITTER_BEARER_TOKEN non configuré — source Twitter API v2 ignorée",
+      "details": null
+    },
+    {
+      "id": 95,
+      "timestamp": "2026-05-15T20:19:40.344Z",
+      "level": "info",
+      "message": "API v2 vide, tentative Nitter pour @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 96,
+      "timestamp": "2026-05-15T20:19:40.643Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.poast.org",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 97,
+      "timestamp": "2026-05-15T20:19:50.982Z",
+      "level": "warn",
+      "message": "Nitter nitter.poast.org → HTTP 403",
+      "details": null
+    },
+    {
+      "id": 98,
+      "timestamp": "2026-05-15T20:19:51.057Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.privacydev.net",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 99,
+      "timestamp": "2026-05-15T20:19:51.154Z",
+      "level": "warn",
+      "message": "Nitter nitter.privacydev.net erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 100,
+      "timestamp": "2026-05-15T20:19:51.680Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.lucabased.space",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 101,
+      "timestamp": "2026-05-15T20:19:52.631Z",
+      "level": "warn",
+      "message": "Nitter nitter.lucabased.space erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 102,
+      "timestamp": "2026-05-15T20:19:53.232Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.net",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 103,
+      "timestamp": "2026-05-15T20:19:56.446Z",
+      "level": "warn",
+      "message": "Nitter nitter.net bloqué ou vide",
+      "details": null
+    },
+    {
+      "id": 104,
+      "timestamp": "2026-05-15T20:19:56.449Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.42l.fr",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 105,
+      "timestamp": "2026-05-15T20:19:58.172Z",
+      "level": "warn",
+      "message": "Nitter nitter.42l.fr → HTTP 503",
+      "details": null
+    },
+    {
+      "id": 106,
+      "timestamp": "2026-05-15T20:19:58.175Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.mint.lgbt",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 107,
+      "timestamp": "2026-05-15T20:19:58.670Z",
+      "level": "warn",
+      "message": "Nitter nitter.mint.lgbt erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 108,
+      "timestamp": "2026-05-15T20:20:00.208Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.bus-hit.me",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 109,
+      "timestamp": "2026-05-15T20:20:00.830Z",
+      "level": "warn",
+      "message": "Nitter nitter.bus-hit.me erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 110,
+      "timestamp": "2026-05-15T20:20:01.939Z",
+      "level": "info",
+      "message": "Nitter vide, tentative Twitter mobile pour @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 111,
+      "timestamp": "2026-05-15T20:20:06.222Z",
+      "level": "info",
+      "message": "Tentative oEmbed pour @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 112,
+      "timestamp": "2026-05-15T20:20:07.453Z",
+      "level": "info",
+      "message": "Scraping terminé — 0 code(s) trouvé(s) sur 3 compte(s)",
+      "details": null
+    },
+    {
+      "id": 113,
+      "timestamp": "2026-05-15T20:20:12.813Z",
+      "level": "warn",
+      "message": "Cron — tentative non autorisée",
+      "details": null
+    },
+    {
+      "id": 114,
+      "timestamp": "2026-05-15T20:21:55.254Z",
+      "level": "info",
+      "message": "Manual scrape triggered",
+      "details": null
+    },
+    {
+      "id": 115,
+      "timestamp": "2026-05-15T20:21:55.259Z",
+      "level": "info",
+      "message": "Démarrage du scraping — 3 compte(s)",
+      "details": null
+    },
+    {
+      "id": 116,
+      "timestamp": "2026-05-15T20:21:55.261Z",
+      "level": "info",
+      "message": "Scraping @binance...",
+      "details": null
+    },
+    {
+      "id": 117,
+      "timestamp": "2026-05-15T20:21:55.263Z",
+      "level": "warn",
+      "message": "TWITTER_BEARER_TOKEN non configuré — source Twitter API v2 ignorée",
+      "details": null
+    },
+    {
+      "id": 118,
+      "timestamp": "2026-05-15T20:21:55.264Z",
+      "level": "info",
+      "message": "API v2 vide, tentative Nitter pour @binance",
+      "details": null
+    },
+    {
+      "id": 119,
+      "timestamp": "2026-05-15T20:21:55.269Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.poast.org",
+      "details": "Username: binance"
+    },
+    {
+      "id": 120,
+      "timestamp": "2026-05-15T20:21:58.312Z",
+      "level": "warn",
+      "message": "Nitter nitter.poast.org → HTTP 403",
+      "details": null
+    },
+    {
+      "id": 121,
+      "timestamp": "2026-05-15T20:21:58.315Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.privacydev.net",
+      "details": "Username: binance"
+    },
+    {
+      "id": 122,
+      "timestamp": "2026-05-15T20:21:58.336Z",
+      "level": "warn",
+      "message": "Nitter nitter.privacydev.net erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 123,
+      "timestamp": "2026-05-15T20:21:59.389Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.lucabased.space",
+      "details": "Username: binance"
+    },
+    {
+      "id": 124,
+      "timestamp": "2026-05-15T20:21:59.768Z",
+      "level": "warn",
+      "message": "Nitter nitter.lucabased.space erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 125,
+      "timestamp": "2026-05-15T20:22:00.381Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.net",
+      "details": "Username: binance"
+    },
+    {
+      "id": 126,
+      "timestamp": "2026-05-15T20:22:02.045Z",
+      "level": "warn",
+      "message": "Nitter nitter.net bloqué ou vide",
+      "details": null
+    },
+    {
+      "id": 127,
+      "timestamp": "2026-05-15T20:22:02.046Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.42l.fr",
+      "details": "Username: binance"
+    },
+    {
+      "id": 128,
+      "timestamp": "2026-05-15T20:22:04.179Z",
+      "level": "warn",
+      "message": "Nitter nitter.42l.fr → HTTP 503",
+      "details": null
+    },
+    {
+      "id": 129,
+      "timestamp": "2026-05-15T20:22:04.181Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.mint.lgbt",
+      "details": "Username: binance"
+    },
+    {
+      "id": 130,
+      "timestamp": "2026-05-15T20:22:04.452Z",
+      "level": "warn",
+      "message": "Nitter nitter.mint.lgbt erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 131,
+      "timestamp": "2026-05-15T20:22:05.419Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.bus-hit.me",
+      "details": "Username: binance"
+    },
+    {
+      "id": 132,
+      "timestamp": "2026-05-15T20:22:05.685Z",
+      "level": "warn",
+      "message": "Nitter nitter.bus-hit.me erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 133,
+      "timestamp": "2026-05-15T20:22:07.337Z",
+      "level": "info",
+      "message": "Nitter vide, tentative Twitter mobile pour @binance",
+      "details": null
+    },
+    {
+      "id": 134,
+      "timestamp": "2026-05-15T20:22:19.357Z",
+      "level": "info",
+      "message": "Tentative oEmbed pour @binance",
+      "details": null
+    },
+    {
+      "id": 135,
+      "timestamp": "2026-05-15T20:22:26.765Z",
+      "level": "info",
+      "message": "Scraping @cz_binance...",
+      "details": null
+    },
+    {
+      "id": 136,
+      "timestamp": "2026-05-15T20:22:26.766Z",
+      "level": "warn",
+      "message": "TWITTER_BEARER_TOKEN non configuré — source Twitter API v2 ignorée",
+      "details": null
+    },
+    {
+      "id": 137,
+      "timestamp": "2026-05-15T20:22:26.768Z",
+      "level": "info",
+      "message": "API v2 vide, tentative Nitter pour @cz_binance",
+      "details": null
+    },
+    {
+      "id": 138,
+      "timestamp": "2026-05-15T20:22:26.770Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.poast.org",
+      "details": "Username: cz_binance"
+    },
+    {
+      "id": 139,
+      "timestamp": "2026-05-15T20:22:28.884Z",
+      "level": "warn",
+      "message": "Nitter nitter.poast.org → HTTP 403",
+      "details": null
+    },
+    {
+      "id": 140,
+      "timestamp": "2026-05-15T20:22:28.886Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.privacydev.net",
+      "details": "Username: cz_binance"
+    },
+    {
+      "id": 141,
+      "timestamp": "2026-05-15T20:22:28.899Z",
+      "level": "warn",
+      "message": "Nitter nitter.privacydev.net erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 142,
+      "timestamp": "2026-05-15T20:22:29.995Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.lucabased.space",
+      "details": "Username: cz_binance"
+    },
+    {
+      "id": 143,
+      "timestamp": "2026-05-15T20:22:30.260Z",
+      "level": "warn",
+      "message": "Nitter nitter.lucabased.space erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 144,
+      "timestamp": "2026-05-15T20:22:30.841Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.net",
+      "details": "Username: cz_binance"
+    },
+    {
+      "id": 145,
+      "timestamp": "2026-05-15T20:22:32.098Z",
+      "level": "warn",
+      "message": "Nitter nitter.net bloqué ou vide",
+      "details": null
+    },
+    {
+      "id": 146,
+      "timestamp": "2026-05-15T20:22:32.100Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.42l.fr",
+      "details": "Username: cz_binance"
+    },
+    {
+      "id": 147,
+      "timestamp": "2026-05-15T20:22:33.613Z",
+      "level": "warn",
+      "message": "Nitter nitter.42l.fr → HTTP 503",
+      "details": null
+    },
+    {
+      "id": 148,
+      "timestamp": "2026-05-15T20:22:33.615Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.mint.lgbt",
+      "details": "Username: cz_binance"
+    },
+    {
+      "id": 149,
+      "timestamp": "2026-05-15T20:22:33.890Z",
+      "level": "warn",
+      "message": "Nitter nitter.mint.lgbt erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 150,
+      "timestamp": "2026-05-15T20:22:34.946Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.bus-hit.me",
+      "details": "Username: cz_binance"
+    },
+    {
+      "id": 151,
+      "timestamp": "2026-05-15T20:22:35.215Z",
+      "level": "warn",
+      "message": "Nitter nitter.bus-hit.me erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 152,
+      "timestamp": "2026-05-15T20:22:35.965Z",
+      "level": "info",
+      "message": "Nitter vide, tentative Twitter mobile pour @cz_binance",
+      "details": null
+    },
+    {
+      "id": 153,
+      "timestamp": "2026-05-15T20:22:41.653Z",
+      "level": "info",
+      "message": "Tentative oEmbed pour @cz_binance",
+      "details": null
+    },
+    {
+      "id": 154,
+      "timestamp": "2026-05-15T20:22:46.021Z",
+      "level": "info",
+      "message": "Scraping @muhammadtari55...",
+      "details": null
+    },
+    {
+      "id": 155,
+      "timestamp": "2026-05-15T20:22:46.023Z",
+      "level": "warn",
+      "message": "TWITTER_BEARER_TOKEN non configuré — source Twitter API v2 ignorée",
+      "details": null
+    },
+    {
+      "id": 156,
+      "timestamp": "2026-05-15T20:22:46.025Z",
+      "level": "info",
+      "message": "API v2 vide, tentative Nitter pour @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 157,
+      "timestamp": "2026-05-15T20:22:46.028Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.poast.org",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 158,
+      "timestamp": "2026-05-15T20:22:47.589Z",
+      "level": "warn",
+      "message": "Nitter nitter.poast.org → HTTP 403",
+      "details": null
+    },
+    {
+      "id": 159,
+      "timestamp": "2026-05-15T20:22:47.591Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.privacydev.net",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 160,
+      "timestamp": "2026-05-15T20:22:47.599Z",
+      "level": "warn",
+      "message": "Nitter nitter.privacydev.net erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 161,
+      "timestamp": "2026-05-15T20:22:48.244Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.lucabased.space",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 162,
+      "timestamp": "2026-05-15T20:22:48.503Z",
+      "level": "warn",
+      "message": "Nitter nitter.lucabased.space erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 163,
+      "timestamp": "2026-05-15T20:22:49.717Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.net",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 164,
+      "timestamp": "2026-05-15T20:22:50.755Z",
+      "level": "warn",
+      "message": "Nitter nitter.net bloqué ou vide",
+      "details": null
+    },
+    {
+      "id": 165,
+      "timestamp": "2026-05-15T20:22:50.762Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.42l.fr",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 166,
+      "timestamp": "2026-05-15T20:22:52.325Z",
+      "level": "warn",
+      "message": "Nitter nitter.42l.fr → HTTP 503",
+      "details": null
+    },
+    {
+      "id": 167,
+      "timestamp": "2026-05-15T20:22:52.328Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.mint.lgbt",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 168,
+      "timestamp": "2026-05-15T20:22:52.610Z",
+      "level": "warn",
+      "message": "Nitter nitter.mint.lgbt erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 169,
+      "timestamp": "2026-05-15T20:22:53.578Z",
+      "level": "info",
+      "message": "Tentative Nitter: nitter.bus-hit.me",
+      "details": "Username: muhammadtari55"
+    },
+    {
+      "id": 170,
+      "timestamp": "2026-05-15T20:22:53.850Z",
+      "level": "warn",
+      "message": "Nitter nitter.bus-hit.me erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 171,
+      "timestamp": "2026-05-15T20:22:54.728Z",
+      "level": "info",
+      "message": "Nitter vide, tentative Twitter mobile pour @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 172,
+      "timestamp": "2026-05-15T20:22:57.015Z",
+      "level": "info",
+      "message": "Tentative oEmbed pour @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 173,
+      "timestamp": "2026-05-15T20:22:58.209Z",
+      "level": "info",
+      "message": "Scraping terminé — 0 code(s) trouvé(s) sur 3 compte(s)",
+      "details": null
+    },
+    {
+      "id": 174,
+      "timestamp": "2026-05-15T20:23:08.724Z",
+      "level": "info",
+      "message": "Test DB depuis /api/test",
+      "details": null
+    },
+    {
+      "id": 175,
+      "timestamp": "2026-05-15T20:34:24.947Z",
+      "level": "info",
+      "message": "Manually added: BPTEST12345678",
+      "details": null
+    },
+    {
+      "id": 176,
+      "timestamp": "2026-05-15T20:34:43.831Z",
+      "level": "info",
+      "message": "Vérification du code: BPTEST12345678",
+      "details": null
+    },
+    {
+      "id": 177,
+      "timestamp": "2026-05-15T20:34:44.583Z",
+      "level": "info",
+      "message": "Code BPTEST12345678 est valid",
+      "details": null
+    },
+    {
+      "id": 178,
+      "timestamp": "2026-05-15T20:35:17.476Z",
+      "level": "info",
+      "message": "Claiming: BPTEST12345678",
+      "details": null
+    },
+    {
+      "id": 179,
+      "timestamp": "2026-05-15T20:35:18.016Z",
+      "level": "info",
+      "message": "Claimed 1.00000000 USDT",
+      "details": null
+    },
+    {
+      "id": 180,
+      "timestamp": "2026-05-15T20:55:00.550Z",
+      "level": "info",
+      "message": "External ingestion: Added code BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 181,
+      "timestamp": "2026-05-15T20:55:00.552Z",
+      "level": "info",
+      "message": "External ingestion: Added code BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 182,
+      "timestamp": "2026-05-15T20:55:00.554Z",
+      "level": "info",
+      "message": "External ingestion: Added code PFJY6HOV",
+      "details": null
+    },
+    {
+      "id": 183,
+      "timestamp": "2026-05-15T20:55:00.557Z",
+      "level": "info",
+      "message": "External ingestion: Added code RHD6AW9",
+      "details": null
+    },
+    {
+      "id": 184,
+      "timestamp": "2026-05-15T20:55:00.560Z",
+      "level": "info",
+      "message": "External ingestion: Added code 5LLGAKW1",
+      "details": null
+    },
+    {
+      "id": 185,
+      "timestamp": "2026-05-15T20:55:00.795Z",
+      "level": "info",
+      "message": "External ingestion: Added code 79EF4NNG",
+      "details": null
+    },
+    {
+      "id": 186,
+      "timestamp": "2026-05-15T20:55:00.919Z",
+      "level": "info",
+      "message": "External ingestion: Added code 0BR6E70Z",
+      "details": null
+    },
+    {
+      "id": 187,
+      "timestamp": "2026-05-15T20:55:01.174Z",
+      "level": "info",
+      "message": "External ingestion: Added code ST35MVOK",
+      "details": null
+    },
+    {
+      "id": 188,
+      "timestamp": "2026-05-15T20:55:01.272Z",
+      "level": "info",
+      "message": "External ingestion: Added code LCTUC1CJ",
+      "details": null
+    },
+    {
+      "id": 189,
+      "timestamp": "2026-05-15T20:55:01.353Z",
+      "level": "info",
+      "message": "External ingestion: Added code HFODK4T1",
+      "details": null
+    },
+    {
+      "id": 190,
+      "timestamp": "2026-05-15T20:55:01.444Z",
+      "level": "info",
+      "message": "External ingestion: Added code QEDPV4AZ",
+      "details": null
+    },
+    {
+      "id": 191,
+      "timestamp": "2026-05-15T20:55:01.530Z",
+      "level": "info",
+      "message": "External ingestion: Added code Y5CY0FLM",
+      "details": null
+    },
+    {
+      "id": 192,
+      "timestamp": "2026-05-15T20:55:01.616Z",
+      "level": "info",
+      "message": "External ingestion: Added code KHLLE2R",
+      "details": null
+    },
+    {
+      "id": 193,
+      "timestamp": "2026-05-15T20:55:01.695Z",
+      "level": "info",
+      "message": "External ingestion: Added code QNPQJGJB",
+      "details": null
+    },
+    {
+      "id": 194,
+      "timestamp": "2026-05-15T20:55:01.771Z",
+      "level": "info",
+      "message": "External ingestion: Added code 2BLIRBY1",
+      "details": null
+    },
+    {
+      "id": 195,
+      "timestamp": "2026-05-15T20:55:01.875Z",
+      "level": "info",
+      "message": "External ingestion: Added code EGBFC3UD",
+      "details": null
+    },
+    {
+      "id": 196,
+      "timestamp": "2026-05-15T20:55:01.956Z",
+      "level": "info",
+      "message": "External ingestion: Added code 9EE035BF",
+      "details": null
+    },
+    {
+      "id": 197,
+      "timestamp": "2026-05-15T20:55:02.035Z",
+      "level": "info",
+      "message": "External ingestion: Added code F1MH6598",
+      "details": null
+    },
+    {
+      "id": 198,
+      "timestamp": "2026-05-15T20:55:08.276Z",
+      "level": "info",
+      "message": "Cron scrape déclenché",
+      "details": null
+    },
+    {
+      "id": 199,
+      "timestamp": "2026-05-15T20:55:08.279Z",
+      "level": "info",
+      "message": "=== Scraping démarré — 3 compte(s) ===",
+      "details": null
+    },
+    {
+      "id": 200,
+      "timestamp": "2026-05-15T20:55:08.281Z",
+      "level": "info",
+      "message": "Scraping @binance...",
+      "details": null
+    },
+    {
+      "id": 201,
+      "timestamp": "2026-05-15T20:55:08.283Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.poast.org → @binance",
+      "details": null
+    },
+    {
+      "id": 202,
+      "timestamp": "2026-05-15T20:55:10.117Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.poast.org → HTTP 403",
+      "details": null
+    },
+    {
+      "id": 203,
+      "timestamp": "2026-05-15T20:55:10.124Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.privacydev.net → @binance",
+      "details": null
+    },
+    {
+      "id": 204,
+      "timestamp": "2026-05-15T20:55:10.140Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.privacydev.net erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 205,
+      "timestamp": "2026-05-15T20:55:10.850Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.lucabased.space → @binance",
+      "details": null
+    },
+    {
+      "id": 206,
+      "timestamp": "2026-05-15T20:55:11.136Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.lucabased.space erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 207,
+      "timestamp": "2026-05-15T20:55:11.583Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.mint.lgbt → @binance",
+      "details": null
+    },
+    {
+      "id": 208,
+      "timestamp": "2026-05-15T20:55:11.883Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.mint.lgbt erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 209,
+      "timestamp": "2026-05-15T20:55:12.551Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.bus-hit.me → @binance",
+      "details": null
+    },
+    {
+      "id": 210,
+      "timestamp": "2026-05-15T20:55:12.832Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.bus-hit.me erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 211,
+      "timestamp": "2026-05-15T20:55:13.201Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.42l.fr → @binance",
+      "details": null
+    },
+    {
+      "id": 212,
+      "timestamp": "2026-05-15T20:55:20.114Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.42l.fr → HTTP 503",
+      "details": null
+    },
+    {
+      "id": 213,
+      "timestamp": "2026-05-15T20:55:20.118Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.fdn.fr → @binance",
+      "details": null
+    },
+    {
+      "id": 214,
+      "timestamp": "2026-05-15T20:55:20.774Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.fdn.fr erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 215,
+      "timestamp": "2026-05-15T20:55:21.378Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.1d4.us → @binance",
+      "details": null
+    },
+    {
+      "id": 216,
+      "timestamp": "2026-05-15T20:55:21.636Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.1d4.us erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 217,
+      "timestamp": "2026-05-15T20:55:22.405Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.kavin.rocks → @binance",
+      "details": null
+    },
+    {
+      "id": 218,
+      "timestamp": "2026-05-15T20:55:23.866Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.kavin.rocks → HTTP 502",
+      "details": null
+    },
+    {
+      "id": 219,
+      "timestamp": "2026-05-15T20:55:23.869Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.net → @binance",
+      "details": null
+    },
+    {
+      "id": 220,
+      "timestamp": "2026-05-15T20:55:24.709Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.net bloqué ou vide",
+      "details": null
+    },
+    {
+      "id": 221,
+      "timestamp": "2026-05-15T20:55:24.711Z",
+      "level": "info",
+      "message": "[Fallback] Syndication pour @binance",
+      "details": null
+    },
+    {
+      "id": 222,
+      "timestamp": "2026-05-15T20:55:25.860Z",
+      "level": "info",
+      "message": "[Fallback] Twitter Search pour @binance",
+      "details": null
+    },
+    {
+      "id": 223,
+      "timestamp": "2026-05-15T20:55:29.292Z",
+      "level": "info",
+      "message": "[Fallback] oEmbed pour @binance",
+      "details": null
+    },
+    {
+      "id": 224,
+      "timestamp": "2026-05-15T20:55:30.772Z",
+      "level": "info",
+      "message": "[oEmbed] Tweet récupéré pour @binance",
+      "details": null
+    },
+    {
+      "id": 225,
+      "timestamp": "2026-05-15T20:55:30.773Z",
+      "level": "info",
+      "message": "@binance — 1 tweet(s) analysé(s), 0 nouveau(x) code(s)",
+      "details": null
+    },
+    {
+      "id": 226,
+      "timestamp": "2026-05-15T20:55:33.814Z",
+      "level": "info",
+      "message": "Scraping @cz_binance...",
+      "details": null
+    },
+    {
+      "id": 227,
+      "timestamp": "2026-05-15T20:55:33.817Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.poast.org → @cz_binance",
+      "details": null
+    },
+    {
+      "id": 228,
+      "timestamp": "2026-05-15T20:55:35.253Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.poast.org → HTTP 403",
+      "details": null
+    },
+    {
+      "id": 229,
+      "timestamp": "2026-05-15T20:55:35.254Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.privacydev.net → @cz_binance",
+      "details": null
+    },
+    {
+      "id": 230,
+      "timestamp": "2026-05-15T20:55:35.259Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.privacydev.net erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 231,
+      "timestamp": "2026-05-15T20:55:35.889Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.lucabased.space → @cz_binance",
+      "details": null
+    },
+    {
+      "id": 232,
+      "timestamp": "2026-05-15T20:55:36.170Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.lucabased.space erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 233,
+      "timestamp": "2026-05-15T20:55:36.956Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.mint.lgbt → @cz_binance",
+      "details": null
+    },
+    {
+      "id": 234,
+      "timestamp": "2026-05-15T20:55:37.214Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.mint.lgbt erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 235,
+      "timestamp": "2026-05-15T20:55:37.869Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.bus-hit.me → @cz_binance",
+      "details": null
+    },
+    {
+      "id": 236,
+      "timestamp": "2026-05-15T20:55:38.143Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.bus-hit.me erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 237,
+      "timestamp": "2026-05-15T20:55:38.703Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.42l.fr → @cz_binance",
+      "details": null
+    },
+    {
+      "id": 238,
+      "timestamp": "2026-05-15T20:55:44.490Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.42l.fr → HTTP 503",
+      "details": null
+    },
+    {
+      "id": 239,
+      "timestamp": "2026-05-15T20:55:44.494Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.fdn.fr → @cz_binance",
+      "details": null
+    },
+    {
+      "id": 240,
+      "timestamp": "2026-05-15T20:55:44.919Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.fdn.fr erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 241,
+      "timestamp": "2026-05-15T20:55:45.308Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.1d4.us → @cz_binance",
+      "details": null
+    },
+    {
+      "id": 242,
+      "timestamp": "2026-05-15T20:55:46.295Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.1d4.us erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 243,
+      "timestamp": "2026-05-15T20:55:46.796Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.kavin.rocks → @cz_binance",
+      "details": null
+    },
+    {
+      "id": 244,
+      "timestamp": "2026-05-15T20:55:48.006Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.kavin.rocks → HTTP 502",
+      "details": null
+    },
+    {
+      "id": 245,
+      "timestamp": "2026-05-15T20:55:48.012Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.net → @cz_binance",
+      "details": null
+    },
+    {
+      "id": 246,
+      "timestamp": "2026-05-15T20:55:48.880Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.net bloqué ou vide",
+      "details": null
+    },
+    {
+      "id": 247,
+      "timestamp": "2026-05-15T20:55:48.887Z",
+      "level": "info",
+      "message": "[Fallback] Syndication pour @cz_binance",
+      "details": null
+    },
+    {
+      "id": 248,
+      "timestamp": "2026-05-15T20:55:50.015Z",
+      "level": "info",
+      "message": "[Fallback] Twitter Search pour @cz_binance",
+      "details": null
+    },
+    {
+      "id": 249,
+      "timestamp": "2026-05-15T20:55:52.282Z",
+      "level": "info",
+      "message": "[Fallback] oEmbed pour @cz_binance",
+      "details": null
+    },
+    {
+      "id": 250,
+      "timestamp": "2026-05-15T20:55:53.060Z",
+      "level": "info",
+      "message": "[oEmbed] Tweet récupéré pour @cz_binance",
+      "details": null
+    },
+    {
+      "id": 251,
+      "timestamp": "2026-05-15T20:55:53.067Z",
+      "level": "info",
+      "message": "@cz_binance — 1 tweet(s) analysé(s), 0 nouveau(x) code(s)",
+      "details": null
+    },
+    {
+      "id": 252,
+      "timestamp": "2026-05-15T20:55:56.654Z",
+      "level": "info",
+      "message": "Scraping @muhammadtari55...",
+      "details": null
+    },
+    {
+      "id": 253,
+      "timestamp": "2026-05-15T20:55:56.659Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.poast.org → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 254,
+      "timestamp": "2026-05-15T20:55:58.670Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.poast.org → HTTP 403",
+      "details": null
+    },
+    {
+      "id": 255,
+      "timestamp": "2026-05-15T20:55:58.673Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.privacydev.net → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 256,
+      "timestamp": "2026-05-15T20:55:58.682Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.privacydev.net erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 257,
+      "timestamp": "2026-05-15T20:55:59.207Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.lucabased.space → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 258,
+      "timestamp": "2026-05-15T20:55:59.461Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.lucabased.space erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 259,
+      "timestamp": "2026-05-15T20:56:00.092Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.mint.lgbt → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 260,
+      "timestamp": "2026-05-15T20:56:00.351Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.mint.lgbt erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 261,
+      "timestamp": "2026-05-15T20:56:00.842Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.bus-hit.me → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 262,
+      "timestamp": "2026-05-15T20:56:01.254Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.bus-hit.me erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 263,
+      "timestamp": "2026-05-15T20:56:01.991Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.42l.fr → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 264,
+      "timestamp": "2026-05-15T20:56:11.632Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.42l.fr → HTTP 503",
+      "details": null
+    },
+    {
+      "id": 265,
+      "timestamp": "2026-05-15T20:56:11.633Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.fdn.fr → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 266,
+      "timestamp": "2026-05-15T20:56:11.937Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.fdn.fr erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 267,
+      "timestamp": "2026-05-15T20:56:12.637Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.1d4.us → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 268,
+      "timestamp": "2026-05-15T20:56:12.927Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.1d4.us erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 269,
+      "timestamp": "2026-05-15T20:56:13.619Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.kavin.rocks → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 270,
+      "timestamp": "2026-05-15T20:56:15.986Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.kavin.rocks → HTTP 502",
+      "details": null
+    },
+    {
+      "id": 271,
+      "timestamp": "2026-05-15T20:56:15.992Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.net → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 272,
+      "timestamp": "2026-05-15T20:56:18.741Z",
+      "level": "info",
+      "message": "[Nitter] nitter.net → 20 tweet(s) pour @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 273,
+      "timestamp": "2026-05-15T20:56:18.747Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 274,
+      "timestamp": "2026-05-15T20:56:18.751Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 275,
+      "timestamp": "2026-05-15T20:56:18.755Z",
+      "level": "info",
+      "message": "Code déjà connu: PFJY6HOV",
+      "details": null
+    },
+    {
+      "id": 276,
+      "timestamp": "2026-05-15T20:56:18.759Z",
+      "level": "info",
+      "message": "✅ Nouveau code: RI1D6AW9 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 277,
+      "timestamp": "2026-05-15T20:56:18.762Z",
+      "level": "info",
+      "message": "Code déjà connu: 79EF4NNG",
+      "details": null
+    },
+    {
+      "id": 278,
+      "timestamp": "2026-05-15T20:56:18.765Z",
+      "level": "info",
+      "message": "Code déjà connu: 0BR6E70Z",
+      "details": null
+    },
+    {
+      "id": 279,
+      "timestamp": "2026-05-15T20:56:18.767Z",
+      "level": "info",
+      "message": "Code déjà connu: ST35MVOK",
+      "details": null
+    },
+    {
+      "id": 280,
+      "timestamp": "2026-05-15T20:56:18.769Z",
+      "level": "info",
+      "message": "Code déjà connu: LCTUC1CJ",
+      "details": null
+    },
+    {
+      "id": 281,
+      "timestamp": "2026-05-15T20:56:18.771Z",
+      "level": "info",
+      "message": "Code déjà connu: HFODK4T1",
+      "details": null
+    },
+    {
+      "id": 282,
+      "timestamp": "2026-05-15T20:56:18.774Z",
+      "level": "info",
+      "message": "Code déjà connu: QEDPV4AZ",
+      "details": null
+    },
+    {
+      "id": 283,
+      "timestamp": "2026-05-15T20:56:18.777Z",
+      "level": "info",
+      "message": "Code déjà connu: Y5CY0FLM",
+      "details": null
+    },
+    {
+      "id": 284,
+      "timestamp": "2026-05-15T20:56:18.781Z",
+      "level": "info",
+      "message": "✅ Nouveau code: KI1LLE2R (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 285,
+      "timestamp": "2026-05-15T20:56:18.785Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 2BLIRBYI (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 286,
+      "timestamp": "2026-05-15T20:56:18.787Z",
+      "level": "info",
+      "message": "Code déjà connu: EGBFC3UD",
+      "details": null
+    },
+    {
+      "id": 287,
+      "timestamp": "2026-05-15T20:56:18.789Z",
+      "level": "info",
+      "message": "Code déjà connu: 9EE035BF",
+      "details": null
+    },
+    {
+      "id": 288,
+      "timestamp": "2026-05-15T20:56:18.795Z",
+      "level": "info",
+      "message": "✅ Nouveau code: E1MH6598 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 289,
+      "timestamp": "2026-05-15T20:56:18.797Z",
+      "level": "info",
+      "message": "Code déjà connu: 5LLGAKW1",
+      "details": null
+    },
+    {
+      "id": 290,
+      "timestamp": "2026-05-15T20:56:18.800Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 291,
+      "timestamp": "2026-05-15T20:56:18.802Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 292,
+      "timestamp": "2026-05-15T20:56:18.808Z",
+      "level": "info",
+      "message": "✅ Nouveau code: S50NMNXU (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 293,
+      "timestamp": "2026-05-15T20:56:18.812Z",
+      "level": "info",
+      "message": "✅ Nouveau code: R97KE2J6 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 294,
+      "timestamp": "2026-05-15T20:56:18.817Z",
+      "level": "info",
+      "message": "✅ Nouveau code: RB58I0AA (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 295,
+      "timestamp": "2026-05-15T20:56:18.821Z",
+      "level": "info",
+      "message": "✅ Nouveau code: BK88A2BZ (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 296,
+      "timestamp": "2026-05-15T20:56:18.828Z",
+      "level": "info",
+      "message": "✅ Nouveau code: UCU7JBBS (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 297,
+      "timestamp": "2026-05-15T20:56:18.833Z",
+      "level": "info",
+      "message": "✅ Nouveau code: J715LDU8 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 298,
+      "timestamp": "2026-05-15T20:56:18.837Z",
+      "level": "info",
+      "message": "✅ Nouveau code: BK9YLDY4 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 299,
+      "timestamp": "2026-05-15T20:56:18.842Z",
+      "level": "info",
+      "message": "✅ Nouveau code: EUW60WDH (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 300,
+      "timestamp": "2026-05-15T20:56:18.847Z",
+      "level": "info",
+      "message": "✅ Nouveau code: BANANAS31 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 301,
+      "timestamp": "2026-05-15T20:56:18.849Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 302,
+      "timestamp": "2026-05-15T20:56:18.855Z",
+      "level": "info",
+      "message": "✅ Nouveau code: BPSMBKM23R (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 303,
+      "timestamp": "2026-05-15T20:56:18.858Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 304,
+      "timestamp": "2026-05-15T20:56:18.861Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 305,
+      "timestamp": "2026-05-15T20:56:18.864Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 306,
+      "timestamp": "2026-05-15T20:56:18.869Z",
+      "level": "info",
+      "message": "✅ Nouveau code: C8W5BSPQ (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 307,
+      "timestamp": "2026-05-15T20:56:18.874Z",
+      "level": "info",
+      "message": "✅ Nouveau code: ZE30TTJZ (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 308,
+      "timestamp": "2026-05-15T20:56:18.879Z",
+      "level": "info",
+      "message": "✅ Nouveau code: A7FL6TB8 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 309,
+      "timestamp": "2026-05-15T20:56:18.884Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 6N761JCQ (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 310,
+      "timestamp": "2026-05-15T20:56:18.890Z",
+      "level": "info",
+      "message": "✅ Nouveau code: IAWQ1MIK (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 311,
+      "timestamp": "2026-05-15T20:56:18.895Z",
+      "level": "info",
+      "message": "✅ Nouveau code: UN5V853K (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 312,
+      "timestamp": "2026-05-15T20:56:18.903Z",
+      "level": "info",
+      "message": "✅ Nouveau code: SARI55FF (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 313,
+      "timestamp": "2026-05-15T20:56:18.909Z",
+      "level": "info",
+      "message": "✅ Nouveau code: G8U8YDB6 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 314,
+      "timestamp": "2026-05-15T20:56:18.916Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 1TIFYXWW (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 315,
+      "timestamp": "2026-05-15T20:56:18.923Z",
+      "level": "info",
+      "message": "✅ Nouveau code: TY1RRSGE (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 316,
+      "timestamp": "2026-05-15T20:56:18.927Z",
+      "level": "info",
+      "message": "Code déjà connu: BANANAS31",
+      "details": null
+    },
+    {
+      "id": 317,
+      "timestamp": "2026-05-15T20:56:18.930Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 318,
+      "timestamp": "2026-05-15T20:56:18.934Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 319,
+      "timestamp": "2026-05-15T20:56:18.940Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 03XC87TE (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 320,
+      "timestamp": "2026-05-15T20:56:18.946Z",
+      "level": "info",
+      "message": "✅ Nouveau code: VWEM2U4K (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 321,
+      "timestamp": "2026-05-15T20:56:18.951Z",
+      "level": "info",
+      "message": "✅ Nouveau code: ROWA05SN (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 322,
+      "timestamp": "2026-05-15T20:56:18.957Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 9UPZB2E1 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 323,
+      "timestamp": "2026-05-15T20:56:18.963Z",
+      "level": "info",
+      "message": "✅ Nouveau code: P3KHGF5A (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 324,
+      "timestamp": "2026-05-15T20:56:18.969Z",
+      "level": "info",
+      "message": "✅ Nouveau code: EFES91KH (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 325,
+      "timestamp": "2026-05-15T20:56:18.974Z",
+      "level": "info",
+      "message": "✅ Nouveau code: BJP511U7 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 326,
+      "timestamp": "2026-05-15T20:56:18.979Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 63YRB3B4 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 327,
+      "timestamp": "2026-05-15T20:56:18.984Z",
+      "level": "info",
+      "message": "✅ Nouveau code: L4PEHM2H (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 328,
+      "timestamp": "2026-05-15T20:56:18.989Z",
+      "level": "info",
+      "message": "✅ Nouveau code: O0ZSLFPO (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 329,
+      "timestamp": "2026-05-15T20:56:18.994Z",
+      "level": "info",
+      "message": "✅ Nouveau code: SXUXQ6CD (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 330,
+      "timestamp": "2026-05-15T20:56:18.999Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 3X51K1LI (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 331,
+      "timestamp": "2026-05-15T20:56:19.004Z",
+      "level": "info",
+      "message": "✅ Nouveau code: BUAB772R (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 332,
+      "timestamp": "2026-05-15T20:56:19.011Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 9XOVXWGS (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 333,
+      "timestamp": "2026-05-15T20:56:19.016Z",
+      "level": "info",
+      "message": "✅ Nouveau code: X5WWLZW3 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 334,
+      "timestamp": "2026-05-15T20:56:19.019Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 335,
+      "timestamp": "2026-05-15T20:56:19.023Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 336,
+      "timestamp": "2026-05-15T20:56:19.061Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 76WIHK7L (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 337,
+      "timestamp": "2026-05-15T20:56:19.069Z",
+      "level": "info",
+      "message": "✅ Nouveau code: IQT547PY (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 338,
+      "timestamp": "2026-05-15T20:56:19.077Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 9VAPN1U5 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 339,
+      "timestamp": "2026-05-15T20:56:19.085Z",
+      "level": "info",
+      "message": "✅ Nouveau code: RLKDG35T (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 340,
+      "timestamp": "2026-05-15T20:56:19.093Z",
+      "level": "info",
+      "message": "✅ Nouveau code: Q79AD8S6 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 341,
+      "timestamp": "2026-05-15T20:56:19.101Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 9BFL9WLK (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 342,
+      "timestamp": "2026-05-15T20:56:19.106Z",
+      "level": "info",
+      "message": "Code déjà connu: BANANAS31",
+      "details": null
+    },
+    {
+      "id": 343,
+      "timestamp": "2026-05-15T20:56:19.111Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 344,
+      "timestamp": "2026-05-15T20:56:19.116Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 345,
+      "timestamp": "2026-05-15T20:56:19.124Z",
+      "level": "info",
+      "message": "✅ Nouveau code: VCUGWB9P (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 346,
+      "timestamp": "2026-05-15T20:56:19.129Z",
+      "level": "info",
+      "message": "Code déjà connu: BANANAS31",
+      "details": null
+    },
+    {
+      "id": 347,
+      "timestamp": "2026-05-15T20:56:19.133Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 348,
+      "timestamp": "2026-05-15T20:56:19.138Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 349,
+      "timestamp": "2026-05-15T20:56:19.147Z",
+      "level": "info",
+      "message": "✅ Nouveau code: WJLM97KH (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 350,
+      "timestamp": "2026-05-15T20:56:19.155Z",
+      "level": "info",
+      "message": "✅ Nouveau code: TPI3I4LK (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 351,
+      "timestamp": "2026-05-15T20:56:19.163Z",
+      "level": "info",
+      "message": "✅ Nouveau code: C6GLF94J (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 352,
+      "timestamp": "2026-05-15T20:56:19.195Z",
+      "level": "info",
+      "message": "✅ Nouveau code: J5X679DU (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 353,
+      "timestamp": "2026-05-15T20:56:19.202Z",
+      "level": "info",
+      "message": "✅ Nouveau code: F54C7QJ2 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 354,
+      "timestamp": "2026-05-15T20:56:19.208Z",
+      "level": "info",
+      "message": "✅ Nouveau code: VCGKYX61 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 355,
+      "timestamp": "2026-05-15T20:56:19.213Z",
+      "level": "info",
+      "message": "✅ Nouveau code: V12ZOJ74 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 356,
+      "timestamp": "2026-05-15T20:56:19.216Z",
+      "level": "info",
+      "message": "Code déjà connu: BANANAS31",
+      "details": null
+    },
+    {
+      "id": 357,
+      "timestamp": "2026-05-15T20:56:19.220Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 358,
+      "timestamp": "2026-05-15T20:56:19.227Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 51SS7UA0 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 359,
+      "timestamp": "2026-05-15T20:56:19.232Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 360,
+      "timestamp": "2026-05-15T20:56:19.236Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 361,
+      "timestamp": "2026-05-15T20:56:19.241Z",
+      "level": "info",
+      "message": "✅ Nouveau code: FLN22KGE (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 362,
+      "timestamp": "2026-05-15T20:56:19.249Z",
+      "level": "info",
+      "message": "✅ Nouveau code: C43Q8TTE (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 363,
+      "timestamp": "2026-05-15T20:56:19.254Z",
+      "level": "info",
+      "message": "✅ Nouveau code: P9B8DFMU (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 364,
+      "timestamp": "2026-05-15T20:56:19.261Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 8TKU94LG (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 365,
+      "timestamp": "2026-05-15T20:56:19.268Z",
+      "level": "info",
+      "message": "✅ Nouveau code: YQU94CXI (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 366,
+      "timestamp": "2026-05-15T20:56:19.276Z",
+      "level": "info",
+      "message": "✅ Nouveau code: KZP1VDNJ (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 367,
+      "timestamp": "2026-05-15T20:56:19.282Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 727Z1MIT (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 368,
+      "timestamp": "2026-05-15T20:56:19.285Z",
+      "level": "info",
+      "message": "Code déjà connu: BANANAS31",
+      "details": null
+    },
+    {
+      "id": 369,
+      "timestamp": "2026-05-15T20:56:19.289Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 370,
+      "timestamp": "2026-05-15T20:56:19.293Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 371,
+      "timestamp": "2026-05-15T20:56:19.299Z",
+      "level": "info",
+      "message": "✅ Nouveau code: HFRV6BA3 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 372,
+      "timestamp": "2026-05-15T20:56:19.306Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 490RRZ41 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 373,
+      "timestamp": "2026-05-15T20:56:19.312Z",
+      "level": "info",
+      "message": "✅ Nouveau code: EM0EP4PK (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 374,
+      "timestamp": "2026-05-15T20:56:19.321Z",
+      "level": "info",
+      "message": "✅ Nouveau code: PRRA80GD (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 375,
+      "timestamp": "2026-05-15T20:56:19.327Z",
+      "level": "info",
+      "message": "✅ Nouveau code: KN58X060 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 376,
+      "timestamp": "2026-05-15T20:56:19.336Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 4O92KKAP (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 377,
+      "timestamp": "2026-05-15T20:56:19.341Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 378,
+      "timestamp": "2026-05-15T20:56:19.346Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 379,
+      "timestamp": "2026-05-15T20:56:19.363Z",
+      "level": "info",
+      "message": "✅ Nouveau code: S8HWHMMS (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 380,
+      "timestamp": "2026-05-15T20:56:19.373Z",
+      "level": "info",
+      "message": "✅ Nouveau code: YUDQLYV2 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 381,
+      "timestamp": "2026-05-15T20:56:19.380Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 1EQGMT06 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 382,
+      "timestamp": "2026-05-15T20:56:19.388Z",
+      "level": "info",
+      "message": "✅ Nouveau code: QT13Y5K5 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 383,
+      "timestamp": "2026-05-15T20:56:19.396Z",
+      "level": "info",
+      "message": "✅ Nouveau code: XY4NQ1UE (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 384,
+      "timestamp": "2026-05-15T20:56:19.404Z",
+      "level": "info",
+      "message": "✅ Nouveau code: F15YL3PB (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 385,
+      "timestamp": "2026-05-15T20:56:19.411Z",
+      "level": "info",
+      "message": "✅ Nouveau code: D7SGCY0F (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 386,
+      "timestamp": "2026-05-15T20:56:19.416Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 387,
+      "timestamp": "2026-05-15T20:56:19.424Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 8V2XCL21 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 388,
+      "timestamp": "2026-05-15T20:56:19.432Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 86P9Z6J3 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 389,
+      "timestamp": "2026-05-15T20:56:19.438Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 390,
+      "timestamp": "2026-05-15T20:56:19.441Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 391,
+      "timestamp": "2026-05-15T20:56:19.450Z",
+      "level": "info",
+      "message": "✅ Nouveau code: DD0J5CVO (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 392,
+      "timestamp": "2026-05-15T20:56:19.459Z",
+      "level": "info",
+      "message": "✅ Nouveau code: HGT2ZBBF (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 393,
+      "timestamp": "2026-05-15T20:56:19.466Z",
+      "level": "info",
+      "message": "✅ Nouveau code: CZ4LX1PJ (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 394,
+      "timestamp": "2026-05-15T20:56:19.472Z",
+      "level": "info",
+      "message": "✅ Nouveau code: U9ILU20G (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 395,
+      "timestamp": "2026-05-15T20:56:19.479Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 2YJJB2IV (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 396,
+      "timestamp": "2026-05-15T20:56:19.486Z",
+      "level": "info",
+      "message": "✅ Nouveau code: GX5H62LD (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 397,
+      "timestamp": "2026-05-15T20:56:19.495Z",
+      "level": "info",
+      "message": "✅ Nouveau code: EEXWQIU6 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 398,
+      "timestamp": "2026-05-15T20:56:19.502Z",
+      "level": "info",
+      "message": "✅ Nouveau code: JF4ZEY74 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 399,
+      "timestamp": "2026-05-15T20:56:19.513Z",
+      "level": "info",
+      "message": "✅ Nouveau code: SS0VW1WW (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 400,
+      "timestamp": "2026-05-15T20:56:19.520Z",
+      "level": "info",
+      "message": "✅ Nouveau code: LZ3NJW8L (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 401,
+      "timestamp": "2026-05-15T20:56:19.528Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 5ZCIPVMP (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 402,
+      "timestamp": "2026-05-15T20:56:19.533Z",
+      "level": "info",
+      "message": "Code déjà connu: BANANAS31",
+      "details": null
+    },
+    {
+      "id": 403,
+      "timestamp": "2026-05-15T20:56:19.538Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 404,
+      "timestamp": "2026-05-15T20:56:19.542Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 405,
+      "timestamp": "2026-05-15T20:56:19.550Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 8QBGGFJ0 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 406,
+      "timestamp": "2026-05-15T20:56:19.557Z",
+      "level": "info",
+      "message": "✅ Nouveau code: TK4Y5E75 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 407,
+      "timestamp": "2026-05-15T20:56:19.565Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 0KZTUZB1 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 408,
+      "timestamp": "2026-05-15T20:56:19.572Z",
+      "level": "info",
+      "message": "✅ Nouveau code: RYY4ULJ0 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 409,
+      "timestamp": "2026-05-15T20:56:19.579Z",
+      "level": "info",
+      "message": "✅ Nouveau code: U5TNS1YC (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 410,
+      "timestamp": "2026-05-15T20:56:19.585Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 59H79O6X (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 411,
+      "timestamp": "2026-05-15T20:56:19.593Z",
+      "level": "info",
+      "message": "✅ Nouveau code: P2O1A564 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 412,
+      "timestamp": "2026-05-15T20:56:19.604Z",
+      "level": "info",
+      "message": "✅ Nouveau code: BJKHG8KR (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 413,
+      "timestamp": "2026-05-15T20:56:19.608Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 414,
+      "timestamp": "2026-05-15T20:56:19.613Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 415,
+      "timestamp": "2026-05-15T20:56:19.622Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 3247CV8A (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 416,
+      "timestamp": "2026-05-15T20:56:19.630Z",
+      "level": "info",
+      "message": "✅ Nouveau code: AVOLCHC4 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 417,
+      "timestamp": "2026-05-15T20:56:19.638Z",
+      "level": "info",
+      "message": "✅ Nouveau code: ARZH5WXP (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 418,
+      "timestamp": "2026-05-15T20:56:19.646Z",
+      "level": "info",
+      "message": "✅ Nouveau code: KAZ1Q16X (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 419,
+      "timestamp": "2026-05-15T20:56:19.654Z",
+      "level": "info",
+      "message": "✅ Nouveau code: TIY343WU (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 420,
+      "timestamp": "2026-05-15T20:56:19.661Z",
+      "level": "info",
+      "message": "✅ Nouveau code: U6TGII1A (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 421,
+      "timestamp": "2026-05-15T20:56:19.669Z",
+      "level": "info",
+      "message": "✅ Nouveau code: F5D4IV5K (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 422,
+      "timestamp": "2026-05-15T20:56:19.674Z",
+      "level": "info",
+      "message": "Code déjà connu: BANANAS31",
+      "details": null
+    },
+    {
+      "id": 423,
+      "timestamp": "2026-05-15T20:56:19.678Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 424,
+      "timestamp": "2026-05-15T20:56:19.683Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 425,
+      "timestamp": "2026-05-15T20:56:19.691Z",
+      "level": "info",
+      "message": "✅ Nouveau code: TM0O460V (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 426,
+      "timestamp": "2026-05-15T20:56:19.700Z",
+      "level": "info",
+      "message": "✅ Nouveau code: RU2QGBV5 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 427,
+      "timestamp": "2026-05-15T20:56:19.706Z",
+      "level": "info",
+      "message": "✅ Nouveau code: QR3T8AM8 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 428,
+      "timestamp": "2026-05-15T20:56:19.715Z",
+      "level": "info",
+      "message": "✅ Nouveau code: SLSP4FTQ (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 429,
+      "timestamp": "2026-05-15T20:56:19.723Z",
+      "level": "info",
+      "message": "✅ Nouveau code: MOHVW4N8 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 430,
+      "timestamp": "2026-05-15T20:56:19.731Z",
+      "level": "info",
+      "message": "✅ Nouveau code: XI4RO55Q (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 431,
+      "timestamp": "2026-05-15T20:56:19.741Z",
+      "level": "info",
+      "message": "✅ Nouveau code: F4FTJ8F5 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 432,
+      "timestamp": "2026-05-15T20:56:19.750Z",
+      "level": "info",
+      "message": "✅ Nouveau code: R7K6NWO9 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 433,
+      "timestamp": "2026-05-15T20:56:19.758Z",
+      "level": "info",
+      "message": "✅ Nouveau code: UTOY2QOH (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 434,
+      "timestamp": "2026-05-15T20:56:19.766Z",
+      "level": "info",
+      "message": "✅ Nouveau code: D9IBXGOU (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 435,
+      "timestamp": "2026-05-15T20:56:19.773Z",
+      "level": "info",
+      "message": "✅ Nouveau code: YHR7ENGX (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 436,
+      "timestamp": "2026-05-15T20:56:19.782Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 8WAFYCDC (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 437,
+      "timestamp": "2026-05-15T20:56:19.792Z",
+      "level": "info",
+      "message": "✅ Nouveau code: D4VAV3HA (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 438,
+      "timestamp": "2026-05-15T20:56:19.800Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 7PV0IOS3 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 439,
+      "timestamp": "2026-05-15T20:56:19.809Z",
+      "level": "info",
+      "message": "✅ Nouveau code: Z4OF685G (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 440,
+      "timestamp": "2026-05-15T20:56:19.815Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 441,
+      "timestamp": "2026-05-15T20:56:19.820Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 442,
+      "timestamp": "2026-05-15T20:56:19.828Z",
+      "level": "info",
+      "message": "✅ Nouveau code: JDZ94SDI (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 443,
+      "timestamp": "2026-05-15T20:56:19.837Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 90DCRDPO (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 444,
+      "timestamp": "2026-05-15T20:56:19.844Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 8PXETLZ4 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 445,
+      "timestamp": "2026-05-15T20:56:19.854Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 2NMZIUC1 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 446,
+      "timestamp": "2026-05-15T20:56:19.865Z",
+      "level": "info",
+      "message": "✅ Nouveau code: YMCL1UKP (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 447,
+      "timestamp": "2026-05-15T20:56:19.875Z",
+      "level": "info",
+      "message": "✅ Nouveau code: H6JB60RU (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 448,
+      "timestamp": "2026-05-15T20:56:19.894Z",
+      "level": "info",
+      "message": "✅ Nouveau code: GCZJ497Y (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 449,
+      "timestamp": "2026-05-15T20:56:19.901Z",
+      "level": "info",
+      "message": "Code déjà connu: BANANAS31",
+      "details": null
+    },
+    {
+      "id": 450,
+      "timestamp": "2026-05-15T20:56:19.908Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 451,
+      "timestamp": "2026-05-15T20:56:19.914Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 452,
+      "timestamp": "2026-05-15T20:56:19.932Z",
+      "level": "info",
+      "message": "✅ Nouveau code: CEO4C7H2 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 453,
+      "timestamp": "2026-05-15T20:56:19.943Z",
+      "level": "info",
+      "message": "✅ Nouveau code: P22EIAYU (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 454,
+      "timestamp": "2026-05-15T20:56:19.955Z",
+      "level": "info",
+      "message": "✅ Nouveau code: E29QKLBQ (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 455,
+      "timestamp": "2026-05-15T20:56:19.980Z",
+      "level": "info",
+      "message": "✅ Nouveau code: INWI4F5S (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 456,
+      "timestamp": "2026-05-15T20:56:19.991Z",
+      "level": "info",
+      "message": "✅ Nouveau code: SJHP067T (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 457,
+      "timestamp": "2026-05-15T20:56:20.004Z",
+      "level": "info",
+      "message": "✅ Nouveau code: P6XFFWM8 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 458,
+      "timestamp": "2026-05-15T20:56:20.019Z",
+      "level": "info",
+      "message": "✅ Nouveau code: AOM43TBC (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 459,
+      "timestamp": "2026-05-15T20:56:20.026Z",
+      "level": "info",
+      "message": "Code déjà connu: BANANAS31",
+      "details": null
+    },
+    {
+      "id": 460,
+      "timestamp": "2026-05-15T20:56:20.035Z",
+      "level": "info",
+      "message": "Code déjà connu: BPNAANK34X",
+      "details": null
+    },
+    {
+      "id": 461,
+      "timestamp": "2026-05-15T20:56:20.042Z",
+      "level": "info",
+      "message": "Code déjà connu: BPWW78B144",
+      "details": null
+    },
+    {
+      "id": 462,
+      "timestamp": "2026-05-15T20:56:20.054Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 0PUUJBDS (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 463,
+      "timestamp": "2026-05-15T20:56:20.067Z",
+      "level": "info",
+      "message": "✅ Nouveau code: LNOK0OZ1 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 464,
+      "timestamp": "2026-05-15T20:56:20.081Z",
+      "level": "info",
+      "message": "✅ Nouveau code: J5NXMO0J (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 465,
+      "timestamp": "2026-05-15T20:56:20.098Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 8ZH80JQF (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 466,
+      "timestamp": "2026-05-15T20:56:20.110Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 78WE0IMY (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 467,
+      "timestamp": "2026-05-15T20:56:20.125Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 9K7WCM33 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 468,
+      "timestamp": "2026-05-15T20:56:20.138Z",
+      "level": "info",
+      "message": "✅ Nouveau code: THS1B34S (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 469,
+      "timestamp": "2026-05-15T20:56:20.148Z",
+      "level": "info",
+      "message": "✅ Nouveau code: TFZV6M07 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 470,
+      "timestamp": "2026-05-15T20:56:20.158Z",
+      "level": "info",
+      "message": "✅ Nouveau code: IZSZY1IH (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 471,
+      "timestamp": "2026-05-15T20:56:20.168Z",
+      "level": "info",
+      "message": "✅ Nouveau code: IZWNNI6X (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 472,
+      "timestamp": "2026-05-15T20:56:20.177Z",
+      "level": "info",
+      "message": "✅ Nouveau code: CO4H5FYX (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 473,
+      "timestamp": "2026-05-15T20:56:20.185Z",
+      "level": "info",
+      "message": "✅ Nouveau code: RSGS3ZVE (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 474,
+      "timestamp": "2026-05-15T20:56:20.193Z",
+      "level": "info",
+      "message": "✅ Nouveau code: 1DSU4B0M (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 475,
+      "timestamp": "2026-05-15T20:56:20.204Z",
+      "level": "info",
+      "message": "✅ Nouveau code: QZ58SC1K (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 476,
+      "timestamp": "2026-05-15T20:56:20.213Z",
+      "level": "info",
+      "message": "✅ Nouveau code: AROKN57X (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 477,
+      "timestamp": "2026-05-15T20:56:20.222Z",
+      "level": "info",
+      "message": "✅ Nouveau code: PCSXL061 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 478,
+      "timestamp": "2026-05-15T20:56:20.235Z",
+      "level": "info",
+      "message": "✅ Nouveau code: NQQV5K85 (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 479,
+      "timestamp": "2026-05-15T20:56:20.247Z",
+      "level": "info",
+      "message": "✅ Nouveau code: VTN35H5N (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 480,
+      "timestamp": "2026-05-15T20:56:20.256Z",
+      "level": "info",
+      "message": "✅ Nouveau code: GO27GWMR (via @muhammadtari55)",
+      "details": null
+    },
+    {
+      "id": 481,
+      "timestamp": "2026-05-15T20:56:20.260Z",
+      "level": "info",
+      "message": "@muhammadtari55 — 20 tweet(s) analysé(s), 150 nouveau(x) code(s)",
+      "details": null
+    },
+    {
+      "id": 482,
+      "timestamp": "2026-05-15T20:56:20.267Z",
+      "level": "info",
+      "message": "=== Scraping terminé — 150 code(s) / 3 compte(s) ===",
+      "details": null
+    }
+  ],
+  "settings": {
+    "scraping_enabled": "true",
+    "scrape_interval_minutes": "5",
+    "test_mode": "true"
+  },
+  "_nextId": {
+    "accounts": 4,
+    "codes": 172,
+    "attempts": 2,
+    "logs": 483
+  }
+}

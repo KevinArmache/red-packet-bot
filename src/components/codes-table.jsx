@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { format } from "date-fns";
+import { formatDistanceToNow } from "date-fns";
+import { fr } from "date-fns/locale";
 import {
   Copy,
   Check,
@@ -32,12 +33,12 @@ import { verifyCode, claimCode } from "@/app/actions";
 import { toast } from "sonner";
 
 const statusConfig = {
-  unverified: { label: "Unverified", variant: "secondary", icon: Clock },
-  valid: { label: "Valid", variant: "default", icon: CircleCheck },
-  invalid: { label: "Invalid", variant: "destructive", icon: CircleX },
-  claimed: { label: "Claimed", variant: "default", icon: CircleCheck },
-  failed: { label: "Failed", variant: "destructive", icon: CircleX },
-  expired: { label: "Expired", variant: "secondary", icon: AlertTriangle },
+  unverified: { label: "Non vérifié", variant: "secondary", icon: Clock },
+  valid: { label: "Valide", variant: "default", icon: CircleCheck },
+  invalid: { label: "Invalide", variant: "destructive", icon: CircleX },
+  claimed: { label: "Réclamé", variant: "default", icon: CircleCheck },
+  failed: { label: "Échoué", variant: "destructive", icon: CircleX },
+  expired: { label: "Expiré", variant: "secondary", icon: AlertTriangle },
 };
 
 export function CodesTable({ codes, failedAttempts }) {
@@ -49,7 +50,7 @@ export function CodesTable({ codes, failedAttempts }) {
   const copyToClipboard = async (code, id) => {
     await navigator.clipboard.writeText(code);
     setCopiedId(id);
-    toast.success("Copied!");
+    toast.success("Code copié !");
     setTimeout(() => setCopiedId(null), 2000);
   };
 
@@ -59,13 +60,15 @@ export function CodesTable({ codes, failedAttempts }) {
       const result = await verifyCode(id);
       setVerifyingId(null);
       if (result.success) {
-        if (result.valid) {
-          toast.success(`Valid! ${result.amount} ${result.token}`);
+        if (result.claimed) {
+          toast.success(`🎉 Code réclamé lors de la vérification : ${result.amount} ${result.token} !`);
+        } else if (result.valid) {
+          toast.success(`✅ Code valide ! ${result.amount} ${result.token}`);
         } else {
-          toast.info("Code is not valid");
+          toast.info("❌ Code invalide ou déjà utilisé");
         }
       } else {
-        toast.error(result.error || "Verification failed");
+        toast.error(result.error || "Échec de la vérification");
       }
     });
   };
@@ -76,14 +79,18 @@ export function CodesTable({ codes, failedAttempts }) {
       const result = await claimCode(id);
       setClaimingId(null);
       if (result.success) {
-        toast.success(`Claimed ${result.amount} ${result.token}!`);
+        toast.success(`🎉 Réclamé : ${result.amount} ${result.token} !`);
       } else {
-        toast.error(result.error || "Claim failed");
+        if (result.blocked) {
+          toast.error("⛔ Limite journalière atteinte (5 échecs/24h)");
+        } else {
+          toast.error(result.error || "Échec du claim");
+        }
       }
     });
   };
 
-  const isClaimBlocked = failedAttempts >= 5;
+  const isClaimBlocked = failedAttempts >= 4;
 
   if (codes.length === 0) {
     return (
@@ -91,9 +98,9 @@ export function CodesTable({ codes, failedAttempts }) {
         <div className="flex size-12 items-center justify-center rounded-full bg-muted">
           <RefreshCw className="size-6 text-muted-foreground" />
         </div>
-        <h3 className="mt-4 text-lg font-semibold">No codes yet</h3>
+        <h3 className="mt-4 text-lg font-semibold">Aucun code détecté</h3>
         <p className="mt-2 text-sm text-muted-foreground">
-          Add accounts to monitor, or manually add codes.
+          Ajoutez des comptes à surveiller ou ajoutez des codes manuellement.
         </p>
       </div>
     );
@@ -104,8 +111,8 @@ export function CodesTable({ codes, failedAttempts }) {
       {isClaimBlocked && (
         <div className="mb-4 flex items-center gap-2 rounded-md bg-destructive/10 p-3 text-destructive">
           <AlertTriangle className="size-4" />
-          <span className="text-sm">
-            Claiming disabled (5 failed attempts in 24h).
+          <span className="text-sm font-medium">
+            Claim désactivé — 4 échecs en 24h. Réessayez demain.
           </span>
         </div>
       )}
@@ -113,16 +120,17 @@ export function CodesTable({ codes, failedAttempts }) {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead className="w-[180px]">Code</TableHead>
+              <TableHead className="w-[170px]">Code</TableHead>
               <TableHead>Tweet</TableHead>
-              <TableHead className="w-[100px]">Author</TableHead>
-              <TableHead className="w-[100px]">Status</TableHead>
-              <TableHead className="text-right w-[150px]">Actions</TableHead>
+              <TableHead className="w-[100px]">Auteur</TableHead>
+              <TableHead className="w-[110px]">Détecté</TableHead>
+              <TableHead className="w-[120px]">Statut</TableHead>
+              <TableHead className="text-right w-[160px]">Actions</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {codes.map((code) => {
-              const status = statusConfig[code.status];
+              const status = statusConfig[code.status] ?? statusConfig.unverified;
               const StatusIcon = status.icon;
 
               return (
@@ -147,19 +155,38 @@ export function CodesTable({ codes, failedAttempts }) {
                             )}
                           </Button>
                         </TooltipTrigger>
-                        <TooltipContent>Copy</TooltipContent>
+                        <TooltipContent>Copier le code</TooltipContent>
                       </Tooltip>
                     </div>
                   </TableCell>
                   <TableCell className="max-w-[250px]">
                     <p className="truncate text-xs text-muted-foreground">
-                      {code.tweet_text || "-"}
+                      {code.tweet_text || "—"}
                     </p>
                   </TableCell>
                   <TableCell>
                     <span className="text-sm">
-                      @{code.author.replace(/^@+/, "")}
+                      @{code.author?.replace(/^@+/, "") ?? "inconnu"}
                     </span>
+                  </TableCell>
+                  <TableCell>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <span className="text-xs text-muted-foreground cursor-default">
+                          {code.detected_at
+                            ? formatDistanceToNow(new Date(code.detected_at), {
+                                addSuffix: true,
+                                locale: fr,
+                              })
+                            : "—"}
+                        </span>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        {code.detected_at
+                          ? new Date(code.detected_at).toLocaleString("fr-FR")
+                          : "Inconnue"}
+                      </TooltipContent>
+                    </Tooltip>
                   </TableCell>
                   <TableCell>
                     <Badge variant={status.variant} className="gap-1">
@@ -167,7 +194,7 @@ export function CodesTable({ codes, failedAttempts }) {
                       {status.label}
                     </Badge>
                     {code.claimed_amount && code.claimed_asset && (
-                      <div className="mt-1 text-xs text-green-600">
+                      <div className="mt-1 text-xs text-green-600 font-medium">
                         +{code.claimed_amount} {code.claimed_asset}
                       </div>
                     )}
@@ -184,7 +211,7 @@ export function CodesTable({ codes, failedAttempts }) {
                           {verifyingId === code.id ? (
                             <Spinner className="size-3" />
                           ) : (
-                            "Verify"
+                            "Vérifier"
                           )}
                         </Button>
                       )}
@@ -215,7 +242,7 @@ export function CodesTable({ codes, failedAttempts }) {
         </Table>
       </div>
       <div className="mt-2 text-xs text-muted-foreground">
-        Failed attempts: {failedAttempts}/5
+        Tentatives échouées : {failedAttempts}/4 sur 24h
       </div>
     </TooltipProvider>
   );
