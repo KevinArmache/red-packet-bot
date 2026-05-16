@@ -6,7 +6,7 @@ import {
   getSetting,
   updateAccountLastScraped,
 } from "./db";
-
+import { chromium } from "playwright";
 // ─────────────────────────────────────────────────────────────────────────────
 // REGEX MULTI-FORMAT pour les codes red packet / gift card Binance
 // Captures :
@@ -19,11 +19,48 @@ import {
 
 // Mots courants à exclure pour éviter les faux positifs
 const FALSE_POSITIVE_WORDS = new Set([
-  "HTTPS", "HTTP", "HTML", "JSON", "USDT", "BUSD", "USDC", "BTC", "ETH",
-  "BNB", "XRP", "DOGE", "SHIB", "AVAX", "MATIC", "LINK", "DOT", "ADA",
-  "SOL", "LUNA", "ATOM", "ALGO", "NEAR", "SAND", "MANA", "AAVE", "NFT",
-  "API", "URL", "BOT", "SPAM", "SCAN", "CODE", "GIFT", "TODAY", "FROM",
-  "BINANCE", "TWITTER", "COINBASE", "CRYPTO", "DEFI", "BLOCKCHAIN",
+  "HTTPS",
+  "HTTP",
+  "HTML",
+  "JSON",
+  "USDT",
+  "BUSD",
+  "USDC",
+  "BTC",
+  "ETH",
+  "BNB",
+  "XRP",
+  "DOGE",
+  "SHIB",
+  "AVAX",
+  "MATIC",
+  "LINK",
+  "DOT",
+  "ADA",
+  "SOL",
+  "LUNA",
+  "ATOM",
+  "ALGO",
+  "NEAR",
+  "SAND",
+  "MANA",
+  "AAVE",
+  "NFT",
+  "API",
+  "URL",
+  "BOT",
+  "SPAM",
+  "SCAN",
+  "CODE",
+  "GIFT",
+  "TODAY",
+  "FROM",
+  "BINANCE",
+  "TWITTER",
+  "COINBASE",
+  "CRYPTO",
+  "DEFI",
+  "BLOCKCHAIN",
 ]);
 
 // Patterns pour codes red packet (basé sur les vrais codes observés)
@@ -131,7 +168,8 @@ async function fetchFromNitter(username) {
       const response = await fetch(url, {
         headers: {
           "User-Agent": randomUA(),
-          Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+          Accept:
+            "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
           "Accept-Language": "en-US,en;q=0.5",
           "Cache-Control": "no-cache",
         },
@@ -161,25 +199,46 @@ async function fetchFromNitter(username) {
       const tweets = [];
 
       // Pattern A : div.tweet-content (Nitter récent)
-      const patternA = [...html.matchAll(/<div[^>]+class="[^"]*tweet-content[^"]*"[^>]*>([\s\S]*?)<\/div>/gi)];
+      const patternA = [
+        ...html.matchAll(
+          /<div[^>]+class="[^"]*tweet-content[^"]*"[^>]*>([\s\S]*?)<\/div>/gi,
+        ),
+      ];
       for (const m of patternA) {
         if (tweets.length >= 20) break;
         const t = cleanHtml(m[1]);
-        if (t.length > 5) tweets.push({ id: `nitter-${instance}-${tweets.length}`, text: t, author: username });
+        if (t.length > 5)
+          tweets.push({
+            id: `nitter-${instance}-${tweets.length}`,
+            text: t,
+            author: username,
+          });
       }
 
       // Pattern B : p.tweet-text (ancien Nitter)
       if (tweets.length === 0) {
-        const patternB = [...html.matchAll(/<p[^>]+class="[^"]*tweet-text[^"]*"[^>]*>([\s\S]*?)<\/p>/gi)];
+        const patternB = [
+          ...html.matchAll(
+            /<p[^>]+class="[^"]*tweet-text[^"]*"[^>]*>([\s\S]*?)<\/p>/gi,
+          ),
+        ];
         for (const m of patternB) {
           if (tweets.length >= 20) break;
           const t = cleanHtml(m[1]);
-          if (t.length > 5) tweets.push({ id: `nitter-${instance}-${tweets.length}`, text: t, author: username });
+          if (t.length > 5)
+            tweets.push({
+              id: `nitter-${instance}-${tweets.length}`,
+              text: t,
+              author: username,
+            });
         }
       }
 
       if (tweets.length > 0) {
-        addScrapeLog("info", `[Nitter] ${instance} → ${tweets.length} tweet(s) pour @${username}`);
+        addScrapeLog(
+          "info",
+          `[Nitter] ${instance} → ${tweets.length} tweet(s) pour @${username}`,
+        );
         return tweets;
       }
 
@@ -230,13 +289,17 @@ async function fetchFromOembed(username) {
 async function fetchFromTwitterSearch(username) {
   try {
     // Utilise l'URL de recherche publique Twitter (sans login)
-    const query = encodeURIComponent(`from:${username} red packet OR gift OR code BP`);
+    const query = encodeURIComponent(
+      `from:${username} red packet OR gift OR code BP`,
+    );
     const url = `https://mobile.twitter.com/search?q=${query}&src=typed_query&f=live`;
 
     const response = await fetch(url, {
       headers: {
-        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
-        Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "User-Agent":
+          "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+        Accept:
+          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Accept-Language": "en-US,en;q=0.5",
         "Cache-Control": "no-cache",
       },
@@ -260,13 +323,21 @@ async function fetchFromTwitterSearch(username) {
       for (const m of matches) {
         if (tweets.length >= 15) break;
         const t = cleanHtml(m[1]);
-        if (t.length > 5) tweets.push({ id: `tw-search-${tweets.length}`, text: t, author: username });
+        if (t.length > 5)
+          tweets.push({
+            id: `tw-search-${tweets.length}`,
+            text: t,
+            author: username,
+          });
       }
       if (tweets.length > 0) break;
     }
 
     if (tweets.length > 0) {
-      addScrapeLog("info", `[TW Search] ${tweets.length} tweet(s) pour @${username}`);
+      addScrapeLog(
+        "info",
+        `[TW Search] ${tweets.length} tweet(s) pour @${username}`,
+      );
     }
     return tweets;
   } catch {
@@ -295,7 +366,10 @@ async function fetchFromSyndication(username) {
 
     let text = await response.text();
     // Enlève le wrapper JSONP
-    text = text.replace(/^__twttr\(/, "").replace(/\)$/, "").trim();
+    text = text
+      .replace(/^__twttr\(/, "")
+      .replace(/\)$/, "")
+      .trim();
 
     let data;
     try {
@@ -305,18 +379,24 @@ async function fetchFromSyndication(username) {
     }
 
     const tweets = [];
-    const items = data?.timeline?.instructions?.[0]?.addEntries?.entries || 
-                  data?.globalObjects?.tweets || 
-                  [];
+    const items =
+      data?.timeline?.instructions?.[0]?.addEntries?.entries ||
+      data?.globalObjects?.tweets ||
+      [];
 
     if (Array.isArray(items)) {
       for (const entry of items) {
         if (tweets.length >= 15) break;
-        const t = entry?.content?.item?.content?.tweet?.full_text || 
-                  entry?.tweet?.full_text || 
-                  "";
+        const t =
+          entry?.content?.item?.content?.tweet?.full_text ||
+          entry?.tweet?.full_text ||
+          "";
         if (t.length > 5) {
-          tweets.push({ id: `syndication-${tweets.length}`, text: t, author: username });
+          tweets.push({
+            id: `syndication-${tweets.length}`,
+            text: t,
+            author: username,
+          });
         }
       }
     } else if (typeof items === "object") {
@@ -330,7 +410,10 @@ async function fetchFromSyndication(username) {
     }
 
     if (tweets.length > 0) {
-      addScrapeLog("info", `[Syndication] ${tweets.length} tweet(s) pour @${username}`);
+      addScrapeLog(
+        "info",
+        `[Syndication] ${tweets.length} tweet(s) pour @${username}`,
+      );
     }
     return tweets;
   } catch {
@@ -344,6 +427,10 @@ async function fetchFromSyndication(username) {
 async function scrapeAccount(account) {
   const { username } = account;
   let tweets = [];
+
+  // 1. Playwright
+  tweets = await fetchFromPlaywright(username);
+  if (tweets.length > 0) return tweets;
 
   // 1. Nitter (le plus fiable — open-source, gratuit)
   tweets = await fetchFromNitter(username);
@@ -373,16 +460,30 @@ export async function scrapeAccounts() {
   const scrapingEnabled = getSetting("scraping_enabled");
   if (scrapingEnabled !== "true") {
     addScrapeLog("info", "Scraping désactivé dans les paramètres");
-    return { codesFound: 0, accountsScraped: 0, errors: ["Scraping désactivé"] };
+    return {
+      codesFound: 0,
+      accountsScraped: 0,
+      errors: ["Scraping désactivé"],
+    };
   }
 
   const accounts = getMonitoredAccounts();
   if (accounts.length === 0) {
-    addScrapeLog("warn", "Aucun compte surveillé — ajoutez des comptes dans Paramètres");
-    return { codesFound: 0, accountsScraped: 0, errors: ["Aucun compte configuré"] };
+    addScrapeLog(
+      "warn",
+      "Aucun compte surveillé — ajoutez des comptes dans Paramètres",
+    );
+    return {
+      codesFound: 0,
+      accountsScraped: 0,
+      errors: ["Aucun compte configuré"],
+    };
   }
 
-  addScrapeLog("info", `=== Scraping démarré — ${accounts.length} compte(s) ===`);
+  addScrapeLog(
+    "info",
+    `=== Scraping démarré — ${accounts.length} compte(s) ===`,
+  );
 
   let codesFound = 0;
   let accountsScraped = 0;
@@ -410,18 +511,26 @@ export async function scrapeAccounts() {
             addScrapeLog("info", `Code déjà connu: ${code}`);
             continue;
           }
-          const result = addRedPacketCode(code, tweet.text, tweet.id, tweet.author);
+          const result = addRedPacketCode(
+            code,
+            tweet.text,
+            tweet.id,
+            tweet.author,
+          );
           if (result) {
             codesFound++;
             newCodesForAccount++;
-            addScrapeLog("info", `✅ Nouveau code: ${code} (via @${tweet.author})`);
+            addScrapeLog(
+              "info",
+              `✅ Nouveau code: ${code} (via @${tweet.author})`,
+            );
           }
         }
       }
 
       addScrapeLog(
         "info",
-        `@${account.username} — ${tweets.length} tweet(s) analysé(s), ${newCodesForAccount} nouveau(x) code(s)`
+        `@${account.username} — ${tweets.length} tweet(s) analysé(s), ${newCodesForAccount} nouveau(x) code(s)`,
       );
 
       updateAccountLastScraped(account.id);
@@ -440,8 +549,117 @@ export async function scrapeAccounts() {
 
   addScrapeLog(
     "info",
-    `=== Scraping terminé — ${codesFound} code(s) / ${accountsScraped} compte(s) ===`
+    `=== Scraping terminé — ${codesFound} code(s) / ${accountsScraped} compte(s) ===`,
   );
 
   return { codesFound, accountsScraped, errors };
+}
+
+async function fetchFromPlaywright(username) {
+  let browser;
+  console.log("fetchFromPlaywright", username);
+  try {
+    addScrapeLog("info", `[Playwright] Scraping @${username}`);
+
+    browser = await chromium.launch({
+      headless: true,
+    });
+
+    const context = await browser.newContext({
+      userAgent: randomUA(),
+      viewport: {
+        width: 1280,
+        height: 720,
+      },
+    });
+
+    const page = await context.newPage();
+
+    // bloque ressources lourdes
+    await page.route("**/*", (route) => {
+      const type = route.request().resourceType();
+
+      if (type === "image" || type === "media" || type === "font") {
+        return route.abort();
+      }
+
+      return route.continue();
+    });
+
+    await page.goto(`https://x.com/${username}`, {
+      waitUntil: "networkidle",
+      timeout: 60000,
+    });
+
+    // attendre chargement
+    await page.waitForTimeout(5000);
+
+    // scroll plusieurs fois
+    for (let i = 0; i < 5; i++) {
+      await page.mouse.wheel(0, 5000);
+      await page.waitForTimeout(2000);
+    }
+
+    // DEBUG HTML
+    const html = await page.content();
+
+    addScrapeLog("info", `[Playwright] HTML length: ${html.length}`);
+
+    // récupération brute texte page
+    const bodyText = await page.locator("body").innerText();
+
+    addScrapeLog("info", `[Playwright] Body text length: ${bodyText.length}`);
+
+    // extraction codes directement depuis toute la page
+    const foundCodes = extractRedPacketCodes(bodyText);
+
+    addScrapeLog(
+      "info",
+      `[Playwright] ${foundCodes.length} code(s) trouvé(s) directement`,
+    );
+
+    // récupération tweets
+    const tweetTexts = await page
+      .locator('[data-testid="tweetText"]')
+      .allInnerTexts();
+
+    addScrapeLog(
+      "info",
+      `[Playwright] ${tweetTexts.length} tweetText trouvé(s)`,
+    );
+
+    const tweets = [];
+
+    for (let i = 0; i < tweetTexts.length; i++) {
+      tweets.push({
+        id: `pw-${i}`,
+        text: tweetTexts[i],
+        author: username,
+      });
+    }
+
+    // fallback :
+    // si aucun tweet détecté MAIS des codes dans le body
+    if (tweets.length === 0 && foundCodes.length > 0) {
+      tweets.push({
+        id: "pw-body-fallback",
+        text: bodyText,
+        author: username,
+      });
+    }
+
+    addScrapeLog("info", `[Playwright] ${tweets.length} tweet(s) final`);
+
+    return tweets;
+  } catch (error) {
+    const msg = error instanceof Error ? error.message : String(error);
+
+    addScrapeLog("error", `[Playwright] Erreur @${username}: ${msg}`);
+
+    return [];
+  } finally {
+    if (browser) {
+      await browser.close();
+    }
+  }
 }
