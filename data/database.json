@@ -4,13 +4,13 @@
       "id": 1,
       "username": "muhammadtari55",
       "created_at": "2026-05-18T00:14:42.529Z",
-      "last_scraped_at": "2026-05-18T18:51:45.316Z"
+      "last_scraped_at": "2026-05-18T19:12:49.527Z"
     },
     {
       "id": 2,
       "username": "binanceboxcode",
       "created_at": "2026-05-18T00:14:58.159Z",
-      "last_scraped_at": "2026-05-18T18:51:10.765Z"
+      "last_scraped_at": "2026-05-18T19:11:43.384Z"
     },
     {
       "id": 3,
@@ -163,6 +163,18 @@
       "claim_result": "Claimed via Playwright",
       "claimed_asset": "SUI",
       "claimed_amount": 0.00002961
+    },
+    {
+      "id": 1426,
+      "code": "3ADKZW2C",
+      "tweet_text": "3ADKZW2C",
+      "tweet_id": null,
+      "author": "manual",
+      "detected_at": "2026-05-18T19:14:46.898Z",
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "SPK",
+      "claimed_amount": 0.00067596
     }
   ],
   "claim_attempts": [
@@ -844,1297 +856,23 @@
       "attempted_at": "2026-05-18T18:42:42.013Z",
       "success": true,
       "error_message": null
+    },
+    {
+      "id": 98,
+      "code_id": 1425,
+      "attempted_at": "2026-05-18T19:14:26.415Z",
+      "success": false,
+      "error_message": "Impossible d’ouvrir une page après plusieurs tentatives."
+    },
+    {
+      "id": 99,
+      "code_id": 1426,
+      "attempted_at": "2026-05-18T19:15:45.822Z",
+      "success": true,
+      "error_message": null
     }
   ],
   "scrape_logs": [
-    {
-      "id": 3226,
-      "timestamp": "2026-05-18T17:44:25.580Z",
-      "level": "info",
-      "message": "✅ Nouveau code: XMNUJVW1 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3227,
-      "timestamp": "2026-05-18T17:44:25.603Z",
-      "level": "info",
-      "message": "✅ Nouveau code: VFV6WL1P (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3228,
-      "timestamp": "2026-05-18T17:44:25.646Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3229,
-      "timestamp": "2026-05-18T17:44:25.660Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3230,
-      "timestamp": "2026-05-18T17:44:25.689Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 2IBYHIXS (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3231,
-      "timestamp": "2026-05-18T17:44:25.715Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 576K9ZYB (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3232,
-      "timestamp": "2026-05-18T17:44:25.756Z",
-      "level": "info",
-      "message": "✅ Nouveau code: U2CWQFGN (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3233,
-      "timestamp": "2026-05-18T17:44:25.789Z",
-      "level": "info",
-      "message": "✅ Nouveau code: DTL5QQAN (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3234,
-      "timestamp": "2026-05-18T17:44:25.825Z",
-      "level": "info",
-      "message": "✅ Nouveau code: D9IO2LSB (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3235,
-      "timestamp": "2026-05-18T17:44:25.858Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 5WPPQSM6 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3236,
-      "timestamp": "2026-05-18T17:44:25.895Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 64BEYFAE (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3237,
-      "timestamp": "2026-05-18T17:44:25.917Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 3LM8YQXL (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3238,
-      "timestamp": "2026-05-18T17:44:25.942Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3239,
-      "timestamp": "2026-05-18T17:44:25.959Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3240,
-      "timestamp": "2026-05-18T17:44:26.011Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 8MTRQ04I (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3241,
-      "timestamp": "2026-05-18T17:44:26.090Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 4C3QJHJG (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3242,
-      "timestamp": "2026-05-18T17:44:26.115Z",
-      "level": "info",
-      "message": "✅ Nouveau code: CL1Q0IOD (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3243,
-      "timestamp": "2026-05-18T17:44:26.135Z",
-      "level": "info",
-      "message": "✅ Nouveau code: QN7NU8T3 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3244,
-      "timestamp": "2026-05-18T17:44:26.156Z",
-      "level": "info",
-      "message": "✅ Nouveau code: ZI7OYZJ5 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3245,
-      "timestamp": "2026-05-18T17:44:26.179Z",
-      "level": "info",
-      "message": "✅ Nouveau code: ZP4J820C (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3246,
-      "timestamp": "2026-05-18T17:44:26.310Z",
-      "level": "info",
-      "message": "✅ Nouveau code: MHW8T4V8 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3247,
-      "timestamp": "2026-05-18T17:44:26.336Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3248,
-      "timestamp": "2026-05-18T17:44:26.353Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3249,
-      "timestamp": "2026-05-18T17:44:26.409Z",
-      "level": "info",
-      "message": "✅ Nouveau code: LPZR95UK (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3250,
-      "timestamp": "2026-05-18T17:44:26.462Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 351QZ1TV (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3251,
-      "timestamp": "2026-05-18T17:44:26.513Z",
-      "level": "info",
-      "message": "✅ Nouveau code: H57NLJ74 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3252,
-      "timestamp": "2026-05-18T17:44:26.599Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 5AQ4179C (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3253,
-      "timestamp": "2026-05-18T17:44:26.680Z",
-      "level": "info",
-      "message": "✅ Nouveau code: A6CA1OUA (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3254,
-      "timestamp": "2026-05-18T17:44:26.719Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 10T57OE9 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3255,
-      "timestamp": "2026-05-18T17:44:26.754Z",
-      "level": "info",
-      "message": "✅ Nouveau code: NF73A81D (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3256,
-      "timestamp": "2026-05-18T17:44:26.786Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 3T2FNXEI (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3257,
-      "timestamp": "2026-05-18T17:44:26.814Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3258,
-      "timestamp": "2026-05-18T17:44:26.842Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3259,
-      "timestamp": "2026-05-18T17:44:26.945Z",
-      "level": "info",
-      "message": "✅ Nouveau code: ZIIHBE9C (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3260,
-      "timestamp": "2026-05-18T17:44:26.991Z",
-      "level": "info",
-      "message": "✅ Nouveau code: P4G2KX5F (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3261,
-      "timestamp": "2026-05-18T17:44:27.053Z",
-      "level": "info",
-      "message": "✅ Nouveau code: D7Z3VSFH (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3262,
-      "timestamp": "2026-05-18T17:44:27.140Z",
-      "level": "info",
-      "message": "✅ Nouveau code: JN8QFRIE (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3263,
-      "timestamp": "2026-05-18T17:44:27.177Z",
-      "level": "info",
-      "message": "✅ Nouveau code: V18OI114 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3264,
-      "timestamp": "2026-05-18T17:44:27.202Z",
-      "level": "info",
-      "message": "✅ Nouveau code: AMUM2OME (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3265,
-      "timestamp": "2026-05-18T17:44:27.228Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3266,
-      "timestamp": "2026-05-18T17:44:27.245Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3267,
-      "timestamp": "2026-05-18T17:44:27.271Z",
-      "level": "info",
-      "message": "✅ Nouveau code: V08SNOUF (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3268,
-      "timestamp": "2026-05-18T17:44:27.297Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 4H6NQY5K (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3269,
-      "timestamp": "2026-05-18T17:44:27.326Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 21ZUZX99 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3270,
-      "timestamp": "2026-05-18T17:44:27.353Z",
-      "level": "info",
-      "message": "✅ Nouveau code: R9MR8JPY (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3271,
-      "timestamp": "2026-05-18T17:44:27.389Z",
-      "level": "info",
-      "message": "✅ Nouveau code: V5ALQO5R (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3272,
-      "timestamp": "2026-05-18T17:44:27.417Z",
-      "level": "info",
-      "message": "✅ Nouveau code: X2Y33WX3 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3273,
-      "timestamp": "2026-05-18T17:44:27.446Z",
-      "level": "info",
-      "message": "✅ Nouveau code: VBBSR3AZ (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3274,
-      "timestamp": "2026-05-18T17:44:27.470Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 5QYYXL2H (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3275,
-      "timestamp": "2026-05-18T17:44:27.498Z",
-      "level": "info",
-      "message": "✅ Nouveau code: CL0OZ557 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3276,
-      "timestamp": "2026-05-18T17:44:27.520Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3277,
-      "timestamp": "2026-05-18T17:44:27.543Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3278,
-      "timestamp": "2026-05-18T17:44:27.590Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 8IGYJZ1C (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3279,
-      "timestamp": "2026-05-18T17:44:27.617Z",
-      "level": "info",
-      "message": "✅ Nouveau code: HDGLEQT0 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3280,
-      "timestamp": "2026-05-18T17:44:27.641Z",
-      "level": "info",
-      "message": "✅ Nouveau code: R56ACBMD (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3281,
-      "timestamp": "2026-05-18T17:44:27.671Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 6KTRHQOT (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3282,
-      "timestamp": "2026-05-18T17:44:27.720Z",
-      "level": "info",
-      "message": "✅ Nouveau code: L76CTO8P (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3283,
-      "timestamp": "2026-05-18T17:44:27.751Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 0MU9R5ZF (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3284,
-      "timestamp": "2026-05-18T17:44:27.787Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 7EHNRAVG (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3285,
-      "timestamp": "2026-05-18T17:44:27.836Z",
-      "level": "info",
-      "message": "✅ Nouveau code: IU4WZW2C (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3286,
-      "timestamp": "2026-05-18T17:44:27.863Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3287,
-      "timestamp": "2026-05-18T17:44:27.902Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3288,
-      "timestamp": "2026-05-18T17:44:27.945Z",
-      "level": "info",
-      "message": "✅ Nouveau code: A2PBGPFP (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3289,
-      "timestamp": "2026-05-18T17:44:28.003Z",
-      "level": "info",
-      "message": "✅ Nouveau code: PUV0Y2AX (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3290,
-      "timestamp": "2026-05-18T17:44:28.102Z",
-      "level": "info",
-      "message": "✅ Nouveau code: VBM7LUL1 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3291,
-      "timestamp": "2026-05-18T17:44:28.253Z",
-      "level": "info",
-      "message": "✅ Nouveau code: V782QN2A (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3292,
-      "timestamp": "2026-05-18T17:44:28.353Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 1Z8Z8ACI (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3293,
-      "timestamp": "2026-05-18T17:44:28.421Z",
-      "level": "info",
-      "message": "✅ Nouveau code: BYJ74J3D (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3294,
-      "timestamp": "2026-05-18T17:44:28.465Z",
-      "level": "info",
-      "message": "✅ Nouveau code: UIXAGVV3 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3295,
-      "timestamp": "2026-05-18T17:44:28.501Z",
-      "level": "info",
-      "message": "✅ Nouveau code: EFMLD50S (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3296,
-      "timestamp": "2026-05-18T17:44:28.535Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3297,
-      "timestamp": "2026-05-18T17:44:28.561Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3298,
-      "timestamp": "2026-05-18T17:44:28.589Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 5CQY6KBY (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3299,
-      "timestamp": "2026-05-18T17:44:28.619Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 0Q5N11D3 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3300,
-      "timestamp": "2026-05-18T17:44:28.654Z",
-      "level": "info",
-      "message": "✅ Nouveau code: GV2HSR33 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3301,
-      "timestamp": "2026-05-18T17:44:28.696Z",
-      "level": "info",
-      "message": "✅ Nouveau code: KWIQC973 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3302,
-      "timestamp": "2026-05-18T17:44:28.738Z",
-      "level": "info",
-      "message": "✅ Nouveau code: R6BCN21M (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3303,
-      "timestamp": "2026-05-18T17:44:28.779Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 7TO9MRKF (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3304,
-      "timestamp": "2026-05-18T17:44:28.812Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 4RG45CTX (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3305,
-      "timestamp": "2026-05-18T17:44:28.869Z",
-      "level": "info",
-      "message": "✅ Nouveau code: LHNXO89S (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3306,
-      "timestamp": "2026-05-18T17:44:28.960Z",
-      "level": "info",
-      "message": "✅ Nouveau code: LCLRT9G8 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3307,
-      "timestamp": "2026-05-18T17:44:29.019Z",
-      "level": "info",
-      "message": "✅ Nouveau code: PJI860JS (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3308,
-      "timestamp": "2026-05-18T17:44:29.061Z",
-      "level": "info",
-      "message": "✅ Nouveau code: LYB7APR5 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3309,
-      "timestamp": "2026-05-18T17:44:29.102Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 7VTJKVKY (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3310,
-      "timestamp": "2026-05-18T17:44:29.134Z",
-      "level": "info",
-      "message": "✅ Nouveau code: R98DKAXW (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3311,
-      "timestamp": "2026-05-18T17:44:29.179Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3312,
-      "timestamp": "2026-05-18T17:44:29.199Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3313,
-      "timestamp": "2026-05-18T17:44:29.243Z",
-      "level": "info",
-      "message": "✅ Nouveau code: PRST26R3 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3314,
-      "timestamp": "2026-05-18T17:44:29.294Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 6NRTAM3P (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3315,
-      "timestamp": "2026-05-18T17:44:29.328Z",
-      "level": "info",
-      "message": "✅ Nouveau code: INVFN90Z (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3316,
-      "timestamp": "2026-05-18T17:44:29.389Z",
-      "level": "info",
-      "message": "✅ Nouveau code: A2GB5TJ3 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3317,
-      "timestamp": "2026-05-18T17:44:29.568Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 6ZVNOE8U (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3318,
-      "timestamp": "2026-05-18T17:44:29.661Z",
-      "level": "info",
-      "message": "✅ Nouveau code: GFMUKE5I (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3319,
-      "timestamp": "2026-05-18T17:44:29.745Z",
-      "level": "info",
-      "message": "✅ Nouveau code: ZKDH4RKH (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3320,
-      "timestamp": "2026-05-18T17:44:29.864Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3321,
-      "timestamp": "2026-05-18T17:44:30.043Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3322,
-      "timestamp": "2026-05-18T17:44:30.096Z",
-      "level": "info",
-      "message": "✅ Nouveau code: IHKTO9P1 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3323,
-      "timestamp": "2026-05-18T17:44:30.135Z",
-      "level": "info",
-      "message": "✅ Nouveau code: HJB8K3W0 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3324,
-      "timestamp": "2026-05-18T17:44:30.228Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 1HA7USC8 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3325,
-      "timestamp": "2026-05-18T17:44:30.351Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 9K6B1V0M (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3326,
-      "timestamp": "2026-05-18T17:44:30.387Z",
-      "level": "info",
-      "message": "✅ Nouveau code: RYXS4Y0U (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3327,
-      "timestamp": "2026-05-18T17:44:30.455Z",
-      "level": "info",
-      "message": "✅ Nouveau code: DTCS3XBD (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3328,
-      "timestamp": "2026-05-18T17:44:30.520Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 8UPK6JJ3 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3329,
-      "timestamp": "2026-05-18T17:44:30.551Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3330,
-      "timestamp": "2026-05-18T17:44:30.571Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3331,
-      "timestamp": "2026-05-18T17:44:30.608Z",
-      "level": "info",
-      "message": "✅ Nouveau code: GWVIXP05 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3332,
-      "timestamp": "2026-05-18T17:44:30.640Z",
-      "level": "info",
-      "message": "✅ Nouveau code: YRLRVP1E (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3333,
-      "timestamp": "2026-05-18T17:44:30.677Z",
-      "level": "info",
-      "message": "✅ Nouveau code: GLRXXB9R (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3334,
-      "timestamp": "2026-05-18T17:44:30.718Z",
-      "level": "info",
-      "message": "✅ Nouveau code: N8CSZGZM (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3335,
-      "timestamp": "2026-05-18T17:44:30.771Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 3Z7K0VGN (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3336,
-      "timestamp": "2026-05-18T17:44:30.817Z",
-      "level": "info",
-      "message": "✅ Nouveau code: VRQSFN6Z (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3337,
-      "timestamp": "2026-05-18T17:44:30.861Z",
-      "level": "info",
-      "message": "✅ Nouveau code: DVOJ2T1D (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3338,
-      "timestamp": "2026-05-18T17:44:30.893Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3339,
-      "timestamp": "2026-05-18T17:44:30.958Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3340,
-      "timestamp": "2026-05-18T17:44:31.027Z",
-      "level": "info",
-      "message": "✅ Nouveau code: C2CH437E (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3341,
-      "timestamp": "2026-05-18T17:44:31.129Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 1QODDRWL (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3342,
-      "timestamp": "2026-05-18T17:44:31.212Z",
-      "level": "info",
-      "message": "✅ Nouveau code: HQ0PZBXP (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3343,
-      "timestamp": "2026-05-18T17:44:31.254Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 51B6NIYX (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3344,
-      "timestamp": "2026-05-18T17:44:31.327Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 9W3V5Q8X (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3345,
-      "timestamp": "2026-05-18T17:44:31.395Z",
-      "level": "info",
-      "message": "✅ Nouveau code: IHSUP9AX (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3346,
-      "timestamp": "2026-05-18T17:44:31.450Z",
-      "level": "info",
-      "message": "✅ Nouveau code: RGI5DETP (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3347,
-      "timestamp": "2026-05-18T17:44:31.485Z",
-      "level": "info",
-      "message": "✅ Nouveau code: DP27AJC4 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3348,
-      "timestamp": "2026-05-18T17:44:31.611Z",
-      "level": "info",
-      "message": "✅ Nouveau code: V7N9QPRP (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3349,
-      "timestamp": "2026-05-18T17:44:31.676Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 449MNAWS (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3350,
-      "timestamp": "2026-05-18T17:44:31.792Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 0M56NQAC (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3351,
-      "timestamp": "2026-05-18T17:44:31.845Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3352,
-      "timestamp": "2026-05-18T17:44:31.895Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3353,
-      "timestamp": "2026-05-18T17:44:32.004Z",
-      "level": "info",
-      "message": "✅ Nouveau code: I3CCKF8G (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3354,
-      "timestamp": "2026-05-18T17:44:32.138Z",
-      "level": "info",
-      "message": "✅ Nouveau code: JG0SOEJ3 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3355,
-      "timestamp": "2026-05-18T17:44:32.255Z",
-      "level": "info",
-      "message": "✅ Nouveau code: VDZR7ESX (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3356,
-      "timestamp": "2026-05-18T17:44:32.317Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 0UO3ORFC (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3357,
-      "timestamp": "2026-05-18T17:44:32.394Z",
-      "level": "info",
-      "message": "✅ Nouveau code: Z3NJOKPO (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3358,
-      "timestamp": "2026-05-18T17:44:32.487Z",
-      "level": "info",
-      "message": "✅ Nouveau code: PUJNCYW5 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3359,
-      "timestamp": "2026-05-18T17:44:32.535Z",
-      "level": "info",
-      "message": "✅ Nouveau code: MK2QKN1Z (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3360,
-      "timestamp": "2026-05-18T17:44:32.622Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 98Z2AORB (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3361,
-      "timestamp": "2026-05-18T17:44:32.666Z",
-      "level": "info",
-      "message": "✅ Nouveau code: IDQGG8S0 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3362,
-      "timestamp": "2026-05-18T17:44:32.711Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 9DVJBQ1R (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3363,
-      "timestamp": "2026-05-18T17:44:32.745Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 30ZHKIUG (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3364,
-      "timestamp": "2026-05-18T17:44:32.786Z",
-      "level": "info",
-      "message": "✅ Nouveau code: UV5PKPFA (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3365,
-      "timestamp": "2026-05-18T17:44:32.813Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3366,
-      "timestamp": "2026-05-18T17:44:32.843Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3367,
-      "timestamp": "2026-05-18T17:44:32.903Z",
-      "level": "info",
-      "message": "✅ Nouveau code: T8RN5BZM (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3368,
-      "timestamp": "2026-05-18T17:44:32.946Z",
-      "level": "info",
-      "message": "✅ Nouveau code: P09QE97C (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3369,
-      "timestamp": "2026-05-18T17:44:32.991Z",
-      "level": "info",
-      "message": "✅ Nouveau code: UWUHEZT1 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3370,
-      "timestamp": "2026-05-18T17:44:33.042Z",
-      "level": "info",
-      "message": "✅ Nouveau code: GO3ROFVR (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3371,
-      "timestamp": "2026-05-18T17:44:33.154Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 3T7N3D75 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3372,
-      "timestamp": "2026-05-18T17:44:33.223Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 3DMDDTW6 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3373,
-      "timestamp": "2026-05-18T17:44:33.258Z",
-      "level": "info",
-      "message": "✅ Nouveau code: Z2HWC5NZ (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3374,
-      "timestamp": "2026-05-18T17:44:33.292Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3375,
-      "timestamp": "2026-05-18T17:44:33.317Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3376,
-      "timestamp": "2026-05-18T17:44:33.358Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 68JAYBZP (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3377,
-      "timestamp": "2026-05-18T17:44:33.394Z",
-      "level": "info",
-      "message": "✅ Nouveau code: U7CMB6RX (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3378,
-      "timestamp": "2026-05-18T17:44:33.434Z",
-      "level": "info",
-      "message": "✅ Nouveau code: K26Q48FK (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3379,
-      "timestamp": "2026-05-18T17:44:33.485Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 32TA4FRM (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3380,
-      "timestamp": "2026-05-18T17:44:33.526Z",
-      "level": "info",
-      "message": "✅ Nouveau code: MNERASH4 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3381,
-      "timestamp": "2026-05-18T17:44:33.575Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 8C8O79MG (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3382,
-      "timestamp": "2026-05-18T17:44:33.609Z",
-      "level": "info",
-      "message": "✅ Nouveau code: CXUYI7N7 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3383,
-      "timestamp": "2026-05-18T17:44:33.644Z",
-      "level": "info",
-      "message": "✅ Nouveau code: R8P3N29U (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3384,
-      "timestamp": "2026-05-18T17:44:33.668Z",
-      "level": "info",
-      "message": "Code déjà connu: BPIURG0H4B",
-      "details": null
-    },
-    {
-      "id": 3385,
-      "timestamp": "2026-05-18T17:44:33.711Z",
-      "level": "info",
-      "message": "Code déjà connu: BP9GDU1HJZ",
-      "details": null
-    },
-    {
-      "id": 3386,
-      "timestamp": "2026-05-18T17:44:33.761Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 5YKU1RJR (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3387,
-      "timestamp": "2026-05-18T17:44:33.800Z",
-      "level": "info",
-      "message": "✅ Nouveau code: WQ270Z3I (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3388,
-      "timestamp": "2026-05-18T17:44:33.835Z",
-      "level": "info",
-      "message": "✅ Nouveau code: C6C365FW (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3389,
-      "timestamp": "2026-05-18T17:44:33.879Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 6HQVIPCE (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3390,
-      "timestamp": "2026-05-18T17:44:33.927Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 7XTJXNCY (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3391,
-      "timestamp": "2026-05-18T17:44:33.986Z",
-      "level": "info",
-      "message": "✅ Nouveau code: DD91BXWW (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3392,
-      "timestamp": "2026-05-18T17:44:34.043Z",
-      "level": "info",
-      "message": "✅ Nouveau code: 1N6HBGXK (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3393,
-      "timestamp": "2026-05-18T17:44:34.083Z",
-      "level": "info",
-      "message": "✅ Nouveau code: DKNRILQ7 (via @zahidaziz577873)",
-      "details": null
-    },
-    {
-      "id": 3394,
-      "timestamp": "2026-05-18T17:44:34.097Z",
-      "level": "info",
-      "message": "@zahidaziz577873 — 20 tweet(s) analysé(s), 162 nouveau(x) code(s)",
-      "details": null
-    },
-    {
-      "id": 3395,
-      "timestamp": "2026-05-18T17:44:34.151Z",
-      "level": "info",
-      "message": "=== Scraping terminé — 162 code(s) / 3 compte(s) ===",
-      "details": null
-    },
-    {
-      "id": 3396,
-      "timestamp": "2026-05-18T17:44:51.173Z",
-      "level": "info",
-      "message": "Claiming via Playwright: DKNRILQ7",
-      "details": null
-    },
-    {
-      "id": 3397,
-      "timestamp": "2026-05-18T17:45:14.041Z",
-      "level": "warn",
-      "message": "Claim failed: page.waitForTimeout: Target page, context or browser has been closed",
-      "details": null
-    },
-    {
-      "id": 3398,
-      "timestamp": "2026-05-18T17:47:48.017Z",
-      "level": "info",
-      "message": "Démarrage du Cron Workflow",
-      "details": null
-    },
-    {
-      "id": 3399,
-      "timestamp": "2026-05-18T17:47:48.033Z",
-      "level": "info",
-      "message": "=== Scraping démarré — 3 compte(s) ===",
-      "details": null
-    },
-    {
-      "id": 3400,
-      "timestamp": "2026-05-18T17:47:48.042Z",
-      "level": "info",
-      "message": "Scraping @binanceboxcode...",
-      "details": null
-    },
-    {
-      "id": 3401,
-      "timestamp": "2026-05-18T17:47:48.051Z",
-      "level": "info",
-      "message": "[Playwright] Scraping @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 3402,
-      "timestamp": "2026-05-18T17:48:13.476Z",
-      "level": "info",
-      "message": "[Playwright] HTML length: 407290",
-      "details": null
-    },
-    {
-      "id": 3403,
-      "timestamp": "2026-05-18T17:48:13.528Z",
-      "level": "info",
-      "message": "[Playwright] Body text length: 1455",
-      "details": null
-    },
-    {
-      "id": 3404,
-      "timestamp": "2026-05-18T17:48:13.551Z",
-      "level": "info",
-      "message": "[Playwright] 29 code(s) trouvé(s) directement",
-      "details": null
-    },
-    {
-      "id": 3405,
-      "timestamp": "2026-05-18T17:48:13.774Z",
-      "level": "info",
-      "message": "[Playwright] 4 tweet(s) structuré(s) trouvé(s)",
-      "details": null
-    },
-    {
-      "id": 3406,
-      "timestamp": "2026-05-18T17:48:13.784Z",
-      "level": "info",
-      "message": "[Playwright] 4 tweet(s) final",
-      "details": null
-    },
-    {
-      "id": 3407,
-      "timestamp": "2026-05-18T17:48:14.102Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (442946 min > 5 min)",
-      "details": null
-    },
-    {
-      "id": 3408,
-      "timestamp": "2026-05-18T17:48:14.120Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (533650 min > 5 min)",
-      "details": null
-    },
-    {
-      "id": 3409,
-      "timestamp": "2026-05-18T17:48:14.144Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (445606 min > 5 min)",
-      "details": null
-    },
     {
       "id": 3410,
       "timestamp": "2026-05-18T17:48:14.165Z",
@@ -7846,6 +6584,1294 @@
       "level": "info",
       "message": "Scraping automatique activé",
       "details": null
+    },
+    {
+      "id": 4226,
+      "timestamp": "2026-05-18T18:56:11.704Z",
+      "level": "info",
+      "message": "Démarrage du Cron Workflow",
+      "details": null
+    },
+    {
+      "id": 4227,
+      "timestamp": "2026-05-18T18:56:11.717Z",
+      "level": "info",
+      "message": "=== Scraping démarré — 3 compte(s) ===",
+      "details": null
+    },
+    {
+      "id": 4228,
+      "timestamp": "2026-05-18T18:56:11.723Z",
+      "level": "info",
+      "message": "Scraping @binanceboxcode...",
+      "details": null
+    },
+    {
+      "id": 4229,
+      "timestamp": "2026-05-18T18:56:11.735Z",
+      "level": "info",
+      "message": "[Playwright] Scraping @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 4230,
+      "timestamp": "2026-05-18T18:56:38.229Z",
+      "level": "info",
+      "message": "[Playwright] HTML length: 426715",
+      "details": null
+    },
+    {
+      "id": 4231,
+      "timestamp": "2026-05-18T18:56:38.274Z",
+      "level": "info",
+      "message": "[Playwright] Body text length: 1533",
+      "details": null
+    },
+    {
+      "id": 4232,
+      "timestamp": "2026-05-18T18:56:38.283Z",
+      "level": "info",
+      "message": "[Playwright] 29 code(s) trouvé(s) directement",
+      "details": null
+    },
+    {
+      "id": 4233,
+      "timestamp": "2026-05-18T18:56:38.373Z",
+      "level": "info",
+      "message": "[Playwright] 4 tweet(s) structuré(s) trouvé(s)",
+      "details": null
+    },
+    {
+      "id": 4234,
+      "timestamp": "2026-05-18T18:56:38.384Z",
+      "level": "info",
+      "message": "[Playwright] 4 tweet(s) final",
+      "details": null
+    },
+    {
+      "id": 4235,
+      "timestamp": "2026-05-18T18:56:38.808Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (443014 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4236,
+      "timestamp": "2026-05-18T18:56:38.820Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (533718 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4237,
+      "timestamp": "2026-05-18T18:56:38.835Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (445675 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4238,
+      "timestamp": "2026-05-18T18:56:38.850Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (555355 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4239,
+      "timestamp": "2026-05-18T18:56:38.856Z",
+      "level": "info",
+      "message": "@binanceboxcode — 4 tweet(s) analysé(s), 0 nouveau(x) code(s)",
+      "details": null
+    },
+    {
+      "id": 4240,
+      "timestamp": "2026-05-18T18:56:41.697Z",
+      "level": "info",
+      "message": "Scraping @muhammadtari55...",
+      "details": null
+    },
+    {
+      "id": 4241,
+      "timestamp": "2026-05-18T18:56:41.710Z",
+      "level": "info",
+      "message": "[Playwright] Scraping @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 4242,
+      "timestamp": "2026-05-18T18:57:07.605Z",
+      "level": "info",
+      "message": "[Playwright] HTML length: 428737",
+      "details": null
+    },
+    {
+      "id": 4243,
+      "timestamp": "2026-05-18T18:57:07.644Z",
+      "level": "info",
+      "message": "[Playwright] Body text length: 2198",
+      "details": null
+    },
+    {
+      "id": 4244,
+      "timestamp": "2026-05-18T18:57:07.650Z",
+      "level": "info",
+      "message": "[Playwright] 63 code(s) trouvé(s) directement",
+      "details": null
+    },
+    {
+      "id": 4245,
+      "timestamp": "2026-05-18T18:57:07.781Z",
+      "level": "info",
+      "message": "[Playwright] 6 tweet(s) structuré(s) trouvé(s)",
+      "details": null
+    },
+    {
+      "id": 4246,
+      "timestamp": "2026-05-18T18:57:07.788Z",
+      "level": "info",
+      "message": "[Playwright] 6 tweet(s) final",
+      "details": null
+    },
+    {
+      "id": 4247,
+      "timestamp": "2026-05-18T18:57:08.018Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (320310 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4248,
+      "timestamp": "2026-05-18T18:57:08.029Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (330977 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4249,
+      "timestamp": "2026-05-18T18:57:08.039Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (351344 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4250,
+      "timestamp": "2026-05-18T18:57:08.050Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (305840 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4251,
+      "timestamp": "2026-05-18T18:57:08.061Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (327548 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4252,
+      "timestamp": "2026-05-18T18:57:08.077Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (323194 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4253,
+      "timestamp": "2026-05-18T18:57:08.084Z",
+      "level": "info",
+      "message": "@muhammadtari55 — 6 tweet(s) analysé(s), 0 nouveau(x) code(s)",
+      "details": null
+    },
+    {
+      "id": 4254,
+      "timestamp": "2026-05-18T18:57:10.317Z",
+      "level": "info",
+      "message": "Scraping @zahidaziz577873...",
+      "details": null
+    },
+    {
+      "id": 4255,
+      "timestamp": "2026-05-18T18:57:10.323Z",
+      "level": "info",
+      "message": "[Playwright] Scraping @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 4256,
+      "timestamp": "2026-05-18T18:57:34.687Z",
+      "level": "info",
+      "message": "[Playwright] HTML length: 320834",
+      "details": null
+    },
+    {
+      "id": 4257,
+      "timestamp": "2026-05-18T18:57:34.741Z",
+      "level": "info",
+      "message": "[Playwright] Body text length: 666",
+      "details": null
+    },
+    {
+      "id": 4258,
+      "timestamp": "2026-05-18T18:57:34.752Z",
+      "level": "info",
+      "message": "[Playwright] 0 code(s) trouvé(s) directement",
+      "details": null
+    },
+    {
+      "id": 4259,
+      "timestamp": "2026-05-18T18:57:34.769Z",
+      "level": "info",
+      "message": "[Playwright] 0 tweet(s) structuré(s) trouvé(s)",
+      "details": null
+    },
+    {
+      "id": 4260,
+      "timestamp": "2026-05-18T18:57:35.024Z",
+      "level": "info",
+      "message": "[Playwright] 0 tweet(s) final",
+      "details": null
+    },
+    {
+      "id": 4261,
+      "timestamp": "2026-05-18T18:57:37.625Z",
+      "level": "warn",
+      "message": "Aucun tweet récupéré pour @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 4262,
+      "timestamp": "2026-05-18T18:57:37.655Z",
+      "level": "info",
+      "message": "=== Scraping terminé — 0 code(s) / 2 compte(s) ===",
+      "details": null
+    },
+    {
+      "id": 4263,
+      "timestamp": "2026-05-18T19:01:11.721Z",
+      "level": "info",
+      "message": "Démarrage du Cron Workflow",
+      "details": null
+    },
+    {
+      "id": 4264,
+      "timestamp": "2026-05-18T19:01:11.740Z",
+      "level": "info",
+      "message": "=== Scraping démarré — 3 compte(s) ===",
+      "details": null
+    },
+    {
+      "id": 4265,
+      "timestamp": "2026-05-18T19:01:11.750Z",
+      "level": "info",
+      "message": "Scraping @binanceboxcode...",
+      "details": null
+    },
+    {
+      "id": 4266,
+      "timestamp": "2026-05-18T19:01:11.761Z",
+      "level": "info",
+      "message": "[Playwright] Scraping @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 4267,
+      "timestamp": "2026-05-18T19:01:38.915Z",
+      "level": "info",
+      "message": "[Playwright] HTML length: 426719",
+      "details": null
+    },
+    {
+      "id": 4268,
+      "timestamp": "2026-05-18T19:01:38.988Z",
+      "level": "info",
+      "message": "[Playwright] Body text length: 1533",
+      "details": null
+    },
+    {
+      "id": 4269,
+      "timestamp": "2026-05-18T19:01:38.999Z",
+      "level": "info",
+      "message": "[Playwright] 29 code(s) trouvé(s) directement",
+      "details": null
+    },
+    {
+      "id": 4270,
+      "timestamp": "2026-05-18T19:01:39.397Z",
+      "level": "info",
+      "message": "[Playwright] 4 tweet(s) structuré(s) trouvé(s)",
+      "details": null
+    },
+    {
+      "id": 4271,
+      "timestamp": "2026-05-18T19:01:39.406Z",
+      "level": "info",
+      "message": "[Playwright] 4 tweet(s) final",
+      "details": null
+    },
+    {
+      "id": 4272,
+      "timestamp": "2026-05-18T19:01:39.888Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (443019 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4273,
+      "timestamp": "2026-05-18T19:01:39.907Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (533723 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4274,
+      "timestamp": "2026-05-18T19:01:39.928Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (445680 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4275,
+      "timestamp": "2026-05-18T19:01:39.954Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (555360 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4276,
+      "timestamp": "2026-05-18T19:01:39.981Z",
+      "level": "info",
+      "message": "@binanceboxcode — 4 tweet(s) analysé(s), 0 nouveau(x) code(s)",
+      "details": null
+    },
+    {
+      "id": 4277,
+      "timestamp": "2026-05-18T19:01:43.476Z",
+      "level": "info",
+      "message": "Scraping @muhammadtari55...",
+      "details": null
+    },
+    {
+      "id": 4278,
+      "timestamp": "2026-05-18T19:01:43.493Z",
+      "level": "info",
+      "message": "[Playwright] Scraping @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 4279,
+      "timestamp": "2026-05-18T19:02:03.307Z",
+      "level": "info",
+      "message": "[Playwright] HTML length: 444778",
+      "details": null
+    },
+    {
+      "id": 4280,
+      "timestamp": "2026-05-18T19:02:03.385Z",
+      "level": "info",
+      "message": "[Playwright] Body text length: 2558",
+      "details": null
+    },
+    {
+      "id": 4281,
+      "timestamp": "2026-05-18T19:02:03.397Z",
+      "level": "info",
+      "message": "[Playwright] 84 code(s) trouvé(s) directement",
+      "details": null
+    },
+    {
+      "id": 4282,
+      "timestamp": "2026-05-18T19:02:04.551Z",
+      "level": "info",
+      "message": "[Playwright] 7 tweet(s) structuré(s) trouvé(s)",
+      "details": null
+    },
+    {
+      "id": 4283,
+      "timestamp": "2026-05-18T19:02:04.561Z",
+      "level": "info",
+      "message": "[Playwright] 7 tweet(s) final",
+      "details": null
+    },
+    {
+      "id": 4284,
+      "timestamp": "2026-05-18T19:02:05.987Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (335636 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4285,
+      "timestamp": "2026-05-18T19:02:06.003Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (356159 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4286,
+      "timestamp": "2026-05-18T19:02:06.033Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (320315 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4287,
+      "timestamp": "2026-05-18T19:02:06.053Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (330982 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4288,
+      "timestamp": "2026-05-18T19:02:06.069Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (351349 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4289,
+      "timestamp": "2026-05-18T19:02:06.108Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (305845 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4290,
+      "timestamp": "2026-05-18T19:02:06.169Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (327553 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4291,
+      "timestamp": "2026-05-18T19:02:06.227Z",
+      "level": "info",
+      "message": "@muhammadtari55 — 7 tweet(s) analysé(s), 0 nouveau(x) code(s)",
+      "details": null
+    },
+    {
+      "id": 4292,
+      "timestamp": "2026-05-18T19:02:09.572Z",
+      "level": "info",
+      "message": "Scraping @zahidaziz577873...",
+      "details": null
+    },
+    {
+      "id": 4293,
+      "timestamp": "2026-05-18T19:02:09.601Z",
+      "level": "info",
+      "message": "[Playwright] Scraping @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 4294,
+      "timestamp": "2026-05-18T19:02:28.788Z",
+      "level": "info",
+      "message": "[Playwright] HTML length: 320831",
+      "details": null
+    },
+    {
+      "id": 4295,
+      "timestamp": "2026-05-18T19:02:28.856Z",
+      "level": "info",
+      "message": "[Playwright] Body text length: 666",
+      "details": null
+    },
+    {
+      "id": 4296,
+      "timestamp": "2026-05-18T19:02:28.877Z",
+      "level": "info",
+      "message": "[Playwright] 0 code(s) trouvé(s) directement",
+      "details": null
+    },
+    {
+      "id": 4297,
+      "timestamp": "2026-05-18T19:02:28.904Z",
+      "level": "info",
+      "message": "[Playwright] 0 tweet(s) structuré(s) trouvé(s)",
+      "details": null
+    },
+    {
+      "id": 4298,
+      "timestamp": "2026-05-18T19:02:29.012Z",
+      "level": "info",
+      "message": "[Playwright] 0 tweet(s) final",
+      "details": null
+    },
+    {
+      "id": 4299,
+      "timestamp": "2026-05-18T19:02:35.414Z",
+      "level": "warn",
+      "message": "Aucun tweet récupéré pour @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 4300,
+      "timestamp": "2026-05-18T19:02:35.425Z",
+      "level": "info",
+      "message": "=== Scraping terminé — 0 code(s) / 2 compte(s) ===",
+      "details": null
+    },
+    {
+      "id": 4301,
+      "timestamp": "2026-05-18T19:06:11.732Z",
+      "level": "info",
+      "message": "Démarrage du Cron Workflow",
+      "details": null
+    },
+    {
+      "id": 4302,
+      "timestamp": "2026-05-18T19:06:11.744Z",
+      "level": "info",
+      "message": "=== Scraping démarré — 3 compte(s) ===",
+      "details": null
+    },
+    {
+      "id": 4303,
+      "timestamp": "2026-05-18T19:06:11.751Z",
+      "level": "info",
+      "message": "Scraping @binanceboxcode...",
+      "details": null
+    },
+    {
+      "id": 4304,
+      "timestamp": "2026-05-18T19:06:11.758Z",
+      "level": "info",
+      "message": "[Playwright] Scraping @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 4305,
+      "timestamp": "2026-05-18T19:06:35.397Z",
+      "level": "info",
+      "message": "[Playwright] HTML length: 426705",
+      "details": null
+    },
+    {
+      "id": 4306,
+      "timestamp": "2026-05-18T19:06:35.444Z",
+      "level": "info",
+      "message": "[Playwright] Body text length: 1533",
+      "details": null
+    },
+    {
+      "id": 4307,
+      "timestamp": "2026-05-18T19:06:35.452Z",
+      "level": "info",
+      "message": "[Playwright] 29 code(s) trouvé(s) directement",
+      "details": null
+    },
+    {
+      "id": 4308,
+      "timestamp": "2026-05-18T19:06:35.743Z",
+      "level": "info",
+      "message": "[Playwright] 4 tweet(s) structuré(s) trouvé(s)",
+      "details": null
+    },
+    {
+      "id": 4309,
+      "timestamp": "2026-05-18T19:06:35.750Z",
+      "level": "info",
+      "message": "[Playwright] 4 tweet(s) final",
+      "details": null
+    },
+    {
+      "id": 4310,
+      "timestamp": "2026-05-18T19:06:36.284Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (443024 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4311,
+      "timestamp": "2026-05-18T19:06:36.295Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (533728 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4312,
+      "timestamp": "2026-05-18T19:06:36.304Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (445685 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4313,
+      "timestamp": "2026-05-18T19:06:36.314Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (555365 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4314,
+      "timestamp": "2026-05-18T19:06:36.331Z",
+      "level": "info",
+      "message": "@binanceboxcode — 4 tweet(s) analysé(s), 0 nouveau(x) code(s)",
+      "details": null
+    },
+    {
+      "id": 4315,
+      "timestamp": "2026-05-18T19:06:38.561Z",
+      "level": "info",
+      "message": "Scraping @muhammadtari55...",
+      "details": null
+    },
+    {
+      "id": 4316,
+      "timestamp": "2026-05-18T19:06:38.573Z",
+      "level": "info",
+      "message": "[Playwright] Scraping @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 4317,
+      "timestamp": "2026-05-18T19:07:02.800Z",
+      "level": "info",
+      "message": "[Playwright] HTML length: 362864",
+      "details": null
+    },
+    {
+      "id": 4318,
+      "timestamp": "2026-05-18T19:07:02.843Z",
+      "level": "info",
+      "message": "[Playwright] Body text length: 1324",
+      "details": null
+    },
+    {
+      "id": 4319,
+      "timestamp": "2026-05-18T19:07:02.850Z",
+      "level": "info",
+      "message": "[Playwright] 30 code(s) trouvé(s) directement",
+      "details": null
+    },
+    {
+      "id": 4320,
+      "timestamp": "2026-05-18T19:07:02.907Z",
+      "level": "info",
+      "message": "[Playwright] 2 tweet(s) structuré(s) trouvé(s)",
+      "details": null
+    },
+    {
+      "id": 4321,
+      "timestamp": "2026-05-18T19:07:02.915Z",
+      "level": "info",
+      "message": "[Playwright] 2 tweet(s) final",
+      "details": null
+    },
+    {
+      "id": 4322,
+      "timestamp": "2026-05-18T19:07:03.116Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (88 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4323,
+      "timestamp": "2026-05-18T19:07:03.127Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (349892 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4324,
+      "timestamp": "2026-05-18T19:07:03.134Z",
+      "level": "info",
+      "message": "@muhammadtari55 — 2 tweet(s) analysé(s), 0 nouveau(x) code(s)",
+      "details": null
+    },
+    {
+      "id": 4325,
+      "timestamp": "2026-05-18T19:07:05.812Z",
+      "level": "info",
+      "message": "Scraping @zahidaziz577873...",
+      "details": null
+    },
+    {
+      "id": 4326,
+      "timestamp": "2026-05-18T19:07:05.825Z",
+      "level": "info",
+      "message": "[Playwright] Scraping @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 4327,
+      "timestamp": "2026-05-18T19:07:29.602Z",
+      "level": "info",
+      "message": "[Playwright] HTML length: 341858",
+      "details": null
+    },
+    {
+      "id": 4328,
+      "timestamp": "2026-05-18T19:07:29.635Z",
+      "level": "info",
+      "message": "[Playwright] Body text length: 750",
+      "details": null
+    },
+    {
+      "id": 4329,
+      "timestamp": "2026-05-18T19:07:29.641Z",
+      "level": "info",
+      "message": "[Playwright] 0 code(s) trouvé(s) directement",
+      "details": null
+    },
+    {
+      "id": 4330,
+      "timestamp": "2026-05-18T19:07:29.649Z",
+      "level": "info",
+      "message": "[Playwright] 0 tweet(s) structuré(s) trouvé(s)",
+      "details": null
+    },
+    {
+      "id": 4331,
+      "timestamp": "2026-05-18T19:07:29.680Z",
+      "level": "info",
+      "message": "[Playwright] 0 tweet(s) final",
+      "details": null
+    },
+    {
+      "id": 4332,
+      "timestamp": "2026-05-18T19:07:29.851Z",
+      "level": "warn",
+      "message": "Aucun tweet récupéré pour @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 4333,
+      "timestamp": "2026-05-18T19:07:29.858Z",
+      "level": "info",
+      "message": "=== Scraping terminé — 0 code(s) / 2 compte(s) ===",
+      "details": null
+    },
+    {
+      "id": 4334,
+      "timestamp": "2026-05-18T19:08:26.481Z",
+      "level": "info",
+      "message": "Settings updated",
+      "details": null
+    },
+    {
+      "id": 4335,
+      "timestamp": "2026-05-18T19:08:44.078Z",
+      "level": "info",
+      "message": "Démarrage du Cron Workflow",
+      "details": null
+    },
+    {
+      "id": 4336,
+      "timestamp": "2026-05-18T19:08:44.098Z",
+      "level": "info",
+      "message": "=== Scraping démarré — 3 compte(s) ===",
+      "details": null
+    },
+    {
+      "id": 4337,
+      "timestamp": "2026-05-18T19:08:44.106Z",
+      "level": "info",
+      "message": "Scraping @binanceboxcode...",
+      "details": null
+    },
+    {
+      "id": 4338,
+      "timestamp": "2026-05-18T19:08:44.112Z",
+      "level": "info",
+      "message": "[Playwright] Scraping @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 4339,
+      "timestamp": "2026-05-18T19:09:06.360Z",
+      "level": "info",
+      "message": "[Playwright] HTML length: 407291",
+      "details": null
+    },
+    {
+      "id": 4340,
+      "timestamp": "2026-05-18T19:09:06.410Z",
+      "level": "info",
+      "message": "[Playwright] Body text length: 1455",
+      "details": null
+    },
+    {
+      "id": 4341,
+      "timestamp": "2026-05-18T19:09:06.419Z",
+      "level": "info",
+      "message": "[Playwright] 29 code(s) trouvé(s) directement",
+      "details": null
+    },
+    {
+      "id": 4342,
+      "timestamp": "2026-05-18T19:09:06.575Z",
+      "level": "info",
+      "message": "[Playwright] 4 tweet(s) structuré(s) trouvé(s)",
+      "details": null
+    },
+    {
+      "id": 4343,
+      "timestamp": "2026-05-18T19:09:06.581Z",
+      "level": "info",
+      "message": "[Playwright] 4 tweet(s) final",
+      "details": null
+    },
+    {
+      "id": 4344,
+      "timestamp": "2026-05-18T19:09:06.772Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (443027 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4345,
+      "timestamp": "2026-05-18T19:09:06.784Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (533731 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4346,
+      "timestamp": "2026-05-18T19:09:06.797Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (445687 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4347,
+      "timestamp": "2026-05-18T19:09:06.811Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (555367 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4348,
+      "timestamp": "2026-05-18T19:09:06.823Z",
+      "level": "info",
+      "message": "@binanceboxcode — 4 tweet(s) analysé(s), 0 nouveau(x) code(s)",
+      "details": null
+    },
+    {
+      "id": 4349,
+      "timestamp": "2026-05-18T19:09:10.507Z",
+      "level": "info",
+      "message": "Scraping @muhammadtari55...",
+      "details": null
+    },
+    {
+      "id": 4350,
+      "timestamp": "2026-05-18T19:09:10.518Z",
+      "level": "info",
+      "message": "[Playwright] Scraping @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 4351,
+      "timestamp": "2026-05-18T19:09:29.656Z",
+      "level": "info",
+      "message": "[Playwright] HTML length: 362861",
+      "details": null
+    },
+    {
+      "id": 4352,
+      "timestamp": "2026-05-18T19:09:29.695Z",
+      "level": "info",
+      "message": "[Playwright] Body text length: 1324",
+      "details": null
+    },
+    {
+      "id": 4353,
+      "timestamp": "2026-05-18T19:09:29.705Z",
+      "level": "info",
+      "message": "[Playwright] 30 code(s) trouvé(s) directement",
+      "details": null
+    },
+    {
+      "id": 4354,
+      "timestamp": "2026-05-18T19:09:29.758Z",
+      "level": "info",
+      "message": "[Playwright] 2 tweet(s) structuré(s) trouvé(s)",
+      "details": null
+    },
+    {
+      "id": 4355,
+      "timestamp": "2026-05-18T19:09:29.768Z",
+      "level": "info",
+      "message": "[Playwright] 2 tweet(s) final",
+      "details": null
+    },
+    {
+      "id": 4356,
+      "timestamp": "2026-05-18T19:09:30.078Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (91 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4357,
+      "timestamp": "2026-05-18T19:09:30.087Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (349895 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4358,
+      "timestamp": "2026-05-18T19:09:30.093Z",
+      "level": "info",
+      "message": "@muhammadtari55 — 2 tweet(s) analysé(s), 0 nouveau(x) code(s)",
+      "details": null
+    },
+    {
+      "id": 4359,
+      "timestamp": "2026-05-18T19:09:33.269Z",
+      "level": "info",
+      "message": "Scraping @zahidaziz577873...",
+      "details": null
+    },
+    {
+      "id": 4360,
+      "timestamp": "2026-05-18T19:09:33.285Z",
+      "level": "info",
+      "message": "[Playwright] Scraping @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 4361,
+      "timestamp": "2026-05-18T19:09:53.644Z",
+      "level": "info",
+      "message": "[Playwright] HTML length: 341856",
+      "details": null
+    },
+    {
+      "id": 4362,
+      "timestamp": "2026-05-18T19:09:53.684Z",
+      "level": "info",
+      "message": "[Playwright] Body text length: 750",
+      "details": null
+    },
+    {
+      "id": 4363,
+      "timestamp": "2026-05-18T19:09:53.691Z",
+      "level": "info",
+      "message": "[Playwright] 0 code(s) trouvé(s) directement",
+      "details": null
+    },
+    {
+      "id": 4364,
+      "timestamp": "2026-05-18T19:09:53.707Z",
+      "level": "info",
+      "message": "[Playwright] 0 tweet(s) structuré(s) trouvé(s)",
+      "details": null
+    },
+    {
+      "id": 4365,
+      "timestamp": "2026-05-18T19:09:53.769Z",
+      "level": "info",
+      "message": "[Playwright] 0 tweet(s) final",
+      "details": null
+    },
+    {
+      "id": 4366,
+      "timestamp": "2026-05-18T19:09:53.965Z",
+      "level": "warn",
+      "message": "Aucun tweet récupéré pour @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 4367,
+      "timestamp": "2026-05-18T19:09:53.971Z",
+      "level": "info",
+      "message": "=== Scraping terminé — 0 code(s) / 2 compte(s) ===",
+      "details": null
+    },
+    {
+      "id": 4368,
+      "timestamp": "2026-05-18T19:11:17.430Z",
+      "level": "info",
+      "message": "Démarrage du Cron Workflow",
+      "details": null
+    },
+    {
+      "id": 4369,
+      "timestamp": "2026-05-18T19:11:17.445Z",
+      "level": "info",
+      "message": "=== Scraping démarré — 3 compte(s) ===",
+      "details": null
+    },
+    {
+      "id": 4370,
+      "timestamp": "2026-05-18T19:11:17.454Z",
+      "level": "info",
+      "message": "Scraping @binanceboxcode...",
+      "details": null
+    },
+    {
+      "id": 4371,
+      "timestamp": "2026-05-18T19:11:17.465Z",
+      "level": "info",
+      "message": "[Playwright] Scraping @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 4372,
+      "timestamp": "2026-05-18T19:11:41.850Z",
+      "level": "info",
+      "message": "[Playwright] HTML length: 459287",
+      "details": null
+    },
+    {
+      "id": 4373,
+      "timestamp": "2026-05-18T19:11:42.132Z",
+      "level": "info",
+      "message": "[Playwright] Body text length: 2435",
+      "details": null
+    },
+    {
+      "id": 4374,
+      "timestamp": "2026-05-18T19:11:42.169Z",
+      "level": "info",
+      "message": "[Playwright] 70 code(s) trouvé(s) directement",
+      "details": null
+    },
+    {
+      "id": 4375,
+      "timestamp": "2026-05-18T19:11:42.385Z",
+      "level": "info",
+      "message": "[Playwright] 7 tweet(s) structuré(s) trouvé(s)",
+      "details": null
+    },
+    {
+      "id": 4376,
+      "timestamp": "2026-05-18T19:11:42.393Z",
+      "level": "info",
+      "message": "[Playwright] 7 tweet(s) final",
+      "details": null
+    },
+    {
+      "id": 4377,
+      "timestamp": "2026-05-18T19:11:43.182Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (530899 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4378,
+      "timestamp": "2026-05-18T19:11:43.199Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (524656 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4379,
+      "timestamp": "2026-05-18T19:11:43.229Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (601427 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4380,
+      "timestamp": "2026-05-18T19:11:43.246Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (534721 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4381,
+      "timestamp": "2026-05-18T19:11:43.266Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (498465 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4382,
+      "timestamp": "2026-05-18T19:11:43.288Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (520429 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4383,
+      "timestamp": "2026-05-18T19:11:43.318Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @binanceboxcode ignoré(s) car le tweet est trop ancien (491993 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4384,
+      "timestamp": "2026-05-18T19:11:43.344Z",
+      "level": "info",
+      "message": "@binanceboxcode — 7 tweet(s) analysé(s), 0 nouveau(x) code(s)",
+      "details": null
+    },
+    {
+      "id": 4385,
+      "timestamp": "2026-05-18T19:11:46.671Z",
+      "level": "info",
+      "message": "Scraping @muhammadtari55...",
+      "details": null
+    },
+    {
+      "id": 4386,
+      "timestamp": "2026-05-18T19:11:46.699Z",
+      "level": "info",
+      "message": "[Playwright] Scraping @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 4387,
+      "timestamp": "2026-05-18T19:12:48.845Z",
+      "level": "info",
+      "message": "[Playwright] HTML length: 362860",
+      "details": null
+    },
+    {
+      "id": 4388,
+      "timestamp": "2026-05-18T19:12:48.893Z",
+      "level": "info",
+      "message": "[Playwright] Body text length: 1324",
+      "details": null
+    },
+    {
+      "id": 4389,
+      "timestamp": "2026-05-18T19:12:48.902Z",
+      "level": "info",
+      "message": "[Playwright] 30 code(s) trouvé(s) directement",
+      "details": null
+    },
+    {
+      "id": 4390,
+      "timestamp": "2026-05-18T19:12:48.994Z",
+      "level": "info",
+      "message": "[Playwright] 2 tweet(s) structuré(s) trouvé(s)",
+      "details": null
+    },
+    {
+      "id": 4391,
+      "timestamp": "2026-05-18T19:12:49.003Z",
+      "level": "info",
+      "message": "[Playwright] 2 tweet(s) final",
+      "details": null
+    },
+    {
+      "id": 4392,
+      "timestamp": "2026-05-18T19:12:49.498Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (94 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4393,
+      "timestamp": "2026-05-18T19:12:49.508Z",
+      "level": "info",
+      "message": "[Scraper] Code(s) de @muhammadtari55 ignoré(s) car le tweet est trop ancien (349898 min > 60 min)",
+      "details": null
+    },
+    {
+      "id": 4394,
+      "timestamp": "2026-05-18T19:12:49.517Z",
+      "level": "info",
+      "message": "@muhammadtari55 — 2 tweet(s) analysé(s), 0 nouveau(x) code(s)",
+      "details": null
+    },
+    {
+      "id": 4395,
+      "timestamp": "2026-05-18T19:12:52.475Z",
+      "level": "info",
+      "message": "Scraping @zahidaziz577873...",
+      "details": null
+    },
+    {
+      "id": 4396,
+      "timestamp": "2026-05-18T19:12:52.492Z",
+      "level": "info",
+      "message": "[Playwright] Scraping @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 4397,
+      "timestamp": "2026-05-18T19:13:19.129Z",
+      "level": "info",
+      "message": "[Playwright] HTML length: 321056",
+      "details": null
+    },
+    {
+      "id": 4398,
+      "timestamp": "2026-05-18T19:13:19.175Z",
+      "level": "info",
+      "message": "[Playwright] Body text length: 666",
+      "details": null
+    },
+    {
+      "id": 4399,
+      "timestamp": "2026-05-18T19:13:19.186Z",
+      "level": "info",
+      "message": "[Playwright] 0 code(s) trouvé(s) directement",
+      "details": null
+    },
+    {
+      "id": 4400,
+      "timestamp": "2026-05-18T19:13:19.206Z",
+      "level": "info",
+      "message": "[Playwright] 0 tweet(s) structuré(s) trouvé(s)",
+      "details": null
+    },
+    {
+      "id": 4401,
+      "timestamp": "2026-05-18T19:13:19.273Z",
+      "level": "info",
+      "message": "[Playwright] 0 tweet(s) final",
+      "details": null
+    },
+    {
+      "id": 4402,
+      "timestamp": "2026-05-18T19:13:19.569Z",
+      "level": "warn",
+      "message": "Aucun tweet récupéré pour @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 4403,
+      "timestamp": "2026-05-18T19:13:19.578Z",
+      "level": "info",
+      "message": "=== Scraping terminé — 0 code(s) / 2 compte(s) ===",
+      "details": null
+    },
+    {
+      "id": 4404,
+      "timestamp": "2026-05-18T19:14:17.941Z",
+      "level": "info",
+      "message": "Manually added: 3ADKZW2C",
+      "details": null
+    },
+    {
+      "id": 4405,
+      "timestamp": "2026-05-18T19:14:23.842Z",
+      "level": "info",
+      "message": "Claiming via Playwright: 3ADKZW2C",
+      "details": null
+    },
+    {
+      "id": 4406,
+      "timestamp": "2026-05-18T19:14:26.450Z",
+      "level": "warn",
+      "message": "Claim failed: Impossible d’ouvrir une page après plusieurs tentatives.",
+      "details": null
+    },
+    {
+      "id": 4407,
+      "timestamp": "2026-05-18T19:14:46.978Z",
+      "level": "info",
+      "message": "Manually added: 3ADKZW2C",
+      "details": null
+    },
+    {
+      "id": 4408,
+      "timestamp": "2026-05-18T19:14:55.288Z",
+      "level": "info",
+      "message": "Claiming via Playwright: 3ADKZW2C",
+      "details": null
+    },
+    {
+      "id": 4409,
+      "timestamp": "2026-05-18T19:15:45.836Z",
+      "level": "info",
+      "message": "Claimed 0.00067596 SPK",
+      "details": null
     }
   ],
   "settings": {
@@ -7856,8 +7882,8 @@
   },
   "_nextId": {
     "accounts": 4,
-    "codes": 1425,
-    "attempts": 98,
-    "logs": 4226
+    "codes": 1427,
+    "attempts": 100,
+    "logs": 4410
   }
 }

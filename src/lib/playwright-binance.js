@@ -230,6 +230,7 @@ export async function claimBinanceRedPacketPlaywright(code) {
     return { success: false, error: error.message };
   } finally {
     if (page) {
+      await page.waitForTimeout(3000);
       await page.close().catch(() => { });
       console.log(`[Playwright] Onglet fermé pour le code ${code}`);
     }
@@ -237,7 +238,6 @@ export async function claimBinanceRedPacketPlaywright(code) {
 }
 
 export async function closeBrowser() {
-  await page.waitForTimeout(20000);
   if (globalContext) {
     await globalContext.close();
     globalContext = null;
@@ -246,6 +246,6 @@ export async function closeBrowser() {
 }
 
 export async function disconnectBrowser() {
-  await page.waitForTimeout(20000);
+
   await closeBrowser();
 }
