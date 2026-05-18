@@ -225,3 +225,44 @@ export function codeExistsByCode(code) {
   const db = loadDb();
   return db.red_packet_codes.some((c) => c.code === code);
 }
+
+export function deleteRedPacketCode(id) {
+  const db = loadDb();
+  const index = db.red_packet_codes.findIndex((c) => c.id === id);
+  if (index === -1) return false;
+  db.red_packet_codes.splice(index, 1);
+  saveDb(db);
+  return true;
+}
+
+export function deleteAllRedPacketCodes() {
+  const db = loadDb();
+  const count = db.red_packet_codes.length;
+  db.red_packet_codes = [];
+  saveDb(db);
+  return count;
+}
+
+export function cleanupOldCodes() {
+  const db = loadDb();
+  // We remove invalid, expired, or failed right away. For claimed, we can remove them if they are older than 2 hours to keep the UI clean but show recent wins.
+  const twoHoursAgo = new Date(Date.now() - 2 * 60 * 60 * 1000).toISOString();
+  
+  const initialCount = db.red_packet_codes.length;
+  
+  db.red_packet_codes = db.red_packet_codes.filter(c => {
+    if (c.status === "invalid" || c.status === "expired" || c.status === "failed" || c.status === "empty") {
+      return false; // delete
+    }
+    if (c.status === "claimed" && c.detected_at < twoHoursAgo) {
+      return false; // delete old claimed
+    }
+    return true; // keep others
+  });
+
+  const deletedCount = initialCount - db.red_packet_codes.length;
+  if (deletedCount > 0) {
+    saveDb(db);
+  }
+  return deletedCount;
+}

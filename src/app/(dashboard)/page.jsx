@@ -1,7 +1,10 @@
-import { getCodes, getFailedAttemptsCount } from "@/app/actions";
+import { getCodes } from "@/app/actions";
 import { CodesTable } from "@/components/codes-table";
 import { ManualIngest } from "@/components/manual-ingest";
 import { ScrapeButton } from "@/components/scrape-button";
+import { CronManager } from "@/components/cron-manager";
+import { ClaimAllButton } from "@/components/claim-all-button";
+import { DeleteAllButton } from "@/components/delete-all-button";
 import {
   Card,
   CardContent,
@@ -13,10 +16,7 @@ import {
 export const dynamic = "force-dynamic";
 
 export default async function DashboardPage() {
-  const [codes, failedAttempts] = await Promise.all([
-    getCodes(),
-    getFailedAttemptsCount(),
-  ]);
+  const codes = await getCodes();
 
   const stats = {
     total: codes.length,
@@ -35,6 +35,9 @@ export default async function DashboardPage() {
           </p>
         </div>
         <div className="flex items-center gap-2">
+          <CronManager />
+          <ClaimAllButton codes={codes} />
+          <DeleteAllButton codesCount={codes.length} />
           <ManualIngest />
           <ScrapeButton />
         </div>
@@ -79,7 +82,7 @@ export default async function DashboardPage() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <CodesTable codes={codes} failedAttempts={failedAttempts} />
+          <CodesTable codes={codes} />
         </CardContent>
       </Card>
     </div>

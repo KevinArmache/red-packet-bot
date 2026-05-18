@@ -14,9 +14,13 @@ import {
   removeMonitoredAccount,
   setSetting,
   updateCodeStatus,
+  cleanupOldCodes,
+  deleteRedPacketCode,
+  deleteAllRedPacketCodes,
 } from "@/lib/db";
-import { getErrorMessage, redeemGiftCard, verifyGiftCard } from "@/lib/binance";
+
 import { extractRedPacketCodes, scrapeAccounts } from "@/lib/scraper";
+import { claimBinanceRedPacketPlaywright } from "@/lib/playwright-binance";
 import { revalidatePath } from "next/cache";
 
 // Account management
@@ -59,67 +63,9 @@ export async function getCodes() {
   return getRedPacketCodes();
 }
 
-export async function verifyCode(id) {
-  const code = getCodeById(id);
-  if (!code) {
-    return { success: false, error: "Code introuvable" };
-  }
 
-  addScrapeLog("info", `Vérification du code: ${code.code}`);
-  const result = await verifyGiftCard(code.code);
-
-  if (result.success && result.data) {
-    if (result.data.alreadyClaimed) {
-      // Le code a été racheté pendant la vérification
-      updateCodeStatus(
-        id,
-        "claimed",
-        JSON.stringify(result.data),
-        result.data.token,
-        parseFloat(result.data.amount),
-      );
-      recordClaimAttempt(id, true);
-      addScrapeLog("info", `Code ${code.code} racheté automatiquement lors de la vérification`);
-      revalidatePath("/");
-      return {
-        success: true,
-        valid: true,
-        claimed: true,
-        token: result.data.token,
-        amount: result.data.amount,
-      };
-    }
-
-    const newStatus = result.data.valid ? "valid" : "invalid";
-    updateCodeStatus(id, newStatus);
-    addScrapeLog("info", `Code ${code.code} est ${newStatus}`);
-    revalidatePath("/");
-    return {
-      success: true,
-      valid: result.data.valid,
-      token: result.data.token,
-      amount: result.data.amount,
-    };
-  }
-
-  addScrapeLog("warn", `Vérification échouée: ${result.error}`);
-  return {
-    success: false,
-    error: result.error || "Vérification échouée",
-    errorCode: result.code,
-  };
-}
 
 export async function claimCode(id) {
-  const failedAttempts = getFailedClaimAttemptsLast24Hours();
-  if (failedAttempts >= 4) {
-    return {
-      success: false,
-      error: "Limite journalière atteinte (4 échecs). Réessayez dans 24h.",
-      blocked: true,
-    };
-  }
-
   const code = getCodeById(id);
   if (!code) {
     return { success: false, error: "Code not found" };
@@ -129,45 +75,83 @@ export async function claimCode(id) {
     return { success: false, error: "Already claimed" };
   }
 
-  addScrapeLog("info", `Claiming: ${code.code}`);
-  const result = await redeemGiftCard(code.code);
+  addScrapeLog("info", `Claiming via Playwright: ${code.code}`);
+  
+  // Utilisation de Playwright au lieu de l'API Binance
+  const result = await claimBinanceRedPacketPlaywright(code.code);
 
-  if (result.success && result.data) {
+  if (result.success) {
     updateCodeStatus(
       id,
       "claimed",
-      JSON.stringify(result.data),
-      result.data.token,
-      parseFloat(result.data.amount),
+      "Claimed via Playwright",
+      result.token,
+      parseFloat(result.amount) || 0,
     );
     recordClaimAttempt(id, true);
-    addScrapeLog("info", `Claimed ${result.data.amount} ${result.data.token}`);
+    addScrapeLog("info", `Claimed ${result.amount} ${result.token}`);
     revalidatePath("/");
     return {
       success: true,
-      token: result.data.token,
-      amount: result.data.amount,
+      token: result.token,
+      amount: result.amount,
     };
   }
 
   recordClaimAttempt(id, false, result.error);
-  const friendlyError = getErrorMessage(result.code);
-
-  if (result.code === "000003") {
-    updateCodeStatus(id, "claimed", "Already redeemed");
-  } else if (result.code === "000004") {
+  
+  if (result.reason === "empty") {
+    updateCodeStatus(id, "empty", "Déjà utilisé");
+  } else if (result.reason === "expired") {
     updateCodeStatus(id, "expired");
+  } else if (result.reason === "invalid") {
+    updateCodeStatus(id, "invalid", result.error);
   } else {
     updateCodeStatus(id, "failed", result.error);
   }
 
-  addScrapeLog("warn", `Claim failed: ${friendlyError}`);
+  addScrapeLog("warn", `Claim failed: ${result.error}`);
   revalidatePath("/");
   return {
     success: false,
-    error: friendlyError,
-    errorCode: result.code,
+    error: result.error || "Erreur inconnue avec Playwright",
   };
+}
+
+export async function deleteCode(id) {
+  const success = deleteRedPacketCode(id);
+  if (success) {
+    revalidatePath("/");
+  }
+  return { success };
+}
+
+export async function deleteAllCodes() {
+  const count = deleteAllRedPacketCodes();
+  if (count > 0) {
+    addScrapeLog("info", `Tous les codes (${count}) ont été supprimés`);
+    revalidatePath("/");
+  }
+  return { success: true, count };
+}
+
+export async function runCronWorkflow() {
+  addScrapeLog("info", "Démarrage du Cron Workflow");
+  
+  // 1. Scrape
+  await scrapeAccounts();
+  
+  // 2. Cleanup
+  const deletedCount = cleanupOldCodes();
+  if (deletedCount > 0) {
+    addScrapeLog("info", `Nettoyage: ${deletedCount} codes supprimés`);
+  }
+  
+  // 3. (Optional) Le "Claim All" séquentiel est mieux géré côté client pour éviter le timeout du serveur.
+  // Ce workflow sert surtout à mettre à jour la BDD périodiquement.
+  
+  revalidatePath("/");
+  return { success: true };
 }
 
 export async function getFailedAttemptsCount() {

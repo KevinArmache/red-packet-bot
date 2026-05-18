@@ -11,6 +11,7 @@ import {
   CircleX,
   Clock,
   AlertTriangle,
+  Trash2,
 } from "lucide-react";
 import {
   Table,
@@ -29,21 +30,20 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { verifyCode, claimCode } from "@/app/actions";
+import { claimCode, deleteCode } from "@/app/actions";
 import { toast } from "sonner";
 
 const statusConfig = {
-  unverified: { label: "Non vérifié", variant: "secondary", icon: Clock },
-  valid: { label: "Valide", variant: "default", icon: CircleCheck },
+  unverified: { label: "Nouveau", variant: "secondary", icon: Clock },
+  claimed: { label: "Succès", variant: "default", icon: CircleCheck },
+  empty: { label: "Vide/Utilisé", variant: "secondary", icon: CircleX },
   invalid: { label: "Invalide", variant: "destructive", icon: CircleX },
-  claimed: { label: "Réclamé", variant: "default", icon: CircleCheck },
-  failed: { label: "Échoué", variant: "destructive", icon: CircleX },
+  failed: { label: "Erreur", variant: "destructive", icon: CircleX },
   expired: { label: "Expiré", variant: "secondary", icon: AlertTriangle },
 };
 
-export function CodesTable({ codes, failedAttempts }) {
+export function CodesTable({ codes }) {
   const [copiedId, setCopiedId] = useState(null);
-  const [verifyingId, setVerifyingId] = useState(null);
   const [claimingId, setClaimingId] = useState(null);
   const [isPending, startTransition] = useTransition();
 
@@ -54,21 +54,15 @@ export function CodesTable({ codes, failedAttempts }) {
     setTimeout(() => setCopiedId(null), 2000);
   };
 
-  const handleVerify = async (id) => {
-    setVerifyingId(id);
+
+
+  const handleDelete = async (id) => {
     startTransition(async () => {
-      const result = await verifyCode(id);
-      setVerifyingId(null);
+      const result = await deleteCode(id);
       if (result.success) {
-        if (result.claimed) {
-          toast.success(`🎉 Code réclamé lors de la vérification : ${result.amount} ${result.token} !`);
-        } else if (result.valid) {
-          toast.success(`✅ Code valide ! ${result.amount} ${result.token}`);
-        } else {
-          toast.info("❌ Code invalide ou déjà utilisé");
-        }
+        toast.success("Code supprimé");
       } else {
-        toast.error(result.error || "Échec de la vérification");
+        toast.error("Erreur lors de la suppression");
       }
     });
   };
@@ -79,18 +73,28 @@ export function CodesTable({ codes, failedAttempts }) {
       const result = await claimCode(id);
       setClaimingId(null);
       if (result.success) {
-        toast.success(`🎉 Réclamé : ${result.amount} ${result.token} !`);
+        // Estimation basique en USD
+        const stablecoins = ["USDT", "BUSD", "USDC", "FDUSD"];
+        const estUsd = stablecoins.includes(result.token) 
+          ? `(~$${result.amount} USD)` 
+          : "";
+        toast.success(`🎉 Réclamé : ${result.amount} ${result.token} ${estUsd}`);
       } else {
-        if (result.blocked) {
-          toast.error("⛔ Limite journalière atteinte (5 échecs/24h)");
-        } else {
-          toast.error(result.error || "Échec du claim");
-        }
+        const errorMsg = result.error || "Échec du claim";
+        toast.error("Erreur", {
+          description: errorMsg.length > 100 ? errorMsg.substring(0, 100) + "..." : errorMsg,
+          action: {
+            label: "Copier l'erreur",
+            onClick: () => {
+              navigator.clipboard.writeText(errorMsg);
+              toast.success("Erreur copiée !");
+            }
+          },
+          duration: 10000,
+        });
       }
     });
   };
-
-  const isClaimBlocked = failedAttempts >= 4;
 
   if (codes.length === 0) {
     return (
@@ -108,14 +112,6 @@ export function CodesTable({ codes, failedAttempts }) {
 
   return (
     <TooltipProvider>
-      {isClaimBlocked && (
-        <div className="mb-4 flex items-center gap-2 rounded-md bg-destructive/10 p-3 text-destructive">
-          <AlertTriangle className="size-4" />
-          <span className="text-sm font-medium">
-            Claim désactivé — 4 échecs en 24h. Réessayez demain.
-          </span>
-        </div>
-      )}
       <div className="rounded-md border">
         <Table>
           <TableHeader>
@@ -130,7 +126,8 @@ export function CodesTable({ codes, failedAttempts }) {
           </TableHeader>
           <TableBody>
             {codes.map((code) => {
-              const status = statusConfig[code.status] ?? statusConfig.unverified;
+              const status =
+                statusConfig[code.status] ?? statusConfig.unverified;
               const StatusIcon = status.icon;
 
               return (
@@ -172,7 +169,7 @@ export function CodesTable({ codes, failedAttempts }) {
                   <TableCell>
                     <Tooltip>
                       <TooltipTrigger asChild>
-                        <span className="text-xs text-muted-foreground cursor-default">
+                        <span className="text-xs text-muted-foreground cursor-default" suppressHydrationWarning>
                           {code.detected_at
                             ? formatDistanceToNow(new Date(code.detected_at), {
                                 addSuffix: true,
@@ -201,30 +198,12 @@ export function CodesTable({ codes, failedAttempts }) {
                   </TableCell>
                   <TableCell className="text-right">
                     <div className="flex items-center justify-end gap-1">
+
                       {code.status === "unverified" && (
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          onClick={() => handleVerify(code.id)}
-                          disabled={verifyingId === code.id || isPending}
-                        >
-                          {verifyingId === code.id ? (
-                            <Spinner className="size-3" />
-                          ) : (
-                            "Vérifier"
-                          )}
-                        </Button>
-                      )}
-                      {(code.status === "valid" ||
-                        code.status === "unverified") && (
                         <Button
                           size="sm"
                           onClick={() => handleClaim(code.id)}
-                          disabled={
-                            claimingId === code.id ||
-                            isPending ||
-                            isClaimBlocked
-                          }
+                          disabled={claimingId === code.id || isPending}
                         >
                           {claimingId === code.id ? (
                             <Spinner className="size-3" />
@@ -233,6 +212,16 @@ export function CodesTable({ codes, failedAttempts }) {
                           )}
                         </Button>
                       )}
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        className="size-8 text-destructive hover:bg-destructive/10"
+                        onClick={() => handleDelete(code.id)}
+                        disabled={isPending}
+                        title="Supprimer ce code"
+                      >
+                        <Trash2 className="size-4" />
+                      </Button>
                     </div>
                   </TableCell>
                 </TableRow>
@@ -240,9 +229,6 @@ export function CodesTable({ codes, failedAttempts }) {
             })}
           </TableBody>
         </Table>
-      </div>
-      <div className="mt-2 text-xs text-muted-foreground">
-        Tentatives échouées : {failedAttempts}/4 sur 24h
       </div>
     </TooltipProvider>
   );
