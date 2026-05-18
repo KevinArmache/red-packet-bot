@@ -20,7 +20,7 @@ import {
 } from "@/lib/db";
 
 import { extractRedPacketCodes, scrapeAccounts } from "@/lib/scraper";
-import { claimBinanceRedPacketPlaywright } from "@/lib/playwright-binance";
+import { claimBinanceRedPacketPlaywright, closeBrowser } from "@/lib/playwright-binance";
 import { revalidatePath } from "next/cache";
 
 // Account management
@@ -135,6 +135,48 @@ export async function deleteAllCodes() {
   return { success: true, count };
 }
 
+export async function autoClaimPendingCodes() {
+  const codes = getRedPacketCodes().filter(c => c.status === "pending");
+  if (codes.length === 0) {
+    addScrapeLog("info", "[Auto-Claim] Aucun code en attente à réclamer.");
+    return;
+  }
+
+  addScrapeLog("info", `[Auto-Claim] Démarrage du claim automatique pour ${codes.length} code(s) en attente.`);
+
+  for (let i = 0; i < codes.length; i++) {
+    const codeObj = codes[i];
+    
+    // Pause humaine aléatoire entre les claims (ex: entre 7 et 15 secondes)
+    if (i > 0) {
+      const delay = Math.floor(Math.random() * (15000 - 7000 + 1)) + 7000;
+      addScrapeLog("info", `[Auto-Claim] Pause humaine de ${Math.round(delay / 1000)}s avant le code suivant...`);
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
+
+    try {
+      addScrapeLog("info", `[Auto-Claim] Tentative automatique pour le code: ${codeObj.code}`);
+      
+      const result = await claimCode(codeObj.id);
+      
+      if (result.success) {
+        addScrapeLog("info", `[Auto-Claim] ✅ Récupéré : ${codeObj.code} (${result.amount} ${result.token})`);
+      } else {
+        addScrapeLog("warn", `[Auto-Claim] ❌ Échec pour ${codeObj.code}: ${result.error}`);
+      }
+    } catch (err) {
+      addScrapeLog("error", `[Auto-Claim] Erreur lors de la réclamation de ${codeObj.code}: ${err.message}`);
+    }
+  }
+
+  // Fermer le navigateur global après avoir fini tous les claims
+  try {
+    await closeBrowser();
+  } catch (e) {}
+
+  addScrapeLog("info", "[Auto-Claim] Fin de la session de claim automatique.");
+}
+
 export async function runCronWorkflow() {
   addScrapeLog("info", "Démarrage du Cron Workflow");
   
@@ -147,8 +189,11 @@ export async function runCronWorkflow() {
     addScrapeLog("info", `Nettoyage: ${deletedCount} codes supprimés`);
   }
   
-  // 3. (Optional) Le "Claim All" séquentiel est mieux géré côté client pour éviter le timeout du serveur.
-  // Ce workflow sert surtout à mettre à jour la BDD périodiquement.
+  // 3. Réclamation automatique de tous les nouveaux codes trouvés
+  // Nous l'exécutons de manière asynchrone (sans bloquer/attendre l'action cron principale si elle est lancée via UI,
+  // ou avec await si c'est exécuté dans une tâche de fond locale)
+  // Pour plus de robustesse sur un workflow de fond local, nous l'attendons.
+  await autoClaimPendingCodes();
   
   revalidatePath("/");
   return { success: true };

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { scrapeAccounts } from "@/lib/scraper";
 import { addScrapeLog } from "@/lib/db";
+import { autoClaimPendingCodes } from "@/app/actions";
 
 // Route cron — appelée par Vercel Cron (vercel.json) ou manuellement
 // GET /api/scrape
@@ -22,6 +23,11 @@ export async function GET(request) {
   try {
     addScrapeLog("info", "Cron scrape déclenché");
     const result = await scrapeAccounts();
+
+    // Déclencher l'auto-claim en arrière-plan
+    autoClaimPendingCodes().catch((err) => {
+      console.error("Erreur autoClaim en arrière-plan:", err);
+    });
 
     return NextResponse.json({
       success: true,

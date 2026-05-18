@@ -207,13 +207,13 @@ async function fetchFromNitter(username) {
       for (let j = 1; j < tweetBlocks.length; j++) {
         if (tweets.length >= 20) break;
         const block = tweetBlocks[j];
-        
+
         const contentMatch = block.match(/<div[^>]+class="[^"]*tweet-content[^"]*"[^>]*>([\s\S]*?)<\/div>/i) ||
-                             block.match(/<p[^>]+class="[^"]*tweet-text[^"]*"[^>]*>([\s\S]*?)<\/p>/i);
+          block.match(/<p[^>]+class="[^"]*tweet-text[^"]*"[^>]*>([\s\S]*?)<\/p>/i);
         if (!contentMatch) continue;
         const text = cleanHtml(contentMatch[1]);
         if (text.length < 5) continue;
-        
+
         const dateMatch = block.match(/<span[^>]+class="[^"]*tweet-date[^"]*"[^>]*><a[^>]+title="([^"]+)"/i);
         let timestamp = Date.now();
         if (dateMatch) {
@@ -224,7 +224,7 @@ async function fetchFromNitter(username) {
             // Ignorer l'erreur et garder Date.now()
           }
         }
-        
+
         tweets.push({
           id: `nitter-${instance}-${j}-${timestamp}`,
           text,

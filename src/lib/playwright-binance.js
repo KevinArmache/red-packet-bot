@@ -17,6 +17,17 @@ function killExistingChrome() {
   }
 }
 
+async function typeLikeHuman(locator, text) {
+  await locator.focus();
+  await locator.fill("");
+  for (const char of text) {
+    await locator.press(char);
+    // Délai aléatoire réaliste entre 80ms et 220ms par caractère
+    const delay = Math.floor(Math.random() * (220 - 80 + 1)) + 80;
+    await new Promise((resolve) => setTimeout(resolve, delay));
+  }
+}
+
 async function getPersistentContext() {
   // 1. Vérifier si le contexte existant est encore valide
   if (globalContext) {
@@ -66,7 +77,8 @@ async function getPersistentContext() {
   console.log("[Playwright] Lancement d’un nouveau Chrome...");
   try {
     globalContext = await chromium.launchPersistentContext(USER_DATA_DIR, {
-      headless: false,
+      // headless signifie sans interface graphique : oui ou non
+      headless: true,
       executablePath: EXECUTABLE_PATH,
       viewport: null,
       timeout: 30000,
@@ -79,7 +91,7 @@ async function getPersistentContext() {
       ],
     });
     console.log("[Playwright] Chrome lancé avec succès.");
-    
+
     // Test immédiat de validité
     const testPage = await globalContext.newPage();
     await testPage.close();
@@ -137,11 +149,17 @@ export async function claimBinanceRedPacketPlaywright(code) {
       console.log("[Playwright] Connexion détectée !");
     }
 
-    // Remplir le code
-    await inputLocator.fill(code);
+    // Remplir le code de manière humaine (simule la frappe clavier)
+    await typeLikeHuman(inputLocator, code);
 
-    // Clic sur le bouton "Claim"
+    // Pause de réflexion humaine avant de cliquer (500ms à 1500ms)
+    const thinkingDelay = Math.floor(Math.random() * (1500 - 500 + 1)) + 500;
+    await page.waitForTimeout(thinkingDelay);
+
+    // Clic sur le bouton "Claim" avec simulation de survol (hover)
     const claimButton = page.locator("button").filter({ hasText: /Claim|Réclamer|Redeem|Obtenir/i }).first();
+    await claimButton.hover().catch(() => {});
+    await page.waitForTimeout(Math.floor(Math.random() * (800 - 300 + 1)) + 300);
     await claimButton.click();
 
     // Attente des indicateurs d'erreur ou de succès après Claim
@@ -216,9 +234,11 @@ export async function claimBinanceRedPacketPlaywright(code) {
           ).catch(() => console.log("[Playwright] Le bouton Ouvrir reste désactivé, on clique quand même."));
         }
 
-        // Clic avec retry en cas d'absence de réaction
+        // Clic avec retry en cas d'absence de réaction, avec simulation de survol (hover) humain
         for (let clickAttempt = 0; clickAttempt < 2; clickAttempt++) {
           if (await openButton.isVisible({ timeout: 2000 }).catch(() => false)) {
+            await openButton.hover().catch(() => {});
+            await page.waitForTimeout(Math.floor(Math.random() * (700 - 200 + 1)) + 200);
             await openButton.click({ force: true });
             console.log(`[Playwright] Clic sur Ouvrir tentative ${clickAttempt + 1}`);
             await page.waitForTimeout(800); // laisser l'animation se déclencher
