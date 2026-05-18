@@ -22,18 +22,18 @@ export default async function SettingsPage() {
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <h2 className="text-2xl font-bold tracking-tight">Settings</h2>
+        <h2 className="text-2xl font-bold tracking-tight">Paramètres</h2>
         <p className="text-muted-foreground">
-          Configure monitored accounts and scraping behavior.
+          Configurez les comptes surveillés et le comportement du scraping automatique.
         </p>
       </div>
 
       <Card>
         <CardHeader>
-          <CardTitle>Monitored Accounts</CardTitle>
+          <CardTitle>Comptes Surveillés</CardTitle>
           <CardDescription>
-            Twitter accounts to monitor for red packet codes. Add usernames
-            without the @ symbol.
+            Comptes Twitter/X à surveiller pour détecter les codes Red Packet.
+            Entrez les noms d'utilisateur sans le @.
           </CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col gap-4">
@@ -45,42 +45,14 @@ export default async function SettingsPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Scraping Settings</CardTitle>
+          <CardTitle>Paramètres du Scraping</CardTitle>
           <CardDescription>
-            Configure how and when the scraper runs.
+            Contrôlez la fréquence et l'âge maximal des tweets analysés.
+            Ces paramètres s'appliquent à tous les comptes surveillés.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <SettingsForm settings={settings} />
-        </CardContent>
-      </Card>
-
-      <Card>
-        <CardHeader>
-          <CardTitle>Environment Variables</CardTitle>
-          <CardDescription>
-            These variables must be configured in your .env.local file or Vercel
-            project settings.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="rounded-lg bg-muted p-4 font-mono text-sm">
-            <div className="flex flex-col gap-2">
-              <div>
-                <span className="text-muted-foreground">
-                  # Required for claiming
-                </span>
-              </div>
-              <div>BINANCE_API_KEY=your_api_key</div>
-              <div>BINANCE_SECRET_KEY=your_secret_key</div>
-              <div className="mt-2">
-                <span className="text-muted-foreground"># Optional</span>
-              </div>
-              <div>BINANCE_TEST_MODE=true</div>
-              <div>PROXY_LIST=http://proxy1:port,http://proxy2:port</div>
-              <div>CRON_SECRET=your_cron_secret</div>
-            </div>
-          </div>
         </CardContent>
       </Card>
     </div>

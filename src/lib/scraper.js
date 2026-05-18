@@ -3,107 +3,67 @@ import {
   addScrapeLog,
   codeExistsByCode,
   getMonitoredAccounts,
+  getRedPacketCodes,
   getSetting,
   updateAccountLastScraped,
 } from "./db";
-// ─────────────────────────────────────────────────────────────────────────────
-// REGEX MULTI-FORMAT pour les codes red packet / gift card Binance
-// Captures :
-//   1. BP[alphanum]{8-20}  → format historique Binance Red Packet (désormais ignoré via extractNonBPCodes)
-//   2. [A-Z0-9]{12,20}     → codes majuscules sans préfixe (certains gift cards)
-//   3. [A-Za-z0-9]{16}     → codes 16 chars mixtes (format typique gift card)
-//   4. [A-Z]{2,4}[0-9A-Za-z]{8,18} → codes avec préfixe lettres (ex: GC12345...)
-// Tous filtrés pour éviter les faux positifs (pas de mots courants)
-// ─────────────────────────────────────────────────────────────────────────────
 
-// Mots courants à exclure pour éviter les faux positifs
+// ─────────────────────────────────────────────────────────────────────────────
+// FAUX POSITIFS — Mots à exclure systématiquement
+// ─────────────────────────────────────────────────────────────────────────────
 const FALSE_POSITIVE_WORDS = new Set([
-  "HTTPS",
-  "HTTP",
-  "HTML",
-  "JSON",
-  "USDT",
-  "BUSD",
-  "USDC",
-  "BTC",
-  "ETH",
-  "BNB",
-  "XRP",
-  "DOGE",
-  "SHIB",
-  "AVAX",
-  "MATIC",
-  "LINK",
-  "DOT",
-  "ADA",
-  "SOL",
-  "LUNA",
-  "ATOM",
-  "ALGO",
-  "NEAR",
-  "SAND",
-  "MANA",
-  "AAVE",
-  "NFT",
-  "API",
-  "URL",
-  "BOT",
-  "SPAM",
-  "SCAN",
-  "CODE",
-  "GIFT",
-  "TODAY",
-  "FROM",
-  "BINANCE",
-  "TWITTER",
-  "COINBASE",
-  "CRYPTO",
-  "DEFI",
-  "BLOCKCHAIN",
+  "HTTPS", "HTTP", "HTML", "JSON", "USDT", "BUSD", "USDC", "FDUSD",
+  "BTC", "ETH", "BNB", "XRP", "DOGE", "SHIB", "AVAX", "MATIC", "LINK",
+  "DOT", "ADA", "SOL", "LUNA", "ATOM", "ALGO", "NEAR", "SAND", "MANA",
+  "AAVE", "NFT", "API", "URL", "BOT", "SPAM", "SCAN", "CODE", "GIFT",
+  "TODAY", "FROM", "BINANCE", "TWITTER", "COINBASE", "CRYPTO", "DEFI",
+  "BLOCKCHAIN", "CLAIM", "FREE", "AIRDROP", "TOKEN", "COIN", "WALLET",
+  "SEND", "JOIN", "CLICK", "LINK", "COPY", "PASTE", "FOLLOW", "LIKE",
+  "SHARE", "RETWEET", "COMMENT", "REPLY", "CHECK", "OPEN", "ENTER",
+  "YOUR", "THIS", "THAT", "HAVE", "WITH", "FROM", "WILL", "ALSO",
+  "DONT", "CANT", "WONT", "LETS", "MAKE", "TAKE", "GIVE", "COME",
+  "NEED", "WANT", "KNOW", "LOOK", "GOOD", "JUST", "LIKE", "TIME",
+  "YEAR", "WEEK", "NEXT", "LAST", "FIRST", "ONLY", "EVEN",
+  "EACH", "MUCH", "MORE", "LESS", "THAN", "THEN", "WHEN", "WHAT",
 ]);
 
-// Patterns pour codes red packet (basé sur les vrais codes observés)
-// Les codes de @Muhammadtari55 sont : PFJY6HOV, RHD6AW9, HFODK4T1, etc.
-// Format : alphanumériques MAJUSCULES+chiffres, 7 à 12 caractères
+// ─────────────────────────────────────────────────────────────────────────────
+// PATTERNS DE CODES
+// Format réel observé : PFJY6HOV, RHD6AW9, HFODK4T1, JH96JHR4 (7-12 chars)
+// ─────────────────────────────────────────────────────────────────────────────
 const CODE_PATTERNS = [
-  // 1. Codes BP classiques Binance Red Packet (BP + 7-20 chars)
+  // BP + 7-20 chars (codes BP classiques)
   /\bBP[0-9A-Za-z]{7,20}\b/g,
-  // 2. Codes non-BP : majuscules+chiffres, 7-12 chars, doit contenir au moins 1 chiffre
-  /\b(?!BP)[A-Z0-9]{7,12}\b/g,
+  // Codes sans préfixe BP : 7-12 chars, majuscules+chiffres
+  /\b(?!BP)[A-Z][A-Z0-9]{6,11}\b/g,
 ];
 
-// Détermine si un code est valide (non-faux-positif)
 function isValidCode(code) {
-  if (!code || code.length < 7 || code.length > 24) return false;
-  if (FALSE_POSITIVE_WORDS.has(code)) return false;
-  // Doit contenir au moins 1 chiffre ET au moins 1 lettre
+  if (!code || code.length < 7 || code.length > 20) return false;
+  if (FALSE_POSITIVE_WORDS.has(code.toUpperCase())) return false;
   const hasDigit = /[0-9]/.test(code);
   const hasLetter = /[A-Za-z]/.test(code);
   if (!hasDigit || !hasLetter) return false;
-  // Pas que des lettres du dictionnaire courant (3 lettres identiques consécutives = faux positif)
-  if (/([A-Z])\1{2}/.test(code)) return false;
+  // Exclure les répétitions (AAA, 111, etc.)
+  if (/(.)\1{2}/.test(code)) return false;
+  // Exclure les codes purement numériques ou trop courts en lettres
+  if (/^[0-9]+$/.test(code)) return false;
   return true;
 }
 
 export function extractRedPacketCodes(text) {
   if (!text || typeof text !== "string") return [];
-
   const found = new Set();
-
   for (const pattern of CODE_PATTERNS) {
     const regex = new RegExp(pattern.source, pattern.flags);
     for (const match of text.matchAll(regex)) {
       const code = match[0].trim();
-      if (isValidCode(code)) {
-        found.add(code);
-      }
+      if (isValidCode(code)) found.add(code);
     }
   }
-
   return [...found];
 }
 
-// Variante : extrait UNIQUEMENT les codes ne commençant PAS par BP
 export function extractNonBPCodes(text) {
   return extractRedPacketCodes(text).filter((c) => !c.startsWith("BP"));
 }
@@ -111,16 +71,19 @@ export function extractNonBPCodes(text) {
 // ─────────────────────────────────────────────────────────────────────────────
 // UTILITAIRES
 // ─────────────────────────────────────────────────────────────────────────────
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
-function randomDelay(minMs = 1000, maxMs = 3000) {
-  const delay = minMs + Math.random() * (maxMs - minMs);
-  return new Promise((resolve) => setTimeout(resolve, delay));
+function randomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 const USER_AGENTS = [
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0",
+  "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
   "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
 ];
 
@@ -128,9 +91,6 @@ function randomUA() {
   return USER_AGENTS[Math.floor(Math.random() * USER_AGENTS.length)];
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// NETTOYAGE DU HTML
-// ─────────────────────────────────────────────────────────────────────────────
 function cleanHtml(html = "") {
   return html
     .replace(/<[^>]+>/g, " ")
@@ -145,9 +105,42 @@ function cleanHtml(html = "") {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// INSTANCES NITTER (100% anonyme, ultra-léger et gratuit)
+// PARSE DE DATE NITTER — Robuste pour tous les formats
+// ─────────────────────────────────────────────────────────────────────────────
+function parseNitterDate(block) {
+  // Format 1 : <span class="tweet-date"><a ... title="May 18, 2026 · 3:45 PM UTC">
+  const m1 = block.match(/class="[^"]*tweet-date[^"]*"[^>]*>\s*<a[^>]*title="([^"]+)"/i);
+  if (m1) {
+    const raw = m1[1].replace(/·/g, "").replace(/\s+/g, " ").trim();
+    // "May 18, 2026 3:45 PM UTC" → UTC timestamp
+    const withTz = raw.endsWith("UTC") ? raw.replace("UTC", "+00:00") : raw;
+    const ts = Date.parse(withTz);
+    if (!isNaN(ts)) return ts;
+  }
+
+  // Format 2 : datetime="2026-05-18T15:45:00Z"
+  const m2 = block.match(/datetime="([^"]+)"/i);
+  if (m2) {
+    const ts = Date.parse(m2[1]);
+    if (!isNaN(ts)) return ts;
+  }
+
+  // Format 3 : <time ... title="..."> avec une date ISO ou lisible
+  const m3 = block.match(/<time[^>]+title="([^"]+)"/i);
+  if (m3) {
+    const ts = Date.parse(m3[1]);
+    if (!isNaN(ts)) return ts;
+  }
+
+  // Pas de date trouvée → null (sera traité selon la config)
+  return null;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// INSTANCES NITTER — Classées par fiabilité
 // ─────────────────────────────────────────────────────────────────────────────
 const NITTER_INSTANCES = [
+  "nitter.net",
   "nitter.poast.org",
   "nitter.privacydev.net",
   "nitter.lucabased.space",
@@ -157,241 +150,310 @@ const NITTER_INSTANCES = [
   "nitter.fdn.fr",
   "nitter.1d4.us",
   "nitter.kavin.rocks",
-  "nitter.net",
 ];
 
+// État partagé des instances — on mémorise les instances défaillantes pour éviter de les réessayer trop tôt
+const instanceFailures = new Map(); // instance → { failCount, lastFailAt }
+const FAILURE_COOLDOWN_MS = 2 * 60 * 1000; // 2 minutes de cooldown après 2 échecs consécutifs
+
+function isInstanceCooledDown(instance) {
+  const record = instanceFailures.get(instance);
+  if (!record) return true;
+  if (record.failCount < 2) return true;
+  const elapsed = Date.now() - record.lastFailAt;
+  return elapsed >= FAILURE_COOLDOWN_MS;
+}
+
+function markInstanceFailed(instance) {
+  const record = instanceFailures.get(instance) || { failCount: 0, lastFailAt: 0 };
+  instanceFailures.set(instance, {
+    failCount: record.failCount + 1,
+    lastFailAt: Date.now(),
+  });
+}
+
+function markInstanceSuccess(instance) {
+  instanceFailures.delete(instance);
+}
+
+function getAvailableInstances() {
+  // Mélanger les instances pour distribuer la charge
+  const available = NITTER_INSTANCES.filter(isInstanceCooledDown);
+  if (available.length === 0) {
+    // Si toutes sont en cooldown, réinitialiser et réessayer
+    instanceFailures.clear();
+    return [...NITTER_INSTANCES];
+  }
+  // Shuffle aléatoire pour répartir la charge
+  return available.sort(() => Math.random() - 0.5);
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
-// SCRAPING D'UN COMPTE VIA NITTER (Standard HTTP Fetch)
+// PARSE DES TWEETS DEPUIS LE HTML NITTER
+// ─────────────────────────────────────────────────────────────────────────────
+function parseTweetsFromHtml(html, username, instance) {
+  const tweets = [];
+
+  // Séparer par bloc de tweet
+  const tweetBlocks = html.split('class="tweet-body"');
+  for (let j = 1; j < tweetBlocks.length; j++) {
+    const block = tweetBlocks[j];
+
+    // Extraire le contenu du tweet
+    const contentMatch =
+      block.match(/<div[^>]+class="[^"]*tweet-content[^"]*"[^>]*>([\s\S]*?)<\/div>/i) ||
+      block.match(/<p[^>]+class="[^"]*tweet-text[^"]*"[^>]*>([\s\S]*?)<\/p>/i);
+
+    if (!contentMatch) continue;
+    const text = cleanHtml(contentMatch[1]);
+    if (text.length < 4) continue;
+
+    const timestamp = parseNitterDate(block);
+
+    tweets.push({
+      id: `nitter-${instance}-${j}-${timestamp ?? Date.now()}`,
+      text,
+      author: username,
+      timestamp, // null si non trouvé
+    });
+  }
+
+  return tweets;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SCRAPING D'UN SEUL COMPTE VIA NITTER
+// Tente toutes les instances disponibles jusqu'à succès.
 // ─────────────────────────────────────────────────────────────────────────────
 async function fetchFromNitter(username) {
-  for (const instance of NITTER_INSTANCES) {
+  const instances = getAvailableInstances();
+
+  for (const instance of instances) {
     try {
       const url = `https://${instance}/${username}`;
-      addScrapeLog("info", `[Nitter] Essai ${instance} → @${username}`);
+      addScrapeLog("info", `[Nitter] ${instance} → @${username}`);
 
       const response = await fetch(url, {
         headers: {
           "User-Agent": randomUA(),
-          Accept:
-            "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+          Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
           "Accept-Language": "en-US,en;q=0.5",
           "Cache-Control": "no-cache",
+          Pragma: "no-cache",
         },
-        signal: AbortSignal.timeout(10000),
+        signal: AbortSignal.timeout(12000),
       });
 
       if (!response.ok) {
         addScrapeLog("warn", `[Nitter] ${instance} → HTTP ${response.status}`);
+        if (response.status === 429 || response.status === 503) {
+          markInstanceFailed(instance);
+        }
         continue;
       }
 
       const html = await response.text();
 
-      if (
-        html.length < 1000 ||
+      // Vérifications de validité du contenu
+      const isBlocked =
+        html.length < 1500 ||
         html.includes("rate limited") ||
         html.includes("not available") ||
         html.includes("Access denied") ||
         html.includes("captcha") ||
         html.includes("Instance is not") ||
-        !html.includes("timeline")
-      ) {
-        addScrapeLog("warn", `[Nitter] ${instance} bloqué ou vide`);
+        html.includes("error-panel") ||
+        !html.includes("timeline");
+
+      if (isBlocked) {
+        addScrapeLog("warn", `[Nitter] ${instance} → bloqué/vide pour @${username}`);
+        markInstanceFailed(instance);
         continue;
       }
 
-      const tweets = [];
-
-      // Séparer l'HTML par bloc de tweet pour associer texte et date
-      const tweetBlocks = html.split('class="tweet-body"');
-      for (let j = 1; j < tweetBlocks.length; j++) {
-        if (tweets.length >= 20) break;
-        const block = tweetBlocks[j];
-
-        const contentMatch = block.match(/<div[^>]+class="[^"]*tweet-content[^"]*"[^>]*>([\s\S]*?)<\/div>/i) ||
-          block.match(/<p[^>]+class="[^"]*tweet-text[^"]*"[^>]*>([\s\S]*?)<\/p>/i);
-        if (!contentMatch) continue;
-        const text = cleanHtml(contentMatch[1]);
-        if (text.length < 5) continue;
-
-        const dateMatch = block.match(/<span[^>]+class="[^"]*tweet-date[^"]*"[^>]*><a[^>]+title="([^"]+)"/i);
-        let timestamp = Date.now();
-        if (dateMatch) {
-          const dateStr = dateMatch[1].replace("·", "").trim();
-          try {
-            timestamp = new Date(dateStr).getTime();
-          } catch (e) {
-            // Ignorer l'erreur et garder Date.now()
-          }
-        }
-
-        tweets.push({
-          id: `nitter-${instance}-${j}-${timestamp}`,
-          text,
-          author: username,
-          timestamp,
-        });
-      }
+      const tweets = parseTweetsFromHtml(html, username, instance);
 
       if (tweets.length > 0) {
-        addScrapeLog(
-          "info",
-          `[Nitter] ${instance} → ${tweets.length} tweet(s) pour @${username}`,
-        );
-        return tweets;
+        markInstanceSuccess(instance);
+        addScrapeLog("info", `[Nitter] ${instance} → ✅ ${tweets.length} tweet(s) pour @${username}`);
+        return { tweets, instance };
       }
 
-      addScrapeLog("warn", `[Nitter] ${instance} → 0 tweet parsé`);
+      addScrapeLog("warn", `[Nitter] ${instance} → 0 tweet parsé pour @${username}`);
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err);
-      addScrapeLog("warn", `[Nitter] ${instance} erreur: ${msg}`);
+      const isNetworkError = msg.includes("fetch failed") || msg.includes("ECONNREFUSED") || msg.includes("timeout");
+      addScrapeLog("warn", `[Nitter] ${instance} → erreur: ${isNetworkError ? "connexion échouée" : msg}`);
+      if (isNetworkError) markInstanceFailed(instance);
     }
 
-    await randomDelay(300, 800);
+    // Petite pause entre les instances pour éviter d'être détecté
+    await sleep(randomInt(200, 600));
   }
 
-  return [];
+  addScrapeLog("warn", `[Scraper] ❌ Toutes les instances Nitter ont échoué pour @${username}`);
+  return { tweets: [], instance: null };
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// SCRAPING D'UN COMPTE — Nitter HTTP uniquement
+// TRAITEMENT DES TWEETS D'UN COMPTE
+// Filtre par âge, extrait et déduplique les codes.
+// Reçoit le Set global de codes déjà vus (thread-safe via JS mono-thread)
 // ─────────────────────────────────────────────────────────────────────────────
-async function scrapeAccount(account) {
+function processTweets(tweets, username, maxAgeMs, globalSeenCodes) {
+  const newCodes = [];
+
+  for (const tweet of tweets) {
+    // Filtrage par âge
+    if (maxAgeMs !== Infinity) {
+      if (!tweet.timestamp) {
+        // Date inconnue : on accepte si "sans limite", sinon on ignore
+        continue;
+      }
+      const ageMs = Date.now() - tweet.timestamp;
+      if (ageMs > maxAgeMs) {
+        continue;
+      }
+    }
+
+    const codes = extractNonBPCodes(tweet.text);
+
+    for (const code of codes) {
+      const key = code.toUpperCase();
+
+      // 1. Vérification dans le Set global en mémoire (évite les doublons cross-comptes)
+      if (globalSeenCodes.has(key)) continue;
+
+      // 2. Marquer IMMÉDIATEMENT comme "vu" pour éviter la race condition
+      // (JS est mono-threadé, donc cette opération est atomique dans une async function)
+      globalSeenCodes.add(key);
+
+      // 3. Vérification en base de données
+      if (codeExistsByCode(code)) continue;
+
+      // 4. Ajouter en base
+      const result = addRedPacketCode(code, tweet.text, tweet.id, tweet.author);
+      if (result) {
+        newCodes.push({ code, author: tweet.author });
+      }
+    }
+  }
+
+  return newCodes;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// TRAITEMENT D'UN COMPTE COMPLET (scraping + extraction)
+// ─────────────────────────────────────────────────────────────────────────────
+async function processAccount(account, maxAgeMs, globalSeenCodes) {
   const { username } = account;
-  return fetchFromNitter(username);
+  addScrapeLog("info", `Scraping @${username}...`);
+
+  const { tweets, instance } = await fetchFromNitter(username);
+
+  if (tweets.length === 0) {
+    addScrapeLog("warn", `Aucun tweet récupéré pour @${username}`);
+    return { username, tweetsCount: 0, newCodes: [], success: false };
+  }
+
+  const newCodes = processTweets(tweets, username, maxAgeMs, globalSeenCodes);
+
+  for (const { code } of newCodes) {
+    addScrapeLog("info", `✅ Nouveau code: ${code} (via @${username})`);
+  }
+
+  addScrapeLog(
+    "info",
+    `@${username} — ${tweets.length} tweet(s) analysé(s), ${newCodes.length} nouveau(x) code(s)`
+  );
+
+  updateAccountLastScraped(account.id);
+  return { username, tweetsCount: tweets.length, newCodes, success: true };
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// FONCTION PRINCIPALE
+// EXÉCUTION PAR LOTS (batching) — Évite de saturer Nitter avec 100 requêtes
+// ─────────────────────────────────────────────────────────────────────────────
+async function runInBatches(items, batchSize, fn) {
+  const results = [];
+  for (let i = 0; i < items.length; i += batchSize) {
+    const batch = items.slice(i, i + batchSize);
+    const batchResults = await Promise.allSettled(batch.map(fn));
+    results.push(...batchResults);
+
+    // Pause entre les lots pour éviter le rate-limiting
+    if (i + batchSize < items.length) {
+      const pause = randomInt(1500, 3000);
+      addScrapeLog("info", `[Scraper] Pause ${Math.round(pause / 1000)}s entre les lots...`);
+      await sleep(pause);
+    }
+  }
+  return results;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// FONCTION PRINCIPALE — Scrape tous les comptes surveillés
 // ─────────────────────────────────────────────────────────────────────────────
 export async function scrapeAccounts() {
   const scrapingEnabled = getSetting("scraping_enabled");
   if (scrapingEnabled !== "true") {
     addScrapeLog("info", "Scraping désactivé dans les paramètres");
-    return {
-      codesFound: 0,
-      accountsScraped: 0,
-      errors: ["Scraping désactivé"],
-    };
+    return { codesFound: 0, accountsScraped: 0, errors: ["Scraping désactivé"] };
   }
 
   const accounts = getMonitoredAccounts();
   if (accounts.length === 0) {
-    addScrapeLog(
-      "warn",
-      "Aucun compte surveillé — ajoutez des comptes dans Paramètres",
-    );
-    return {
-      codesFound: 0,
-      accountsScraped: 0,
-      errors: ["Aucun compte configuré"],
-    };
+    addScrapeLog("warn", "Aucun compte surveillé — ajoutez des comptes dans Paramètres");
+    return { codesFound: 0, accountsScraped: 0, errors: ["Aucun compte configuré"] };
   }
+
+  const maxAgeMinutes = parseInt(getSetting("max_code_age_minutes") || "30", 10);
+  const maxAgeMs = maxAgeMinutes > 0 ? maxAgeMinutes * 60 * 1000 : Infinity;
 
   addScrapeLog(
     "info",
-    `=== Scraping démarré — ${accounts.length} compte(s) ===`,
+    `=== Scraping démarré — ${accounts.length} compte(s) | Âge max: ${maxAgeMinutes > 0 ? maxAgeMinutes + " min" : "Sans limite"} ===`
   );
+
+  // Set global de déduplication partagé entre tous les comptes
+  // Pré-rempli avec tous les codes déjà en base pour éviter les re-détections
+  const existingCodes = getRedPacketCodes();
+  const globalSeenCodes = new Set(existingCodes.map((c) => c.code.toUpperCase()));
+  addScrapeLog("info", `[Scraper] ${existingCodes.length} code(s) déjà en base — déduplication active`);
 
   let codesFound = 0;
   let accountsScraped = 0;
   const errors = [];
 
-  // ✅ Nouveau : Set pour éviter les doublons dans la même session
-  const seenCodes = new Set();
+  // Taille du lot adaptatif : 3 pour < 10 comptes, 5 pour < 50, 8 pour + de 50
+  const BATCH_SIZE = accounts.length <= 5 ? 2 : accounts.length <= 20 ? 3 : 5;
+  addScrapeLog("info", `[Scraper] Traitement par lots de ${BATCH_SIZE} compte(s) en simultané`);
 
-  for (let i = 0; i < accounts.length; i++) {
-    const account = accounts[i];
-    try {
-      addScrapeLog("info", `Scraping @${account.username}...`);
+  const settledResults = await runInBatches(
+    accounts,
+    BATCH_SIZE,
+    (account) => processAccount(account, maxAgeMs, globalSeenCodes)
+  );
 
-      const tweets = await scrapeAccount(account);
-
-      if (tweets.length === 0) {
-        addScrapeLog("warn", `Aucun tweet récupéré pour @${account.username}`);
-        errors.push(`Aucun tweet pour @${account.username}`);
-        continue;
+  for (const settled of settledResults) {
+    if (settled.status === "rejected") {
+      const msg = settled.reason?.message || String(settled.reason);
+      addScrapeLog("error", `Erreur inattendue dans le scraping: ${msg}`);
+      errors.push(msg);
+    } else {
+      const { tweetsCount, newCodes, success, username } = settled.value;
+      if (success) {
+        accountsScraped++;
+        codesFound += newCodes.length;
+      } else {
+        errors.push(`Aucun tweet pour @${username}`);
       }
-
-      // Extraction et sauvegarde des codes
-      let newCodesForAccount = 0;
-      for (const tweet of tweets) {
-        // --- FILTRAGE STRICT DE L'AGE DU TWEET ---
-        const maxAgeMinutes = parseInt(getSetting("max_code_age_minutes") || "30", 10);
-        if (maxAgeMinutes && maxAgeMinutes > 0) {
-          if (!tweet.timestamp) {
-            addScrapeLog(
-              "info",
-              `[Scraper] Code(s) de @${tweet.author} ignoré(s) car sa date de publication n'a pas pu être validée.`,
-            );
-            continue;
-          }
-          const ageMs = Date.now() - tweet.timestamp;
-          const maxAgeMs = maxAgeMinutes * 60 * 1000;
-          if (ageMs > maxAgeMs) {
-            addScrapeLog(
-              "info",
-              `[Scraper] Code(s) de @${tweet.author} ignoré(s) car le tweet est trop ancien (${Math.round(ageMs / 60000)} min > ${maxAgeMinutes} min)`,
-            );
-            continue;
-          }
-        }
-
-        // ✅ MODIFICATION : utiliser extractNonBPCodes pour ignorer les codes BP
-        const codes = extractNonBPCodes(tweet.text);
-        for (const code of codes) {
-          // ✅ Vérification en mémoire d'abord (pas de doublon dans la session)
-          if (seenCodes.has(code)) {
-            addScrapeLog("info", `Code déjà vu dans cette session: ${code}`);
-            continue;
-          }
-
-          if (codeExistsByCode(code)) {
-            addScrapeLog("info", `Code déjà connu en base: ${code}`);
-            seenCodes.add(code); // on le marque pour ne pas le re-vérifier
-            continue;
-          }
-
-          const result = addRedPacketCode(
-            code,
-            tweet.text,
-            tweet.id,
-            tweet.author,
-          );
-          if (result) {
-            codesFound++;
-            newCodesForAccount++;
-            seenCodes.add(code);
-            addScrapeLog(
-              "info",
-              `✅ Nouveau code: ${code} (via @${tweet.author})`,
-            );
-          }
-        }
-      }
-
-      addScrapeLog(
-        "info",
-        `@${account.username} — ${tweets.length} tweet(s) analysé(s), ${newCodesForAccount} nouveau(x) code(s)`,
-      );
-
-      updateAccountLastScraped(account.id);
-      accountsScraped++;
-
-      // Délai poli entre comptes
-      if (i < accounts.length - 1) {
-        await randomDelay(2000, 4000);
-      }
-    } catch (error) {
-      const msg = error instanceof Error ? error.message : String(error);
-      addScrapeLog("error", `Erreur scraping @${account.username}: ${msg}`);
-      errors.push(`Erreur: @${account.username}`);
     }
   }
 
   addScrapeLog(
     "info",
-    `=== Scraping terminé — ${codesFound} code(s) / ${accountsScraped} compte(s) ===`,
+    `=== Scraping terminé — ${codesFound} nouveau(x) code(s) sur ${accountsScraped}/${accounts.length} compte(s) ===`
   );
 
   return { codesFound, accountsScraped, errors };

@@ -32,6 +32,7 @@ const defaultDb = {
 };
 
 let isDeduplicated = false;
+let isInitialized = false;
 
 // Load database from file
 function loadDb() {
@@ -40,15 +41,13 @@ function loadDb() {
       const data = readFileSync(dbPath, "utf-8");
       const db = JSON.parse(data);
       
-      // Nettoyage unique des doublons de codes au premier chargement
+      // Nettoyage unique au premier chargement
       if (!isDeduplicated && db.red_packet_codes) {
         const seen = new Set();
         const initialCount = db.red_packet_codes.length;
         db.red_packet_codes = db.red_packet_codes.filter(c => {
           const key = c.code.toUpperCase();
-          if (seen.has(key)) {
-            return false;
-          }
+          if (seen.has(key)) return false;
           seen.add(key);
           return true;
         });
@@ -56,6 +55,36 @@ function loadDb() {
         if (db.red_packet_codes.length < initialCount) {
           saveDb(db);
         }
+      }
+
+      // À chaque démarrage : reset du bot_status et des codes bloqués en "claiming"
+      if (!isInitialized) {
+        isInitialized = true;
+        let needsSave = false;
+
+        // Reset du statut global du bot
+        if (db.bot_status && db.bot_status !== "idle") {
+          db.bot_status = "idle";
+          needsSave = true;
+        }
+
+        // Reset des codes bloqués en état "claiming" au redémarrage
+        if (db.red_packet_codes) {
+          db.red_packet_codes.forEach(c => {
+            if (c.status === "claiming") {
+              c.status = "unverified";
+              needsSave = true;
+            }
+          });
+        }
+
+        // Garder seulement les 50 dernières tentatives de claim (évite la croissance infinie)
+        if (db.claim_attempts && db.claim_attempts.length > 50) {
+          db.claim_attempts = db.claim_attempts.slice(-50);
+          needsSave = true;
+        }
+
+        if (needsSave) saveDb(db);
       }
       
       return db;
@@ -278,4 +307,16 @@ export function cleanupOldCodes() {
     saveDb(db);
   }
   return deletedCount;
+}
+
+// Bot status
+export function getBotStatus() {
+  const db = loadDb();
+  return db.bot_status ?? 'idle';
+}
+
+export function setBotStatus(status) {
+  const db = loadDb();
+  db.bot_status = status;
+  saveDb(db);
 }
