@@ -1,12 +1,24 @@
 import { chromium } from "playwright";
+import { execSync } from "child_process";
 
+let globalBrowser = null;
 let globalContext = null;
 
 const USER_DATA_DIR = "C:\\Users\\pc\\Documents\\chrome-bot-profile";
 const EXECUTABLE_PATH = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 
+function killExistingChrome() {
+  try {
+    console.log("[Playwright] Tentative de fermeture des processus Chrome existants pour libérer le profil...");
+    execSync("taskkill /F /IM chrome.exe", { stdio: "ignore" });
+    console.log("[Playwright] Tous les processus Chrome ont été fermés.");
+  } catch (e) {
+    // Échoue silencieusement si aucun processus n'existe, ce qui est attendu
+  }
+}
+
 async function getPersistentContext() {
-  // Vérifier si le contexte est encore valide
+  // 1. Vérifier si le contexte existant est encore valide
   if (globalContext) {
     try {
       const pages = globalContext.pages();
@@ -16,11 +28,40 @@ async function getPersistentContext() {
       console.log("[Playwright] Contexte existant toujours valide.");
       return globalContext;
     } catch {
-      console.log("[Playwright] Contexte existant invalide, fermeture...");
+      console.log("[Playwright] Contexte existant invalide, réinitialisation...");
       await globalContext.close().catch(() => { });
       globalContext = null;
+      if (globalBrowser) {
+        await globalBrowser.close().catch(() => { });
+        globalBrowser = null;
+      }
     }
   }
+
+  // 2. TENTATIVE A : Connexion à une instance Chrome existante via CDP (port 9222)
+  console.log("[Playwright] Tentative de connexion CDP sur http://localhost:9222...");
+  try {
+    globalBrowser = await chromium.connectOverCDP("http://localhost:9222", {
+      timeout: 5000,
+    });
+    const contexts = globalBrowser.contexts();
+    if (contexts.length > 0) {
+      globalContext = contexts[0];
+      console.log("[Playwright] ✅ Connecté avec succès au Chrome existant via CDP !");
+      return globalContext;
+    } else {
+      console.log("[Playwright] Connecté via CDP mais aucun contexte trouvé.");
+      await globalBrowser.close().catch(() => { });
+      globalBrowser = null;
+    }
+  } catch (err) {
+    console.log(`[Playwright] Connexion CDP impossible (${err.message}).`);
+  }
+
+  // 3. TENTATIVE B : Lancement d'un nouveau Chrome persistant
+  // Fermeture des processus Chrome existants pour libérer les verrous de fichiers sur le profil
+  killExistingChrome();
+  await new Promise((resolve) => setTimeout(resolve, 2000)); // Laisser le temps à Windows de libérer le verrou
 
   console.log("[Playwright] Lancement d’un nouveau Chrome...");
   try {
@@ -38,6 +79,7 @@ async function getPersistentContext() {
       ],
     });
     console.log("[Playwright] Chrome lancé avec succès.");
+    
     // Test immédiat de validité
     const testPage = await globalContext.newPage();
     await testPage.close();
@@ -239,13 +281,16 @@ export async function claimBinanceRedPacketPlaywright(code) {
 
 export async function closeBrowser() {
   if (globalContext) {
-    await globalContext.close();
+    await globalContext.close().catch(() => { });
     globalContext = null;
-    console.log("[Playwright] Navigateur fermé.");
   }
+  if (globalBrowser) {
+    await globalBrowser.close().catch(() => { });
+    globalBrowser = null;
+  }
+  console.log("[Playwright] Navigateur fermé.");
 }
 
 export async function disconnectBrowser() {
-
   await closeBrowser();
 }

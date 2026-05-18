@@ -6,11 +6,10 @@ import {
   getSetting,
   updateAccountLastScraped,
 } from "./db";
-import { chromium } from "playwright";
 // ─────────────────────────────────────────────────────────────────────────────
 // REGEX MULTI-FORMAT pour les codes red packet / gift card Binance
 // Captures :
-//   1. BP[alphanum]{8-20}  → format historique Binance Red Packet
+//   1. BP[alphanum]{8-20}  → format historique Binance Red Packet (désormais ignoré via extractNonBPCodes)
 //   2. [A-Z0-9]{12,20}     → codes majuscules sans préfixe (certains gift cards)
 //   3. [A-Za-z0-9]{16}     → codes 16 chars mixtes (format typique gift card)
 //   4. [A-Z]{2,4}[0-9A-Za-z]{8,18} → codes avec préfixe lettres (ex: GC12345...)
@@ -130,11 +129,136 @@ function randomUA() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// SCRAPING D'UN COMPTE — Playwright uniquement
+// NETTOYAGE DU HTML
+// ─────────────────────────────────────────────────────────────────────────────
+function cleanHtml(html = "") {
+  return html
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// INSTANCES NITTER (100% anonyme, ultra-léger et gratuit)
+// ─────────────────────────────────────────────────────────────────────────────
+const NITTER_INSTANCES = [
+  "nitter.poast.org",
+  "nitter.privacydev.net",
+  "nitter.lucabased.space",
+  "nitter.mint.lgbt",
+  "nitter.bus-hit.me",
+  "nitter.42l.fr",
+  "nitter.fdn.fr",
+  "nitter.1d4.us",
+  "nitter.kavin.rocks",
+  "nitter.net",
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SCRAPING D'UN COMPTE VIA NITTER (Standard HTTP Fetch)
+// ─────────────────────────────────────────────────────────────────────────────
+async function fetchFromNitter(username) {
+  for (const instance of NITTER_INSTANCES) {
+    try {
+      const url = `https://${instance}/${username}`;
+      addScrapeLog("info", `[Nitter] Essai ${instance} → @${username}`);
+
+      const response = await fetch(url, {
+        headers: {
+          "User-Agent": randomUA(),
+          Accept:
+            "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+          "Accept-Language": "en-US,en;q=0.5",
+          "Cache-Control": "no-cache",
+        },
+        signal: AbortSignal.timeout(10000),
+      });
+
+      if (!response.ok) {
+        addScrapeLog("warn", `[Nitter] ${instance} → HTTP ${response.status}`);
+        continue;
+      }
+
+      const html = await response.text();
+
+      if (
+        html.length < 1000 ||
+        html.includes("rate limited") ||
+        html.includes("not available") ||
+        html.includes("Access denied") ||
+        html.includes("captcha") ||
+        html.includes("Instance is not") ||
+        !html.includes("timeline")
+      ) {
+        addScrapeLog("warn", `[Nitter] ${instance} bloqué ou vide`);
+        continue;
+      }
+
+      const tweets = [];
+
+      // Séparer l'HTML par bloc de tweet pour associer texte et date
+      const tweetBlocks = html.split('class="tweet-body"');
+      for (let j = 1; j < tweetBlocks.length; j++) {
+        if (tweets.length >= 20) break;
+        const block = tweetBlocks[j];
+        
+        const contentMatch = block.match(/<div[^>]+class="[^"]*tweet-content[^"]*"[^>]*>([\s\S]*?)<\/div>/i) ||
+                             block.match(/<p[^>]+class="[^"]*tweet-text[^"]*"[^>]*>([\s\S]*?)<\/p>/i);
+        if (!contentMatch) continue;
+        const text = cleanHtml(contentMatch[1]);
+        if (text.length < 5) continue;
+        
+        const dateMatch = block.match(/<span[^>]+class="[^"]*tweet-date[^"]*"[^>]*><a[^>]+title="([^"]+)"/i);
+        let timestamp = Date.now();
+        if (dateMatch) {
+          const dateStr = dateMatch[1].replace("·", "").trim();
+          try {
+            timestamp = new Date(dateStr).getTime();
+          } catch (e) {
+            // Ignorer l'erreur et garder Date.now()
+          }
+        }
+        
+        tweets.push({
+          id: `nitter-${instance}-${j}-${timestamp}`,
+          text,
+          author: username,
+          timestamp,
+        });
+      }
+
+      if (tweets.length > 0) {
+        addScrapeLog(
+          "info",
+          `[Nitter] ${instance} → ${tweets.length} tweet(s) pour @${username}`,
+        );
+        return tweets;
+      }
+
+      addScrapeLog("warn", `[Nitter] ${instance} → 0 tweet parsé`);
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      addScrapeLog("warn", `[Nitter] ${instance} erreur: ${msg}`);
+    }
+
+    await randomDelay(300, 800);
+  }
+
+  return [];
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SCRAPING D'UN COMPTE — Nitter HTTP uniquement
 // ─────────────────────────────────────────────────────────────────────────────
 async function scrapeAccount(account) {
   const { username } = account;
-  return fetchFromPlaywright(username);
+  return fetchFromNitter(username);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -173,6 +297,9 @@ export async function scrapeAccounts() {
   let accountsScraped = 0;
   const errors = [];
 
+  // ✅ Nouveau : Set pour éviter les doublons dans la même session
+  const seenCodes = new Set();
+
   for (let i = 0; i < accounts.length; i++) {
     const account = accounts[i];
     try {
@@ -210,12 +337,21 @@ export async function scrapeAccounts() {
           }
         }
 
-        const codes = extractRedPacketCodes(tweet.text);
+        // ✅ MODIFICATION : utiliser extractNonBPCodes pour ignorer les codes BP
+        const codes = extractNonBPCodes(tweet.text);
         for (const code of codes) {
-          if (codeExistsByCode(code)) {
-            addScrapeLog("info", `Code déjà connu: ${code}`);
+          // ✅ Vérification en mémoire d'abord (pas de doublon dans la session)
+          if (seenCodes.has(code)) {
+            addScrapeLog("info", `Code déjà vu dans cette session: ${code}`);
             continue;
           }
+
+          if (codeExistsByCode(code)) {
+            addScrapeLog("info", `Code déjà connu en base: ${code}`);
+            seenCodes.add(code); // on le marque pour ne pas le re-vérifier
+            continue;
+          }
+
           const result = addRedPacketCode(
             code,
             tweet.text,
@@ -225,6 +361,7 @@ export async function scrapeAccounts() {
           if (result) {
             codesFound++;
             newCodesForAccount++;
+            seenCodes.add(code);
             addScrapeLog(
               "info",
               `✅ Nouveau code: ${code} (via @${tweet.author})`,
@@ -258,141 +395,4 @@ export async function scrapeAccounts() {
   );
 
   return { codesFound, accountsScraped, errors };
-}
-
-async function fetchFromPlaywright(username) {
-  let browser;
-  console.log("fetchFromPlaywright", username);
-  try {
-    addScrapeLog("info", `[Playwright] Scraping @${username}`);
-
-    browser = await chromium.launch({
-      headless: true,
-    });
-
-    const context = await browser.newContext({
-      userAgent: randomUA(),
-      viewport: {
-        width: 1280,
-        height: 720,
-      },
-    });
-
-    const page = await context.newPage();
-
-    // bloque ressources lourdes
-    await page.route("**/*", (route) => {
-      const type = route.request().resourceType();
-
-      if (type === "image" || type === "media" || type === "font") {
-        return route.abort();
-      }
-
-      return route.continue();
-    });
-
-    await page.goto(`https://x.com/${username}`, {
-      waitUntil: "networkidle",
-      timeout: 60000,
-    });
-
-    // attendre chargement
-    await page.waitForTimeout(5000);
-
-    // scroll plusieurs fois
-    for (let i = 0; i < 5; i++) {
-      await page.mouse.wheel(0, 5000);
-      await page.waitForTimeout(2000);
-    }
-
-    // DEBUG HTML
-    const html = await page.content();
-
-    addScrapeLog("info", `[Playwright] HTML length: ${html.length}`);
-
-    // récupération brute texte page
-    const bodyText = await page.locator("body").innerText();
-
-    addScrapeLog("info", `[Playwright] Body text length: ${bodyText.length}`);
-
-    // extraction codes directement depuis toute la page
-    const foundCodes = extractRedPacketCodes(bodyText);
-
-    addScrapeLog(
-      "info",
-      `[Playwright] ${foundCodes.length} code(s) trouvé(s) directement`,
-    );
-
-    // récupération structurée des tweets (texte et date)
-    const tweetArticles = await page.locator('[data-testid="tweet"]').all();
-    const tweets = [];
-
-    for (let i = 0; i < tweetArticles.length; i++) {
-      const article = tweetArticles[i];
-      try {
-        const textLocator = article.locator('[data-testid="tweetText"]').first();
-        const timeLocator = article.locator('time').first();
-        
-        const text = await textLocator.isVisible() ? await textLocator.innerText() : "";
-        const datetime = await timeLocator.isVisible() ? await timeLocator.getAttribute('datetime') : null;
-        
-        if (text) {
-          tweets.push({
-            id: datetime ? `pw-${datetime}-${i}` : `pw-${i}`,
-            text,
-            author: username,
-            timestamp: datetime ? new Date(datetime).getTime() : Date.now(),
-          });
-        }
-      } catch (e) {
-        console.error("Erreur parsing tweet article:", e.message);
-      }
-    }
-
-    addScrapeLog(
-      "info",
-      `[Playwright] ${tweets.length} tweet(s) structuré(s) trouvé(s)`,
-    );
-
-    // fallback si parsing structuré d'articles échoue
-    if (tweets.length === 0) {
-      const tweetTexts = await page
-        .locator('[data-testid="tweetText"]')
-        .allInnerTexts();
-
-      for (let i = 0; i < tweetTexts.length; i++) {
-        tweets.push({
-          id: `pw-${i}`,
-          text: tweetTexts[i],
-          author: username,
-          timestamp: Date.now(), // Fallback: considéré comme récent
-        });
-      }
-    }
-
-    // fallback :
-    // si aucun tweet détecté MAIS des codes dans le body
-    if (tweets.length === 0 && foundCodes.length > 0) {
-      tweets.push({
-        id: "pw-body-fallback",
-        text: bodyText,
-        author: username,
-        timestamp: Date.now(),
-      });
-    }
-
-    addScrapeLog("info", `[Playwright] ${tweets.length} tweet(s) final`);
-
-    return tweets;
-  } catch (error) {
-    const msg = error instanceof Error ? error.message : String(error);
-
-    addScrapeLog("error", `[Playwright] Erreur @${username}: ${msg}`);
-
-    return [];
-  } finally {
-    if (browser) {
-      await browser.close();
-    }
-  }
 }
