@@ -129,328 +129,12 @@ function randomUA() {
   return USER_AGENTS[Math.floor(Math.random() * USER_AGENTS.length)];
 }
 
-function cleanHtml(html = "") {
-  return html
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
 // ─────────────────────────────────────────────────────────────────────────────
-// SOURCE 1 : NITTER (frontend Twitter open-source, 100% GRATUIT)
-// Liste d'instances publiques — mise à jour régulièrement
-// ─────────────────────────────────────────────────────────────────────────────
-const NITTER_INSTANCES = [
-  "nitter.poast.org",
-  "nitter.privacydev.net",
-  "nitter.lucabased.space",
-  "nitter.mint.lgbt",
-  "nitter.bus-hit.me",
-  "nitter.42l.fr",
-  "nitter.fdn.fr",
-  "nitter.1d4.us",
-  "nitter.kavin.rocks",
-  "nitter.net",
-];
-
-async function fetchFromNitter(username) {
-  for (const instance of NITTER_INSTANCES) {
-    try {
-      const url = `https://${instance}/${username}`;
-      addScrapeLog("info", `[Nitter] Essai ${instance} → @${username}`);
-
-      const response = await fetch(url, {
-        headers: {
-          "User-Agent": randomUA(),
-          Accept:
-            "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-          "Accept-Language": "en-US,en;q=0.5",
-          "Cache-Control": "no-cache",
-        },
-        signal: AbortSignal.timeout(10000),
-      });
-
-      if (!response.ok) {
-        addScrapeLog("warn", `[Nitter] ${instance} → HTTP ${response.status}`);
-        continue;
-      }
-
-      const html = await response.text();
-
-      if (
-        html.length < 1000 ||
-        html.includes("rate limited") ||
-        html.includes("not available") ||
-        html.includes("Access denied") ||
-        html.includes("captcha") ||
-        html.includes("Instance is not") ||
-        !html.includes("timeline")
-      ) {
-        addScrapeLog("warn", `[Nitter] ${instance} bloqué ou vide`);
-        continue;
-      }
-
-      const tweets = [];
-
-      // Pattern A : div.tweet-content (Nitter récent)
-      const patternA = [
-        ...html.matchAll(
-          /<div[^>]+class="[^"]*tweet-content[^"]*"[^>]*>([\s\S]*?)<\/div>/gi,
-        ),
-      ];
-      for (const m of patternA) {
-        if (tweets.length >= 20) break;
-        const t = cleanHtml(m[1]);
-        if (t.length > 5)
-          tweets.push({
-            id: `nitter-${instance}-${tweets.length}`,
-            text: t,
-            author: username,
-          });
-      }
-
-      // Pattern B : p.tweet-text (ancien Nitter)
-      if (tweets.length === 0) {
-        const patternB = [
-          ...html.matchAll(
-            /<p[^>]+class="[^"]*tweet-text[^"]*"[^>]*>([\s\S]*?)<\/p>/gi,
-          ),
-        ];
-        for (const m of patternB) {
-          if (tweets.length >= 20) break;
-          const t = cleanHtml(m[1]);
-          if (t.length > 5)
-            tweets.push({
-              id: `nitter-${instance}-${tweets.length}`,
-              text: t,
-              author: username,
-            });
-        }
-      }
-
-      if (tweets.length > 0) {
-        addScrapeLog(
-          "info",
-          `[Nitter] ${instance} → ${tweets.length} tweet(s) pour @${username}`,
-        );
-        return tweets;
-      }
-
-      addScrapeLog("warn", `[Nitter] ${instance} → 0 tweet parsé`);
-    } catch (err) {
-      const msg = err instanceof Error ? err.message : String(err);
-      addScrapeLog("warn", `[Nitter] ${instance} erreur: ${msg}`);
-    }
-
-    await randomDelay(300, 800);
-  }
-
-  return [];
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
-// SOURCE 2 : Twitter oEmbed (GRATUIT — endpoint public)
-// Récupère le dernier tweet épinglé / profil embed
-// ─────────────────────────────────────────────────────────────────────────────
-async function fetchFromOembed(username) {
-  try {
-    const url = `https://publish.twitter.com/oembed?url=https://twitter.com/${username}&omit_script=true&limit=5`;
-    const response = await fetch(url, {
-      headers: { "User-Agent": randomUA(), Accept: "application/json" },
-      signal: AbortSignal.timeout(8000),
-    });
-
-    if (!response.ok) return [];
-
-    const data = await response.json();
-    const html = data?.html || "";
-    if (!html) return [];
-
-    const text = cleanHtml(html);
-    if (!text || text.length < 5) return [];
-
-    addScrapeLog("info", `[oEmbed] Tweet récupéré pour @${username}`);
-    return [{ id: `oembed-${username}-${Date.now()}`, text, author: username }];
-  } catch {
-    return [];
-  }
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
-// SOURCE 3 : Scraping Twitter Search (gratuit via l'interface web mobile)
-// Recherche les tweets contenant des codes pour un compte donné
-// ─────────────────────────────────────────────────────────────────────────────
-async function fetchFromTwitterSearch(username) {
-  try {
-    // Utilise l'URL de recherche publique Twitter (sans login)
-    const query = encodeURIComponent(
-      `from:${username} red packet OR gift OR code BP`,
-    );
-    const url = `https://mobile.twitter.com/search?q=${query}&src=typed_query&f=live`;
-
-    const response = await fetch(url, {
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
-        Accept:
-          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.5",
-        "Cache-Control": "no-cache",
-      },
-      signal: AbortSignal.timeout(10000),
-      redirect: "follow",
-    });
-
-    if (!response.ok) return [];
-
-    const html = await response.text();
-    const tweets = [];
-
-    // Extraire les tweets depuis le HTML mobile Twitter
-    const tweetPatterns = [
-      /<div[^>]+data-testid="tweetText"[^>]*>([\s\S]*?)<\/div>/gi,
-      /<p[^>]+lang="[^"]*"[^>]*>([\s\S]*?)<\/p>/gi,
-    ];
-
-    for (const pattern of tweetPatterns) {
-      const matches = [...html.matchAll(pattern)];
-      for (const m of matches) {
-        if (tweets.length >= 15) break;
-        const t = cleanHtml(m[1]);
-        if (t.length > 5)
-          tweets.push({
-            id: `tw-search-${tweets.length}`,
-            text: t,
-            author: username,
-          });
-      }
-      if (tweets.length > 0) break;
-    }
-
-    if (tweets.length > 0) {
-      addScrapeLog(
-        "info",
-        `[TW Search] ${tweets.length} tweet(s) pour @${username}`,
-      );
-    }
-    return tweets;
-  } catch {
-    return [];
-  }
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
-// SOURCE 4 : Syndication Twitter (endpoint legacy, parfois accessible)
-// ─────────────────────────────────────────────────────────────────────────────
-async function fetchFromSyndication(username) {
-  try {
-    const url = `https://cdn.syndication.twimg.com/timeline/profile?screen_name=${username}&count=20&callback=__twttr`;
-
-    const response = await fetch(url, {
-      headers: {
-        "User-Agent": randomUA(),
-        Referer: "https://platform.twitter.com",
-        Accept: "*/*",
-        Origin: "https://platform.twitter.com",
-      },
-      signal: AbortSignal.timeout(8000),
-    });
-
-    if (!response.ok) return [];
-
-    let text = await response.text();
-    // Enlève le wrapper JSONP
-    text = text
-      .replace(/^__twttr\(/, "")
-      .replace(/\)$/, "")
-      .trim();
-
-    let data;
-    try {
-      data = JSON.parse(text);
-    } catch {
-      return [];
-    }
-
-    const tweets = [];
-    const items =
-      data?.timeline?.instructions?.[0]?.addEntries?.entries ||
-      data?.globalObjects?.tweets ||
-      [];
-
-    if (Array.isArray(items)) {
-      for (const entry of items) {
-        if (tweets.length >= 15) break;
-        const t =
-          entry?.content?.item?.content?.tweet?.full_text ||
-          entry?.tweet?.full_text ||
-          "";
-        if (t.length > 5) {
-          tweets.push({
-            id: `syndication-${tweets.length}`,
-            text: t,
-            author: username,
-          });
-        }
-      }
-    } else if (typeof items === "object") {
-      for (const id of Object.keys(items)) {
-        if (tweets.length >= 15) break;
-        const t = items[id]?.full_text || "";
-        if (t.length > 5) {
-          tweets.push({ id: `syndication-${id}`, text: t, author: username });
-        }
-      }
-    }
-
-    if (tweets.length > 0) {
-      addScrapeLog(
-        "info",
-        `[Syndication] ${tweets.length} tweet(s) pour @${username}`,
-      );
-    }
-    return tweets;
-  } catch {
-    return [];
-  }
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
-// SCRAPING D'UN COMPTE — cascade de sources gratuites
+// SCRAPING D'UN COMPTE — Playwright uniquement
 // ─────────────────────────────────────────────────────────────────────────────
 async function scrapeAccount(account) {
   const { username } = account;
-  let tweets = [];
-
-  // 1. Playwright
-  tweets = await fetchFromPlaywright(username);
-  if (tweets.length > 0) return tweets;
-
-  // 1. Nitter (le plus fiable — open-source, gratuit)
-  tweets = await fetchFromNitter(username);
-  if (tweets.length > 0) return tweets;
-
-  // 2. Syndication Twitter (endpoint legacy, parfois accessible)
-  addScrapeLog("info", `[Fallback] Syndication pour @${username}`);
-  tweets = await fetchFromSyndication(username);
-  if (tweets.length > 0) return tweets;
-
-  // 3. Recherche Twitter mobile (sans API)
-  addScrapeLog("info", `[Fallback] Twitter Search pour @${username}`);
-  tweets = await fetchFromTwitterSearch(username);
-  if (tweets.length > 0) return tweets;
-
-  // 4. oEmbed (au moins le tweet épinglé)
-  addScrapeLog("info", `[Fallback] oEmbed pour @${username}`);
-  tweets = await fetchFromOembed(username);
-
-  return tweets;
+  return fetchFromPlaywright(username);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -505,6 +189,27 @@ export async function scrapeAccounts() {
       // Extraction et sauvegarde des codes
       let newCodesForAccount = 0;
       for (const tweet of tweets) {
+        // --- FILTRAGE STRICT DE L'AGE DU TWEET ---
+        const maxAgeMinutes = parseInt(getSetting("max_code_age_minutes") || "30", 10);
+        if (maxAgeMinutes && maxAgeMinutes > 0) {
+          if (!tweet.timestamp) {
+            addScrapeLog(
+              "info",
+              `[Scraper] Code(s) de @${tweet.author} ignoré(s) car sa date de publication n'a pas pu être validée.`,
+            );
+            continue;
+          }
+          const ageMs = Date.now() - tweet.timestamp;
+          const maxAgeMs = maxAgeMinutes * 60 * 1000;
+          if (ageMs > maxAgeMs) {
+            addScrapeLog(
+              "info",
+              `[Scraper] Code(s) de @${tweet.author} ignoré(s) car le tweet est trop ancien (${Math.round(ageMs / 60000)} min > ${maxAgeMinutes} min)`,
+            );
+            continue;
+          }
+        }
+
         const codes = extractRedPacketCodes(tweet.text);
         for (const code of codes) {
           if (codeExistsByCode(code)) {
@@ -618,24 +323,51 @@ async function fetchFromPlaywright(username) {
       `[Playwright] ${foundCodes.length} code(s) trouvé(s) directement`,
     );
 
-    // récupération tweets
-    const tweetTexts = await page
-      .locator('[data-testid="tweetText"]')
-      .allInnerTexts();
+    // récupération structurée des tweets (texte et date)
+    const tweetArticles = await page.locator('[data-testid="tweet"]').all();
+    const tweets = [];
+
+    for (let i = 0; i < tweetArticles.length; i++) {
+      const article = tweetArticles[i];
+      try {
+        const textLocator = article.locator('[data-testid="tweetText"]').first();
+        const timeLocator = article.locator('time').first();
+        
+        const text = await textLocator.isVisible() ? await textLocator.innerText() : "";
+        const datetime = await timeLocator.isVisible() ? await timeLocator.getAttribute('datetime') : null;
+        
+        if (text) {
+          tweets.push({
+            id: datetime ? `pw-${datetime}-${i}` : `pw-${i}`,
+            text,
+            author: username,
+            timestamp: datetime ? new Date(datetime).getTime() : Date.now(),
+          });
+        }
+      } catch (e) {
+        console.error("Erreur parsing tweet article:", e.message);
+      }
+    }
 
     addScrapeLog(
       "info",
-      `[Playwright] ${tweetTexts.length} tweetText trouvé(s)`,
+      `[Playwright] ${tweets.length} tweet(s) structuré(s) trouvé(s)`,
     );
 
-    const tweets = [];
+    // fallback si parsing structuré d'articles échoue
+    if (tweets.length === 0) {
+      const tweetTexts = await page
+        .locator('[data-testid="tweetText"]')
+        .allInnerTexts();
 
-    for (let i = 0; i < tweetTexts.length; i++) {
-      tweets.push({
-        id: `pw-${i}`,
-        text: tweetTexts[i],
-        author: username,
-      });
+      for (let i = 0; i < tweetTexts.length; i++) {
+        tweets.push({
+          id: `pw-${i}`,
+          text: tweetTexts[i],
+          author: username,
+          timestamp: Date.now(), // Fallback: considéré comme récent
+        });
+      }
     }
 
     // fallback :
@@ -645,6 +377,7 @@ async function fetchFromPlaywright(username) {
         id: "pw-body-fallback",
         text: bodyText,
         author: username,
+        timestamp: Date.now(),
       });
     }
 

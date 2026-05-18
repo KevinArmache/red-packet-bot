@@ -30,6 +30,9 @@ export function SettingsForm({ settings }) {
   const [interval, setInterval] = useState(
     settings.scrapeIntervalMinutes.toString(),
   );
+  const [maxCodeAge, setMaxCodeAge] = useState(
+    (settings.maxCodeAgeMinutes || "30").toString(),
+  );
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,6 +42,7 @@ export function SettingsForm({ settings }) {
       formData.set("scraping_enabled", scrapingEnabled ? "true" : "false");
       formData.set("scrape_interval_minutes", interval);
       formData.set("test_mode", testMode ? "true" : "false");
+      formData.set("max_code_age_minutes", maxCodeAge);
 
       const result = await updateSettings(formData);
       if (result.success) {
@@ -83,6 +87,30 @@ export function SettingsForm({ settings }) {
                 <SelectItem value="10">10 min</SelectItem>
                 <SelectItem value="15">15 min</SelectItem>
                 <SelectItem value="30">30 min</SelectItem>
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+        </Field>
+
+        <Field className="flex items-center justify-between rounded-lg border p-4">
+          <div className="flex flex-col gap-0.5">
+            <FieldLabel>Âge maximal des codes</FieldLabel>
+            <FieldDescription>
+              Ignorer les codes dont les tweets datent de plus de cette durée.
+            </FieldDescription>
+          </div>
+          <Select value={maxCodeAge} onValueChange={setMaxCodeAge}>
+            <SelectTrigger className="w-[130px]">
+              <SelectValue placeholder="Sélectionner" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectItem value="5">5 min</SelectItem>
+                <SelectItem value="10">10 min</SelectItem>
+                <SelectItem value="20">20 min</SelectItem>
+                <SelectItem value="30">30 min</SelectItem>
+                <SelectItem value="60">1 heure</SelectItem>
+                <SelectItem value="0">Sans limite</SelectItem>
               </SelectGroup>
             </SelectContent>
           </Select>

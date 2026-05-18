@@ -3,16 +3,21 @@
 import { useState, useEffect, useRef } from "react";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
-import { runCronWorkflow, claimCode, getCodes } from "@/app/actions";
+import { runCronWorkflow, toggleScraping } from "@/app/actions";
 import { toast } from "sonner";
 
-export function CronManager() {
-  const [isActive, setIsActive] = useState(false);
+export function CronManager({ scrapingEnabled, intervalMinutes = 5 }) {
+  const [isActive, setIsActive] = useState(scrapingEnabled);
   const [lastRun, setLastRun] = useState(null);
   const intervalRef = useRef(null);
   const runningRef = useRef(false);
 
-  // Exécution du workflow: Scrape -> Cleanup -> Claim all
+  // Synchroniser l'état local avec les props (lorsque changées depuis les settings)
+  useEffect(() => {
+    setIsActive(scrapingEnabled);
+  }, [scrapingEnabled]);
+
+  // Exécution du workflow: Scrape -> Cleanup
   const executeCron = async () => {
     if (runningRef.current) return;
     runningRef.current = true;
@@ -21,30 +26,8 @@ export function CronManager() {
       toast.info("🔄 Cron: Début du cycle (Scraping...)");
       await runCronWorkflow();
       
-      // Récupérer les codes à jour
-      const codes = await getCodes();
-      const claimable = codes.filter(c => c.status === "unverified");
-      
-      if (claimable.length > 0) {
-        toast.info(`🔄 Cron: ${claimable.length} codes à réclamer...`);
-        for (let i = 0; i < claimable.length; i++) {
-          if (!isActive) break; // Si l'utilisateur désactive entre temps
-          
-          const code = claimable[i];
-          const result = await claimCode(code.id);
-          
-          if (result.success) {
-            toast.success(`🎉 Cron: Réclamé ${result.amount} ${result.token}`);
-          }
-          
-          if (i < claimable.length - 1) {
-            await new Promise(r => setTimeout(r, 5000));
-          }
-        }
-      }
-      
       setLastRun(new Date());
-      toast.success("✅ Cron: Cycle terminé");
+      toast.success("✅ Cron: Scraping et nettoyage terminés");
     } catch (error) {
       console.error(error);
       toast.error("❌ Cron: Erreur lors de l'exécution");
@@ -58,10 +41,10 @@ export function CronManager() {
       // Exécuter tout de suite lors de l'activation
       executeCron();
       
-      // Puis toutes les 5 minutes (300000 ms)
+      // Puis toutes les X minutes
       intervalRef.current = setInterval(() => {
         executeCron();
-      }, 5 * 60 * 1000);
+      }, intervalMinutes * 60 * 1000);
     } else {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
@@ -74,19 +57,30 @@ export function CronManager() {
         clearInterval(intervalRef.current);
       }
     };
-  }, [isActive]);
+  }, [isActive, intervalMinutes]);
+
+  const handleToggle = async (checked) => {
+    setIsActive(checked);
+    try {
+      await toggleScraping(checked);
+      toast.success(checked ? "Auto-Scrape activé" : "Auto-Scrape désactivé");
+    } catch (err) {
+      toast.error("Impossible de sauvegarder le paramètre");
+      setIsActive(!checked);
+    }
+  };
 
   return (
     <div className="flex items-center space-x-2 border rounded-md p-2 bg-muted/20">
       <Switch 
         id="cron-mode" 
         checked={isActive} 
-        onCheckedChange={setIsActive} 
+        onCheckedChange={handleToggle} 
       />
       <Label htmlFor="cron-mode" className="flex flex-col cursor-pointer">
         <span className="font-medium flex items-center gap-2">
           <span className={`size-2 rounded-full ${isActive ? "bg-green-500 animate-pulse" : "bg-muted-foreground"}`}></span>
-          Auto-Claim (5 min)
+          Auto-Scrape ({intervalMinutes} min)
         </span>
         {lastRun && (
           <span className="text-[10px] text-muted-foreground font-normal">

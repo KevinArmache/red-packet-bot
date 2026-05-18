@@ -1,9 +1,7 @@
-import { getCodes } from "@/app/actions";
+import { getCodes, getSettings } from "@/app/actions";
 import { CodesTable } from "@/components/codes-table";
 import { ManualIngest } from "@/components/manual-ingest";
-import { ScrapeButton } from "@/components/scrape-button";
 import { CronManager } from "@/components/cron-manager";
-import { ClaimAllButton } from "@/components/claim-all-button";
 import { DeleteAllButton } from "@/components/delete-all-button";
 import {
   Card,
@@ -17,6 +15,7 @@ export const dynamic = "force-dynamic";
 
 export default async function DashboardPage() {
   const codes = await getCodes();
+  const settings = await getSettings();
 
   const stats = {
     total: codes.length,
@@ -35,11 +34,9 @@ export default async function DashboardPage() {
           </p>
         </div>
         <div className="flex items-center gap-2">
-          <CronManager />
-          <ClaimAllButton codes={codes} />
+          <CronManager scrapingEnabled={settings.scrapingEnabled} intervalMinutes={settings.scrapeIntervalMinutes} />
           <DeleteAllButton codesCount={codes.length} />
           <ManualIngest />
-          <ScrapeButton />
         </div>
       </div>
 

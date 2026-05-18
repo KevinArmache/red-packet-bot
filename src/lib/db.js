@@ -31,12 +31,34 @@ const defaultDb = {
   },
 };
 
+let isDeduplicated = false;
+
 // Load database from file
 function loadDb() {
   try {
     if (existsSync(dbPath)) {
       const data = readFileSync(dbPath, "utf-8");
-      return JSON.parse(data);
+      const db = JSON.parse(data);
+      
+      // Nettoyage unique des doublons de codes au premier chargement
+      if (!isDeduplicated && db.red_packet_codes) {
+        const seen = new Set();
+        const initialCount = db.red_packet_codes.length;
+        db.red_packet_codes = db.red_packet_codes.filter(c => {
+          const key = c.code.toUpperCase();
+          if (seen.has(key)) {
+            return false;
+          }
+          seen.add(key);
+          return true;
+        });
+        isDeduplicated = true;
+        if (db.red_packet_codes.length < initialCount) {
+          saveDb(db);
+        }
+      }
+      
+      return db;
     }
   } catch {
     // If loading fails, return default
@@ -101,8 +123,8 @@ export function getRedPacketCodes() {
 export function addRedPacketCode(code, tweetText, tweetId, author) {
   const db = loadDb();
 
-  // Check if already exists
-  if (db.red_packet_codes.some((c) => c.code === code)) {
+  // Check if already exists (case-insensitive)
+  if (db.red_packet_codes.some((c) => c.code.toUpperCase() === code.toUpperCase())) {
     return null;
   }
 
@@ -198,6 +220,9 @@ export function getScrapeLogs(limit = 100) {
 
 export function getSetting(key) {
   const db = loadDb();
+  if (key === "max_code_age_minutes") {
+    return db.settings[key] ?? "30";
+  }
   return db.settings[key] ?? null;
 }
 
@@ -223,7 +248,7 @@ export function codeExistsByTweetId(tweetId) {
 
 export function codeExistsByCode(code) {
   const db = loadDb();
-  return db.red_packet_codes.some((c) => c.code === code);
+  return db.red_packet_codes.some((c) => c.code.toUpperCase() === code.toUpperCase());
 }
 
 export function deleteRedPacketCode(id) {

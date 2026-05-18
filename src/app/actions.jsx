@@ -167,6 +167,10 @@ export async function getSettings() {
       10,
     ),
     testMode: getSetting("test_mode") === "true",
+    maxCodeAgeMinutes: parseInt(
+      getSetting("max_code_age_minutes") || "30",
+      10,
+    ),
   };
 }
 
@@ -174,25 +178,20 @@ export async function updateSettings(formData) {
   const scrapingEnabled = formData.get("scraping_enabled") === "true";
   const scrapeIntervalMinutes = formData.get("scrape_interval_minutes");
   const testMode = formData.get("test_mode") === "true";
+  const maxCodeAgeMinutes = formData.get("max_code_age_minutes");
 
   setSetting("scraping_enabled", scrapingEnabled.toString());
   if (scrapeIntervalMinutes) {
     setSetting("scrape_interval_minutes", scrapeIntervalMinutes);
   }
   setSetting("test_mode", testMode.toString());
+  if (maxCodeAgeMinutes) {
+    setSetting("max_code_age_minutes", maxCodeAgeMinutes);
+  }
 
   addScrapeLog("info", "Settings updated");
   revalidatePath("/settings");
   return { success: true };
-}
-
-// Manual scrape
-export async function triggerScrape() {
-  addScrapeLog("info", "Manual scrape triggered");
-  const result = await scrapeAccounts();
-  revalidatePath("/");
-  revalidatePath("/settings");
-  return result;
 }
 
 // Manual code ingestion
@@ -232,4 +231,12 @@ export async function ingestCode(formData) {
 // Logs
 export async function getLogs(limit = 100) {
   return getScrapeLogs(limit);
+}
+
+export async function toggleScraping(enabled) {
+  setSetting("scraping_enabled", enabled.toString());
+  addScrapeLog("info", `Scraping automatique ${enabled ? "activé" : "désactivé"}`);
+  revalidatePath("/");
+  revalidatePath("/settings");
+  return { success: true };
 }
