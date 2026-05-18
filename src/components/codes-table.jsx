@@ -85,6 +85,8 @@ export function CodesTable({ codes }) {
   const [copiedId, setCopiedId] = useState(null);
   const [claimingId, setClaimingId] = useState(null);
   const [isPending, startTransition] = useTransition();
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
 
   // Polling via /api/status — ultra léger
   useEffect(() => {
@@ -168,6 +170,10 @@ export function CodesTable({ codes }) {
     );
   }
 
+  const totalPages = Math.ceil(codes.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const paginatedCodes = codes.slice(startIndex, startIndex + itemsPerPage);
+
   return (
     <TooltipProvider>
       <div className="w-full overflow-auto">
@@ -183,7 +189,7 @@ export function CodesTable({ codes }) {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {codes.map((code) => {
+            {paginatedCodes.map((code) => {
               const status = statusConfig[code.status] ?? statusConfig.unverified;
               const StatusIcon = status.icon;
 
@@ -311,6 +317,38 @@ export function CodesTable({ codes }) {
             })}
           </TableBody>
         </Table>
+
+        {/* Pagination Controls */}
+        {totalPages > 1 && (
+          <div className="flex items-center justify-between px-6 py-3 border-t border-border/40 bg-muted/10">
+            <div className="text-xs text-muted-foreground font-medium">
+              Affichage {startIndex + 1}-{Math.min(startIndex + itemsPerPage, codes.length)} sur {codes.length}
+            </div>
+            <div className="flex items-center gap-2">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+                className="h-8 text-xs bg-background/50"
+              >
+                Précédent
+              </Button>
+              <div className="text-xs font-medium px-2 text-foreground/80">
+                Page {currentPage} / {totalPages}
+              </div>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                disabled={currentPage === totalPages}
+                className="h-8 text-xs bg-background/50"
+              >
+                Suivant
+              </Button>
+            </div>
+          </div>
+        )}
       </div>
     </TooltipProvider>
   );
