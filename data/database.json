@@ -1238,496 +1238,6 @@
   ],
   "scrape_logs": [
     {
-      "id": 4997,
-      "timestamp": "2026-05-18T19:51:50.859Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.1d4.us → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 4998,
-      "timestamp": "2026-05-18T19:51:51.141Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.1d4.us erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 4999,
-      "timestamp": "2026-05-18T19:51:51.626Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.kavin.rocks → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5000,
-      "timestamp": "2026-05-18T19:51:53.013Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.kavin.rocks → HTTP 502",
-      "details": null
-    },
-    {
-      "id": 5001,
-      "timestamp": "2026-05-18T19:51:53.045Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.net → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5002,
-      "timestamp": "2026-05-18T19:51:54.970Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.net bloqué ou vide",
-      "details": null
-    },
-    {
-      "id": 5003,
-      "timestamp": "2026-05-18T19:51:55.005Z",
-      "level": "warn",
-      "message": "Aucun tweet récupéré pour @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5004,
-      "timestamp": "2026-05-18T19:51:55.042Z",
-      "level": "info",
-      "message": "Scraping @muhammadtari55...",
-      "details": null
-    },
-    {
-      "id": 5005,
-      "timestamp": "2026-05-18T19:51:55.059Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.poast.org → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5006,
-      "timestamp": "2026-05-18T19:51:56.575Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.poast.org → HTTP 403",
-      "details": null
-    },
-    {
-      "id": 5007,
-      "timestamp": "2026-05-18T19:51:56.590Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.privacydev.net → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5008,
-      "timestamp": "2026-05-18T19:51:56.614Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.privacydev.net erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5009,
-      "timestamp": "2026-05-18T19:51:57.052Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.lucabased.space → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5010,
-      "timestamp": "2026-05-18T19:51:57.331Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.lucabased.space erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5011,
-      "timestamp": "2026-05-18T19:51:57.986Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.mint.lgbt → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5012,
-      "timestamp": "2026-05-18T19:51:58.257Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.mint.lgbt erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5013,
-      "timestamp": "2026-05-18T19:51:58.860Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.bus-hit.me → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5014,
-      "timestamp": "2026-05-18T19:51:59.184Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.bus-hit.me erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5015,
-      "timestamp": "2026-05-18T19:51:59.569Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.42l.fr → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5016,
-      "timestamp": "2026-05-18T19:52:01.031Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.42l.fr → HTTP 503",
-      "details": null
-    },
-    {
-      "id": 5017,
-      "timestamp": "2026-05-18T19:52:01.060Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.fdn.fr → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5018,
-      "timestamp": "2026-05-18T19:52:01.359Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.fdn.fr erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5019,
-      "timestamp": "2026-05-18T19:52:02.064Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.1d4.us → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5020,
-      "timestamp": "2026-05-18T19:52:02.380Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.1d4.us erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5021,
-      "timestamp": "2026-05-18T19:52:02.881Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.kavin.rocks → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5022,
-      "timestamp": "2026-05-18T19:52:04.161Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.kavin.rocks → HTTP 502",
-      "details": null
-    },
-    {
-      "id": 5023,
-      "timestamp": "2026-05-18T19:52:04.173Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.net → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5024,
-      "timestamp": "2026-05-18T19:52:07.529Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.net bloqué ou vide",
-      "details": null
-    },
-    {
-      "id": 5025,
-      "timestamp": "2026-05-18T19:52:07.545Z",
-      "level": "warn",
-      "message": "Aucun tweet récupéré pour @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5026,
-      "timestamp": "2026-05-18T19:52:07.562Z",
-      "level": "info",
-      "message": "Scraping @zahidaziz577873...",
-      "details": null
-    },
-    {
-      "id": 5027,
-      "timestamp": "2026-05-18T19:52:07.589Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.poast.org → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5028,
-      "timestamp": "2026-05-18T19:52:10.110Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.poast.org → HTTP 403",
-      "details": null
-    },
-    {
-      "id": 5029,
-      "timestamp": "2026-05-18T19:52:10.130Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.privacydev.net → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5030,
-      "timestamp": "2026-05-18T19:52:10.178Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.privacydev.net erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5031,
-      "timestamp": "2026-05-18T19:52:10.956Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.lucabased.space → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5032,
-      "timestamp": "2026-05-18T19:52:11.242Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.lucabased.space erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5033,
-      "timestamp": "2026-05-18T19:52:11.597Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.mint.lgbt → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5034,
-      "timestamp": "2026-05-18T19:52:11.878Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.mint.lgbt erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5035,
-      "timestamp": "2026-05-18T19:52:12.308Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.bus-hit.me → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5036,
-      "timestamp": "2026-05-18T19:52:12.965Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.bus-hit.me erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5037,
-      "timestamp": "2026-05-18T19:52:13.374Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.42l.fr → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5038,
-      "timestamp": "2026-05-18T19:52:14.916Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.42l.fr → HTTP 503",
-      "details": null
-    },
-    {
-      "id": 5039,
-      "timestamp": "2026-05-18T19:52:14.961Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.fdn.fr → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5040,
-      "timestamp": "2026-05-18T19:52:15.432Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.fdn.fr erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5041,
-      "timestamp": "2026-05-18T19:52:16.132Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.1d4.us → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5042,
-      "timestamp": "2026-05-18T19:52:16.411Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.1d4.us erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5043,
-      "timestamp": "2026-05-18T19:52:17.005Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.kavin.rocks → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5044,
-      "timestamp": "2026-05-18T19:52:18.097Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.kavin.rocks → HTTP 502",
-      "details": null
-    },
-    {
-      "id": 5045,
-      "timestamp": "2026-05-18T19:52:18.114Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.net → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5046,
-      "timestamp": "2026-05-18T19:52:22.456Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.net bloqué ou vide",
-      "details": null
-    },
-    {
-      "id": 5047,
-      "timestamp": "2026-05-18T19:52:22.474Z",
-      "level": "warn",
-      "message": "Aucun tweet récupéré pour @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5048,
-      "timestamp": "2026-05-18T19:52:22.489Z",
-      "level": "info",
-      "message": "=== Scraping terminé — 0 code(s) / 0 compte(s) ===",
-      "details": null
-    },
-    {
-      "id": 5049,
-      "timestamp": "2026-05-18T19:55:42.273Z",
-      "level": "info",
-      "message": "Démarrage du Cron Workflow",
-      "details": null
-    },
-    {
-      "id": 5050,
-      "timestamp": "2026-05-18T19:55:42.298Z",
-      "level": "info",
-      "message": "=== Scraping démarré — 3 compte(s) ===",
-      "details": null
-    },
-    {
-      "id": 5051,
-      "timestamp": "2026-05-18T19:55:42.359Z",
-      "level": "info",
-      "message": "Scraping @binanceboxcode...",
-      "details": null
-    },
-    {
-      "id": 5052,
-      "timestamp": "2026-05-18T19:55:42.384Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.poast.org → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5053,
-      "timestamp": "2026-05-18T19:55:44.409Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.poast.org → HTTP 403",
-      "details": null
-    },
-    {
-      "id": 5054,
-      "timestamp": "2026-05-18T19:55:44.420Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.privacydev.net → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5055,
-      "timestamp": "2026-05-18T19:55:44.445Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.privacydev.net erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5056,
-      "timestamp": "2026-05-18T19:55:45.325Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.lucabased.space → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5057,
-      "timestamp": "2026-05-18T19:55:47.136Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.lucabased.space erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5058,
-      "timestamp": "2026-05-18T19:55:47.559Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.mint.lgbt → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5059,
-      "timestamp": "2026-05-18T19:55:47.838Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.mint.lgbt erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5060,
-      "timestamp": "2026-05-18T19:55:48.293Z",
-      "level": "info",
-      "message": "Démarrage du Cron Workflow",
-      "details": null
-    },
-    {
-      "id": 5061,
-      "timestamp": "2026-05-18T19:55:48.305Z",
-      "level": "info",
-      "message": "=== Scraping démarré — 3 compte(s) ===",
-      "details": null
-    },
-    {
-      "id": 5062,
-      "timestamp": "2026-05-18T19:55:48.312Z",
-      "level": "info",
-      "message": "Scraping @binanceboxcode...",
-      "details": null
-    },
-    {
-      "id": 5063,
-      "timestamp": "2026-05-18T19:55:48.320Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.poast.org → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5064,
-      "timestamp": "2026-05-18T19:55:48.563Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.bus-hit.me → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5065,
-      "timestamp": "2026-05-18T19:55:49.032Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.bus-hit.me erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5066,
-      "timestamp": "2026-05-18T19:55:49.835Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.42l.fr → @binanceboxcode",
-      "details": null
-    },
-    {
       "id": 5067,
       "timestamp": "2026-05-18T19:55:50.183Z",
       "level": "warn",
@@ -8236,6 +7746,496 @@
       "level": "info",
       "message": "Claimed ? ?",
       "details": null
+    },
+    {
+      "id": 5997,
+      "timestamp": "2026-05-18T20:51:25.720Z",
+      "level": "info",
+      "message": "Démarrage du Cron Workflow",
+      "details": null
+    },
+    {
+      "id": 5998,
+      "timestamp": "2026-05-18T20:51:25.735Z",
+      "level": "info",
+      "message": "=== Scraping démarré — 3 compte(s) ===",
+      "details": null
+    },
+    {
+      "id": 5999,
+      "timestamp": "2026-05-18T20:51:25.744Z",
+      "level": "info",
+      "message": "Scraping @binanceboxcode...",
+      "details": null
+    },
+    {
+      "id": 6000,
+      "timestamp": "2026-05-18T20:51:25.754Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.poast.org → @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 6001,
+      "timestamp": "2026-05-18T20:51:27.268Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.poast.org → HTTP 403",
+      "details": null
+    },
+    {
+      "id": 6002,
+      "timestamp": "2026-05-18T20:51:27.274Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.privacydev.net → @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 6003,
+      "timestamp": "2026-05-18T20:51:27.287Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.privacydev.net erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6004,
+      "timestamp": "2026-05-18T20:51:28.030Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.lucabased.space → @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 6005,
+      "timestamp": "2026-05-18T20:51:28.302Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.lucabased.space erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6006,
+      "timestamp": "2026-05-18T20:51:28.709Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.mint.lgbt → @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 6007,
+      "timestamp": "2026-05-18T20:51:28.969Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.mint.lgbt erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6008,
+      "timestamp": "2026-05-18T20:51:29.669Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.bus-hit.me → @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 6009,
+      "timestamp": "2026-05-18T20:51:29.942Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.bus-hit.me erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6010,
+      "timestamp": "2026-05-18T20:51:30.498Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.42l.fr → @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 6011,
+      "timestamp": "2026-05-18T20:51:33.179Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.42l.fr → HTTP 503",
+      "details": null
+    },
+    {
+      "id": 6012,
+      "timestamp": "2026-05-18T20:51:33.196Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.fdn.fr → @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 6013,
+      "timestamp": "2026-05-18T20:51:33.480Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.fdn.fr erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6014,
+      "timestamp": "2026-05-18T20:51:34.172Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.1d4.us → @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 6015,
+      "timestamp": "2026-05-18T20:51:34.440Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.1d4.us erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6016,
+      "timestamp": "2026-05-18T20:51:35.136Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.kavin.rocks → @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 6017,
+      "timestamp": "2026-05-18T20:51:36.499Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.kavin.rocks → HTTP 502",
+      "details": null
+    },
+    {
+      "id": 6018,
+      "timestamp": "2026-05-18T20:51:36.518Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.net → @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 6019,
+      "timestamp": "2026-05-18T20:51:37.388Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.net bloqué ou vide",
+      "details": null
+    },
+    {
+      "id": 6020,
+      "timestamp": "2026-05-18T20:51:37.399Z",
+      "level": "warn",
+      "message": "Aucun tweet récupéré pour @binanceboxcode",
+      "details": null
+    },
+    {
+      "id": 6021,
+      "timestamp": "2026-05-18T20:51:37.410Z",
+      "level": "info",
+      "message": "Scraping @muhammadtari55...",
+      "details": null
+    },
+    {
+      "id": 6022,
+      "timestamp": "2026-05-18T20:51:37.416Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.poast.org → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 6023,
+      "timestamp": "2026-05-18T20:51:38.925Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.poast.org → HTTP 403",
+      "details": null
+    },
+    {
+      "id": 6024,
+      "timestamp": "2026-05-18T20:51:38.935Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.privacydev.net → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 6025,
+      "timestamp": "2026-05-18T20:51:38.945Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.privacydev.net erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6026,
+      "timestamp": "2026-05-18T20:51:39.487Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.lucabased.space → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 6027,
+      "timestamp": "2026-05-18T20:51:39.790Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.lucabased.space erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6028,
+      "timestamp": "2026-05-18T20:51:40.272Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.mint.lgbt → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 6029,
+      "timestamp": "2026-05-18T20:51:40.599Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.mint.lgbt erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6030,
+      "timestamp": "2026-05-18T20:51:41.141Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.bus-hit.me → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 6031,
+      "timestamp": "2026-05-18T20:51:41.441Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.bus-hit.me erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6032,
+      "timestamp": "2026-05-18T20:51:42.107Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.42l.fr → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 6033,
+      "timestamp": "2026-05-18T20:51:43.836Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.42l.fr → HTTP 503",
+      "details": null
+    },
+    {
+      "id": 6034,
+      "timestamp": "2026-05-18T20:51:43.844Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.fdn.fr → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 6035,
+      "timestamp": "2026-05-18T20:51:44.444Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.fdn.fr erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6036,
+      "timestamp": "2026-05-18T20:51:45.078Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.1d4.us → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 6037,
+      "timestamp": "2026-05-18T20:51:45.402Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.1d4.us erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6038,
+      "timestamp": "2026-05-18T20:51:45.849Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.kavin.rocks → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 6039,
+      "timestamp": "2026-05-18T20:51:47.217Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.kavin.rocks → HTTP 502",
+      "details": null
+    },
+    {
+      "id": 6040,
+      "timestamp": "2026-05-18T20:51:47.224Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.net → @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 6041,
+      "timestamp": "2026-05-18T20:51:48.325Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.net bloqué ou vide",
+      "details": null
+    },
+    {
+      "id": 6042,
+      "timestamp": "2026-05-18T20:51:48.333Z",
+      "level": "warn",
+      "message": "Aucun tweet récupéré pour @muhammadtari55",
+      "details": null
+    },
+    {
+      "id": 6043,
+      "timestamp": "2026-05-18T20:51:48.344Z",
+      "level": "info",
+      "message": "Scraping @zahidaziz577873...",
+      "details": null
+    },
+    {
+      "id": 6044,
+      "timestamp": "2026-05-18T20:51:48.361Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.poast.org → @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 6045,
+      "timestamp": "2026-05-18T20:51:50.642Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.poast.org → HTTP 403",
+      "details": null
+    },
+    {
+      "id": 6046,
+      "timestamp": "2026-05-18T20:51:50.650Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.privacydev.net → @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 6047,
+      "timestamp": "2026-05-18T20:51:50.667Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.privacydev.net erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6048,
+      "timestamp": "2026-05-18T20:51:51.428Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.lucabased.space → @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 6049,
+      "timestamp": "2026-05-18T20:51:51.701Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.lucabased.space erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6050,
+      "timestamp": "2026-05-18T20:51:52.443Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.mint.lgbt → @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 6051,
+      "timestamp": "2026-05-18T20:51:52.769Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.mint.lgbt erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6052,
+      "timestamp": "2026-05-18T20:51:53.089Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.bus-hit.me → @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 6053,
+      "timestamp": "2026-05-18T20:51:53.365Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.bus-hit.me erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6054,
+      "timestamp": "2026-05-18T20:51:54.005Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.42l.fr → @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 6055,
+      "timestamp": "2026-05-18T20:51:55.547Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.42l.fr → HTTP 503",
+      "details": null
+    },
+    {
+      "id": 6056,
+      "timestamp": "2026-05-18T20:51:55.554Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.fdn.fr → @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 6057,
+      "timestamp": "2026-05-18T20:51:55.862Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.fdn.fr erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6058,
+      "timestamp": "2026-05-18T20:51:56.666Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.1d4.us → @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 6059,
+      "timestamp": "2026-05-18T20:51:56.936Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.1d4.us erreur: fetch failed",
+      "details": null
+    },
+    {
+      "id": 6060,
+      "timestamp": "2026-05-18T20:51:57.596Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.kavin.rocks → @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 6061,
+      "timestamp": "2026-05-18T20:51:59.258Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.kavin.rocks → HTTP 502",
+      "details": null
+    },
+    {
+      "id": 6062,
+      "timestamp": "2026-05-18T20:51:59.279Z",
+      "level": "info",
+      "message": "[Nitter] Essai nitter.net → @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 6063,
+      "timestamp": "2026-05-18T20:52:00.394Z",
+      "level": "warn",
+      "message": "[Nitter] nitter.net bloqué ou vide",
+      "details": null
+    },
+    {
+      "id": 6064,
+      "timestamp": "2026-05-18T20:52:00.410Z",
+      "level": "warn",
+      "message": "Aucun tweet récupéré pour @zahidaziz577873",
+      "details": null
+    },
+    {
+      "id": 6065,
+      "timestamp": "2026-05-18T20:52:00.426Z",
+      "level": "info",
+      "message": "=== Scraping terminé — 0 code(s) / 0 compte(s) ===",
+      "details": null
+    },
+    {
+      "id": 6066,
+      "timestamp": "2026-05-18T20:52:00.454Z",
+      "level": "info",
+      "message": "[Auto-Claim] Aucun code en attente à réclamer.",
+      "details": null
     }
   ],
   "settings": {
@@ -8248,6 +8248,6 @@
     "accounts": 4,
     "codes": 1454,
     "attempts": 128,
-    "logs": 5997
+    "logs": 6067
   }
 }

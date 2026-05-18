@@ -5,7 +5,6 @@ import {
   addRedPacketCode,
   addScrapeLog,
   getCodeById,
-  getFailedClaimAttemptsLast24Hours,
   getMonitoredAccounts,
   getRedPacketCodes,
   getScrapeLogs,
@@ -197,10 +196,6 @@ export async function runCronWorkflow() {
   
   revalidatePath("/");
   return { success: true };
-}
-
-export async function getFailedAttemptsCount() {
-  return getFailedClaimAttemptsLast24Hours();
 }
 
 // Settings

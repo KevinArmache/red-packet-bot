@@ -182,13 +182,6 @@ export function recordClaimAttempt(codeId, success, errorMessage) {
   saveDb(db);
 }
 
-export function getFailedClaimAttemptsLast24Hours() {
-  const db = loadDb();
-  const cutoff = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
-  return db.claim_attempts.filter((a) => !a.success && a.attempted_at > cutoff)
-    .length;
-}
-
 export function addScrapeLog(level, message, details) {
   const db = loadDb();
   const log = {
@@ -239,11 +232,6 @@ export function updateAccountLastScraped(id) {
     account.last_scraped_at = new Date().toISOString();
     saveDb(db);
   }
-}
-
-export function codeExistsByTweetId(tweetId) {
-  const db = loadDb();
-  return db.red_packet_codes.some((c) => c.tweet_id === tweetId);
 }
 
 export function codeExistsByCode(code) {
