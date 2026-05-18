@@ -34,8 +34,8 @@ const FALSE_POSITIVE_WORDS = new Set([
 const CODE_PATTERNS = [
   // BP + 7-20 chars (codes BP classiques)
   /\bBP[0-9A-Za-z]{7,20}\b/g,
-  // Codes sans préfixe BP : 7-12 chars, majuscules+chiffres
-  /\b(?!BP)[A-Z][A-Z0-9]{6,11}\b/g,
+  // Codes sans préfixe BP : 7-12 chars, majuscules+chiffres (ex: 3ADKZW2C)
+  /\b(?!BP)[A-Z0-9]{7,12}\b/g,
 ];
 
 function isValidCode(code) {

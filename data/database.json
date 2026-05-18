@@ -1383,7 +1383,7 @@
       "tweet_id": "nitter-nitter.net-15-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:49.786Z",
-      "status": "unverified",
+      "status": "claiming",
       "claim_result": null,
       "claimed_asset": null,
       "claimed_amount": null
@@ -1395,10 +1395,10 @@
       "tweet_id": "nitter-nitter.net-15-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:50.414Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1569,
@@ -1407,10 +1407,10 @@
       "tweet_id": "nitter-nitter.net-15-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:50.545Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1570,
@@ -1419,10 +1419,10 @@
       "tweet_id": "nitter-nitter.net-15-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:50.572Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1571,
@@ -1431,10 +1431,10 @@
       "tweet_id": "nitter-nitter.net-15-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:50.700Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1572,
@@ -1443,10 +1443,10 @@
       "tweet_id": "nitter-nitter.net-15-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:50.849Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1573,
@@ -1455,10 +1455,10 @@
       "tweet_id": "nitter-nitter.net-15-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:50.949Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1574,
@@ -1467,10 +1467,10 @@
       "tweet_id": "nitter-nitter.net-16-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:51.108Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1575,
@@ -1479,10 +1479,10 @@
       "tweet_id": "nitter-nitter.net-16-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:51.371Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1576,
@@ -1491,10 +1491,10 @@
       "tweet_id": "nitter-nitter.net-16-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:51.409Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1577,
@@ -1503,10 +1503,10 @@
       "tweet_id": "nitter-nitter.net-16-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:51.604Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1578,
@@ -1515,10 +1515,10 @@
       "tweet_id": "nitter-nitter.net-16-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:51.725Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1579,
@@ -1527,10 +1527,10 @@
       "tweet_id": "nitter-nitter.net-16-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:51.773Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1580,
@@ -1539,10 +1539,10 @@
       "tweet_id": "nitter-nitter.net-16-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:51.866Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1581,
@@ -1551,10 +1551,10 @@
       "tweet_id": "nitter-nitter.net-17-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:52.000Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1582,
@@ -1563,10 +1563,10 @@
       "tweet_id": "nitter-nitter.net-17-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:52.165Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1583,
@@ -1575,10 +1575,10 @@
       "tweet_id": "nitter-nitter.net-17-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:52.205Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1584,
@@ -1587,10 +1587,10 @@
       "tweet_id": "nitter-nitter.net-17-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:52.347Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1585,
@@ -1599,10 +1599,10 @@
       "tweet_id": "nitter-nitter.net-17-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:52.465Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1586,
@@ -1611,10 +1611,10 @@
       "tweet_id": "nitter-nitter.net-17-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:52.515Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1587,
@@ -1623,10 +1623,10 @@
       "tweet_id": "nitter-nitter.net-17-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:52.602Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1588,
@@ -1635,10 +1635,10 @@
       "tweet_id": "nitter-nitter.net-18-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:52.631Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1589,
@@ -1647,10 +1647,10 @@
       "tweet_id": "nitter-nitter.net-18-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:52.695Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1590,
@@ -1659,10 +1659,10 @@
       "tweet_id": "nitter-nitter.net-18-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:52.733Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1591,
@@ -1671,10 +1671,10 @@
       "tweet_id": "nitter-nitter.net-18-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:52.812Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1592,
@@ -1683,10 +1683,10 @@
       "tweet_id": "nitter-nitter.net-18-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:52.842Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1593,
@@ -1695,10 +1695,10 @@
       "tweet_id": "nitter-nitter.net-18-1779143730600",
       "author": "zahidaziz577873",
       "detected_at": "2026-05-18T22:35:52.898Z",
-      "status": "claiming",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1594,
@@ -1858,167 +1858,6 @@
     }
   ],
   "claim_attempts": [
-    {
-      "id": 89,
-      "code_id": 1416,
-      "attempted_at": "2026-05-18T18:29:54.433Z",
-      "success": false,
-      "error_message": "Impossible d’ouvrir une page après plusieurs tentatives."
-    },
-    {
-      "id": 90,
-      "code_id": 1415,
-      "attempted_at": "2026-05-18T18:30:52.394Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 91,
-      "code_id": 1414,
-      "attempted_at": "2026-05-18T18:34:26.998Z",
-      "success": false,
-      "error_message": "Impossible d’ouvrir une page après plusieurs tentatives."
-    },
-    {
-      "id": 92,
-      "code_id": 1413,
-      "attempted_at": "2026-05-18T18:34:43.907Z",
-      "success": false,
-      "error_message": "Impossible d’ouvrir une page après plusieurs tentatives."
-    },
-    {
-      "id": 93,
-      "code_id": 1412,
-      "attempted_at": "2026-05-18T18:35:20.984Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 94,
-      "code_id": 1411,
-      "attempted_at": "2026-05-18T18:37:55.843Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 95,
-      "code_id": 1410,
-      "attempted_at": "2026-05-18T18:38:38.361Z",
-      "success": false,
-      "error_message": "Impossible d’ouvrir une page après plusieurs tentatives."
-    },
-    {
-      "id": 96,
-      "code_id": 1409,
-      "attempted_at": "2026-05-18T18:39:27.737Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 97,
-      "code_id": 1424,
-      "attempted_at": "2026-05-18T18:42:42.013Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 98,
-      "code_id": 1425,
-      "attempted_at": "2026-05-18T19:14:26.415Z",
-      "success": false,
-      "error_message": "Impossible d’ouvrir une page après plusieurs tentatives."
-    },
-    {
-      "id": 99,
-      "code_id": 1426,
-      "attempted_at": "2026-05-18T19:15:45.822Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 100,
-      "code_id": 1452,
-      "attempted_at": "2026-05-18T19:39:19.864Z",
-      "success": false,
-      "error_message": "Impossible d’ouvrir une page après plusieurs tentatives."
-    },
-    {
-      "id": 101,
-      "code_id": 1451,
-      "attempted_at": "2026-05-18T19:42:49.118Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 102,
-      "code_id": 1450,
-      "attempted_at": "2026-05-18T19:43:22.782Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 103,
-      "code_id": 1449,
-      "attempted_at": "2026-05-18T19:44:45.343Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 104,
-      "code_id": 1448,
-      "attempted_at": "2026-05-18T19:45:21.911Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 105,
-      "code_id": 1447,
-      "attempted_at": "2026-05-18T19:45:57.758Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 106,
-      "code_id": 1445,
-      "attempted_at": "2026-05-18T19:48:05.001Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 107,
-      "code_id": 1444,
-      "attempted_at": "2026-05-18T19:48:48.155Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 108,
-      "code_id": 1443,
-      "attempted_at": "2026-05-18T19:49:22.342Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 109,
-      "code_id": 1442,
-      "attempted_at": "2026-05-18T19:57:12.352Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 110,
-      "code_id": 1441,
-      "attempted_at": "2026-05-18T19:57:44.479Z",
-      "success": true,
-      "error_message": null
-    },
-    {
-      "id": 111,
-      "code_id": 1440,
-      "attempted_at": "2026-05-18T20:01:13.679Z",
-      "success": true,
-      "error_message": null
-    },
     {
       "id": 112,
       "code_id": 1439,
@@ -2228,947 +2067,191 @@
       "attempted_at": "2026-05-18T22:51:35.528Z",
       "success": true,
       "error_message": null
+    },
+    {
+      "id": 142,
+      "code_id": 1593,
+      "attempted_at": "2026-05-18T22:51:56.822Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 143,
+      "code_id": 1592,
+      "attempted_at": "2026-05-18T22:52:19.565Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 144,
+      "code_id": 1591,
+      "attempted_at": "2026-05-18T22:52:48.511Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 145,
+      "code_id": 1590,
+      "attempted_at": "2026-05-18T22:53:09.905Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 146,
+      "code_id": 1589,
+      "attempted_at": "2026-05-18T22:53:35.140Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 147,
+      "code_id": 1588,
+      "attempted_at": "2026-05-18T22:53:57.945Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 148,
+      "code_id": 1587,
+      "attempted_at": "2026-05-18T22:54:20.567Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 149,
+      "code_id": 1586,
+      "attempted_at": "2026-05-18T22:54:40.766Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 150,
+      "code_id": 1585,
+      "attempted_at": "2026-05-18T22:55:06.476Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 151,
+      "code_id": 1584,
+      "attempted_at": "2026-05-18T22:55:31.116Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 152,
+      "code_id": 1583,
+      "attempted_at": "2026-05-18T22:55:52.849Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 153,
+      "code_id": 1582,
+      "attempted_at": "2026-05-18T22:56:14.475Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 154,
+      "code_id": 1581,
+      "attempted_at": "2026-05-18T22:56:35.346Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 155,
+      "code_id": 1580,
+      "attempted_at": "2026-05-18T22:56:54.799Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 156,
+      "code_id": 1579,
+      "attempted_at": "2026-05-18T22:57:21.130Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 157,
+      "code_id": 1578,
+      "attempted_at": "2026-05-18T22:57:53.299Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 158,
+      "code_id": 1577,
+      "attempted_at": "2026-05-18T22:58:17.048Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 159,
+      "code_id": 1576,
+      "attempted_at": "2026-05-18T22:58:39.704Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 160,
+      "code_id": 1575,
+      "attempted_at": "2026-05-18T22:59:02.803Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 161,
+      "code_id": 1574,
+      "attempted_at": "2026-05-18T22:59:33.151Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 162,
+      "code_id": 1573,
+      "attempted_at": "2026-05-18T23:00:02.419Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 163,
+      "code_id": 1572,
+      "attempted_at": "2026-05-18T23:00:26.109Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 164,
+      "code_id": 1571,
+      "attempted_at": "2026-05-18T23:00:50.442Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 165,
+      "code_id": 1570,
+      "attempted_at": "2026-05-18T23:01:15.142Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 166,
+      "code_id": 1569,
+      "attempted_at": "2026-05-18T23:01:40.129Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 167,
+      "code_id": 1568,
+      "attempted_at": "2026-05-18T23:02:05.130Z",
+      "success": true,
+      "error_message": null
     }
   ],
   "scrape_logs": [
-    {
-      "id": 5899,
-      "timestamp": "2026-05-18T20:33:04.437Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.net bloqué ou vide",
-      "details": null
-    },
-    {
-      "id": 5900,
-      "timestamp": "2026-05-18T20:33:04.454Z",
-      "level": "warn",
-      "message": "Aucun tweet récupéré pour @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5901,
-      "timestamp": "2026-05-18T20:33:04.470Z",
-      "level": "info",
-      "message": "=== Scraping terminé — 0 code(s) / 1 compte(s) ===",
-      "details": null
-    },
-    {
-      "id": 5902,
-      "timestamp": "2026-05-18T20:33:04.507Z",
-      "level": "info",
-      "message": "[Auto-Claim] Aucun code en attente à réclamer.",
-      "details": null
-    },
-    {
-      "id": 5903,
-      "timestamp": "2026-05-18T20:41:25.985Z",
-      "level": "info",
-      "message": "Démarrage du Cron Workflow",
-      "details": null
-    },
-    {
-      "id": 5904,
-      "timestamp": "2026-05-18T20:41:26.007Z",
-      "level": "info",
-      "message": "=== Scraping démarré — 3 compte(s) ===",
-      "details": null
-    },
-    {
-      "id": 5905,
-      "timestamp": "2026-05-18T20:41:26.017Z",
-      "level": "info",
-      "message": "Scraping @binanceboxcode...",
-      "details": null
-    },
-    {
-      "id": 5906,
-      "timestamp": "2026-05-18T20:41:26.028Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.poast.org → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5907,
-      "timestamp": "2026-05-18T20:41:27.600Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.poast.org → HTTP 403",
-      "details": null
-    },
-    {
-      "id": 5908,
-      "timestamp": "2026-05-18T20:41:27.613Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.privacydev.net → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5909,
-      "timestamp": "2026-05-18T20:41:27.633Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.privacydev.net erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5910,
-      "timestamp": "2026-05-18T20:41:27.996Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.lucabased.space → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5911,
-      "timestamp": "2026-05-18T20:41:28.676Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.lucabased.space erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5912,
-      "timestamp": "2026-05-18T20:41:29.270Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.mint.lgbt → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5913,
-      "timestamp": "2026-05-18T20:41:29.974Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.mint.lgbt erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5914,
-      "timestamp": "2026-05-18T20:41:30.741Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.bus-hit.me → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5915,
-      "timestamp": "2026-05-18T20:41:31.050Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.bus-hit.me erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5916,
-      "timestamp": "2026-05-18T20:41:31.628Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.42l.fr → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5917,
-      "timestamp": "2026-05-18T20:41:33.063Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.42l.fr → HTTP 503",
-      "details": null
-    },
-    {
-      "id": 5918,
-      "timestamp": "2026-05-18T20:41:33.073Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.fdn.fr → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5919,
-      "timestamp": "2026-05-18T20:41:33.550Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.fdn.fr erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5920,
-      "timestamp": "2026-05-18T20:41:33.898Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.1d4.us → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5921,
-      "timestamp": "2026-05-18T20:41:34.233Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.1d4.us erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5922,
-      "timestamp": "2026-05-18T20:41:34.955Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.kavin.rocks → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5923,
-      "timestamp": "2026-05-18T20:41:36.371Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.kavin.rocks → HTTP 502",
-      "details": null
-    },
-    {
-      "id": 5924,
-      "timestamp": "2026-05-18T20:41:36.382Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.net → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5925,
-      "timestamp": "2026-05-18T20:41:37.893Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.net bloqué ou vide",
-      "details": null
-    },
-    {
-      "id": 5926,
-      "timestamp": "2026-05-18T20:41:37.904Z",
-      "level": "warn",
-      "message": "Aucun tweet récupéré pour @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 5927,
-      "timestamp": "2026-05-18T20:41:37.913Z",
-      "level": "info",
-      "message": "Scraping @muhammadtari55...",
-      "details": null
-    },
-    {
-      "id": 5928,
-      "timestamp": "2026-05-18T20:41:37.926Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.poast.org → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5929,
-      "timestamp": "2026-05-18T20:41:39.408Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.poast.org → HTTP 403",
-      "details": null
-    },
-    {
-      "id": 5930,
-      "timestamp": "2026-05-18T20:41:39.419Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.privacydev.net → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5931,
-      "timestamp": "2026-05-18T20:41:39.431Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.privacydev.net erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5932,
-      "timestamp": "2026-05-18T20:41:40.021Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.lucabased.space → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5933,
-      "timestamp": "2026-05-18T20:41:40.293Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.lucabased.space erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5934,
-      "timestamp": "2026-05-18T20:41:40.892Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.mint.lgbt → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5935,
-      "timestamp": "2026-05-18T20:41:41.182Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.mint.lgbt erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5936,
-      "timestamp": "2026-05-18T20:41:41.991Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.bus-hit.me → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5937,
-      "timestamp": "2026-05-18T20:41:42.272Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.bus-hit.me erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5938,
-      "timestamp": "2026-05-18T20:41:42.609Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.42l.fr → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5939,
-      "timestamp": "2026-05-18T20:41:44.068Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.42l.fr → HTTP 503",
-      "details": null
-    },
-    {
-      "id": 5940,
-      "timestamp": "2026-05-18T20:41:44.073Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.fdn.fr → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5941,
-      "timestamp": "2026-05-18T20:41:44.330Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.fdn.fr erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5942,
-      "timestamp": "2026-05-18T20:41:45.138Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.1d4.us → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5943,
-      "timestamp": "2026-05-18T20:41:45.419Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.1d4.us erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5944,
-      "timestamp": "2026-05-18T20:41:46.232Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.kavin.rocks → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5945,
-      "timestamp": "2026-05-18T20:41:47.794Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.kavin.rocks → HTTP 502",
-      "details": null
-    },
-    {
-      "id": 5946,
-      "timestamp": "2026-05-18T20:41:47.801Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.net → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5947,
-      "timestamp": "2026-05-18T20:41:48.507Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.net bloqué ou vide",
-      "details": null
-    },
-    {
-      "id": 5948,
-      "timestamp": "2026-05-18T20:41:48.516Z",
-      "level": "warn",
-      "message": "Aucun tweet récupéré pour @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 5949,
-      "timestamp": "2026-05-18T20:41:48.524Z",
-      "level": "info",
-      "message": "Scraping @zahidaziz577873...",
-      "details": null
-    },
-    {
-      "id": 5950,
-      "timestamp": "2026-05-18T20:41:48.531Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.poast.org → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5951,
-      "timestamp": "2026-05-18T20:41:49.994Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.poast.org → HTTP 403",
-      "details": null
-    },
-    {
-      "id": 5952,
-      "timestamp": "2026-05-18T20:41:50.002Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.privacydev.net → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5953,
-      "timestamp": "2026-05-18T20:41:50.014Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.privacydev.net erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5954,
-      "timestamp": "2026-05-18T20:41:50.666Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.lucabased.space → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5955,
-      "timestamp": "2026-05-18T20:41:50.953Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.lucabased.space erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5956,
-      "timestamp": "2026-05-18T20:41:51.709Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.mint.lgbt → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5957,
-      "timestamp": "2026-05-18T20:41:52.347Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.mint.lgbt erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5958,
-      "timestamp": "2026-05-18T20:41:52.685Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.bus-hit.me → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5959,
-      "timestamp": "2026-05-18T20:41:52.953Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.bus-hit.me erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5960,
-      "timestamp": "2026-05-18T20:41:53.616Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.42l.fr → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5961,
-      "timestamp": "2026-05-18T20:41:55.273Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.42l.fr → HTTP 503",
-      "details": null
-    },
-    {
-      "id": 5962,
-      "timestamp": "2026-05-18T20:41:55.284Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.fdn.fr → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5963,
-      "timestamp": "2026-05-18T20:41:55.545Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.fdn.fr erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5964,
-      "timestamp": "2026-05-18T20:41:56.328Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.1d4.us → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5965,
-      "timestamp": "2026-05-18T20:41:56.596Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.1d4.us erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 5966,
-      "timestamp": "2026-05-18T20:41:57.268Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.kavin.rocks → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5967,
-      "timestamp": "2026-05-18T20:41:58.464Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.kavin.rocks → HTTP 502",
-      "details": null
-    },
-    {
-      "id": 5968,
-      "timestamp": "2026-05-18T20:41:58.474Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.net → @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5969,
-      "timestamp": "2026-05-18T20:41:59.624Z",
-      "level": "info",
-      "message": "[Nitter] nitter.net → 20 tweet(s) pour @zahidaziz577873",
-      "details": null
-    },
-    {
-      "id": 5970,
-      "timestamp": "2026-05-18T20:41:59.640Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (25541 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5971,
-      "timestamp": "2026-05-18T20:41:59.655Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (114 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5972,
-      "timestamp": "2026-05-18T20:41:59.675Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (114 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5973,
-      "timestamp": "2026-05-18T20:41:59.695Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (114 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5974,
-      "timestamp": "2026-05-18T20:41:59.714Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (265 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5975,
-      "timestamp": "2026-05-18T20:41:59.740Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (265 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5976,
-      "timestamp": "2026-05-18T20:41:59.762Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (265 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5977,
-      "timestamp": "2026-05-18T20:41:59.788Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (390 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5978,
-      "timestamp": "2026-05-18T20:41:59.802Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (391 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5979,
-      "timestamp": "2026-05-18T20:41:59.816Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (391 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5980,
-      "timestamp": "2026-05-18T20:41:59.845Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (392 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5981,
-      "timestamp": "2026-05-18T20:41:59.869Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (435 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5982,
-      "timestamp": "2026-05-18T20:41:59.887Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (509 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5983,
-      "timestamp": "2026-05-18T20:41:59.905Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (509 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5984,
-      "timestamp": "2026-05-18T20:41:59.921Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (646 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5985,
-      "timestamp": "2026-05-18T20:41:59.936Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (646 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5986,
-      "timestamp": "2026-05-18T20:41:59.959Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (646 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5987,
-      "timestamp": "2026-05-18T20:41:59.979Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (646 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5988,
-      "timestamp": "2026-05-18T20:41:59.995Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (646 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5989,
-      "timestamp": "2026-05-18T20:42:00.028Z",
-      "level": "info",
-      "message": "[Scraper] Code(s) de @zahidaziz577873 ignoré(s) car le tweet est trop ancien (910 min > 60 min)",
-      "details": null
-    },
-    {
-      "id": 5990,
-      "timestamp": "2026-05-18T20:42:00.067Z",
-      "level": "info",
-      "message": "@zahidaziz577873 — 20 tweet(s) analysé(s), 0 nouveau(x) code(s)",
-      "details": null
-    },
-    {
-      "id": 5991,
-      "timestamp": "2026-05-18T20:42:00.086Z",
-      "level": "info",
-      "message": "=== Scraping terminé — 0 code(s) / 1 compte(s) ===",
-      "details": null
-    },
-    {
-      "id": 5992,
-      "timestamp": "2026-05-18T20:42:00.128Z",
-      "level": "info",
-      "message": "Nettoyage: 1 codes supprimés",
-      "details": null
-    },
-    {
-      "id": 5993,
-      "timestamp": "2026-05-18T20:42:00.166Z",
-      "level": "info",
-      "message": "[Auto-Claim] Aucun code en attente à réclamer.",
-      "details": null
-    },
-    {
-      "id": 5994,
-      "timestamp": "2026-05-18T20:42:28.286Z",
-      "level": "info",
-      "message": "Manually added: ICINA1F4",
-      "details": null
-    },
-    {
-      "id": 5995,
-      "timestamp": "2026-05-18T20:42:31.538Z",
-      "level": "info",
-      "message": "Claiming via Playwright: ICINA1F4",
-      "details": null
-    },
-    {
-      "id": 5996,
-      "timestamp": "2026-05-18T20:43:08.039Z",
-      "level": "info",
-      "message": "Claimed ? ?",
-      "details": null
-    },
-    {
-      "id": 5997,
-      "timestamp": "2026-05-18T20:51:25.720Z",
-      "level": "info",
-      "message": "Démarrage du Cron Workflow",
-      "details": null
-    },
-    {
-      "id": 5998,
-      "timestamp": "2026-05-18T20:51:25.735Z",
-      "level": "info",
-      "message": "=== Scraping démarré — 3 compte(s) ===",
-      "details": null
-    },
-    {
-      "id": 5999,
-      "timestamp": "2026-05-18T20:51:25.744Z",
-      "level": "info",
-      "message": "Scraping @binanceboxcode...",
-      "details": null
-    },
-    {
-      "id": 6000,
-      "timestamp": "2026-05-18T20:51:25.754Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.poast.org → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 6001,
-      "timestamp": "2026-05-18T20:51:27.268Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.poast.org → HTTP 403",
-      "details": null
-    },
-    {
-      "id": 6002,
-      "timestamp": "2026-05-18T20:51:27.274Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.privacydev.net → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 6003,
-      "timestamp": "2026-05-18T20:51:27.287Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.privacydev.net erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 6004,
-      "timestamp": "2026-05-18T20:51:28.030Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.lucabased.space → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 6005,
-      "timestamp": "2026-05-18T20:51:28.302Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.lucabased.space erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 6006,
-      "timestamp": "2026-05-18T20:51:28.709Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.mint.lgbt → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 6007,
-      "timestamp": "2026-05-18T20:51:28.969Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.mint.lgbt erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 6008,
-      "timestamp": "2026-05-18T20:51:29.669Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.bus-hit.me → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 6009,
-      "timestamp": "2026-05-18T20:51:29.942Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.bus-hit.me erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 6010,
-      "timestamp": "2026-05-18T20:51:30.498Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.42l.fr → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 6011,
-      "timestamp": "2026-05-18T20:51:33.179Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.42l.fr → HTTP 503",
-      "details": null
-    },
-    {
-      "id": 6012,
-      "timestamp": "2026-05-18T20:51:33.196Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.fdn.fr → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 6013,
-      "timestamp": "2026-05-18T20:51:33.480Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.fdn.fr erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 6014,
-      "timestamp": "2026-05-18T20:51:34.172Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.1d4.us → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 6015,
-      "timestamp": "2026-05-18T20:51:34.440Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.1d4.us erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 6016,
-      "timestamp": "2026-05-18T20:51:35.136Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.kavin.rocks → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 6017,
-      "timestamp": "2026-05-18T20:51:36.499Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.kavin.rocks → HTTP 502",
-      "details": null
-    },
-    {
-      "id": 6018,
-      "timestamp": "2026-05-18T20:51:36.518Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.net → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 6019,
-      "timestamp": "2026-05-18T20:51:37.388Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.net bloqué ou vide",
-      "details": null
-    },
-    {
-      "id": 6020,
-      "timestamp": "2026-05-18T20:51:37.399Z",
-      "level": "warn",
-      "message": "Aucun tweet récupéré pour @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 6021,
-      "timestamp": "2026-05-18T20:51:37.410Z",
-      "level": "info",
-      "message": "Scraping @muhammadtari55...",
-      "details": null
-    },
-    {
-      "id": 6022,
-      "timestamp": "2026-05-18T20:51:37.416Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.poast.org → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 6023,
-      "timestamp": "2026-05-18T20:51:38.925Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.poast.org → HTTP 403",
-      "details": null
-    },
-    {
-      "id": 6024,
-      "timestamp": "2026-05-18T20:51:38.935Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.privacydev.net → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 6025,
-      "timestamp": "2026-05-18T20:51:38.945Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.privacydev.net erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 6026,
-      "timestamp": "2026-05-18T20:51:39.487Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.lucabased.space → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 6027,
-      "timestamp": "2026-05-18T20:51:39.790Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.lucabased.space erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 6028,
-      "timestamp": "2026-05-18T20:51:40.272Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.mint.lgbt → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 6029,
-      "timestamp": "2026-05-18T20:51:40.599Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.mint.lgbt erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 6030,
-      "timestamp": "2026-05-18T20:51:41.141Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.bus-hit.me → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 6031,
-      "timestamp": "2026-05-18T20:51:41.441Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.bus-hit.me erreur: fetch failed",
-      "details": null
-    },
-    {
-      "id": 6032,
-      "timestamp": "2026-05-18T20:51:42.107Z",
-      "level": "info",
-      "message": "[Nitter] Essai nitter.42l.fr → @muhammadtari55",
-      "details": null
-    },
     {
       "id": 6033,
       "timestamp": "2026-05-18T20:51:43.836Z",
@@ -9230,6 +8313,944 @@
       "level": "info",
       "message": "Claiming via Playwright: VRQSFN6Z",
       "details": null
+    },
+    {
+      "id": 6899,
+      "timestamp": "2026-05-18T22:51:56.831Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6900,
+      "timestamp": "2026-05-18T22:51:56.846Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : VRQSFN6Z → ? ?",
+      "details": null
+    },
+    {
+      "id": 6901,
+      "timestamp": "2026-05-18T22:51:56.858Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 10s...",
+      "details": null
+    },
+    {
+      "id": 6902,
+      "timestamp": "2026-05-18T22:52:07.252Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 5/143 : 3Z7K0VGN",
+      "details": null
+    },
+    {
+      "id": 6903,
+      "timestamp": "2026-05-18T22:52:07.284Z",
+      "level": "info",
+      "message": "Claiming via Playwright: 3Z7K0VGN",
+      "details": null
+    },
+    {
+      "id": 6904,
+      "timestamp": "2026-05-18T22:52:19.574Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6905,
+      "timestamp": "2026-05-18T22:52:19.582Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : 3Z7K0VGN → ? ?",
+      "details": null
+    },
+    {
+      "id": 6906,
+      "timestamp": "2026-05-18T22:52:19.592Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 15s...",
+      "details": null
+    },
+    {
+      "id": 6907,
+      "timestamp": "2026-05-18T22:52:34.173Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 6/143 : N8CSZGZM",
+      "details": null
+    },
+    {
+      "id": 6908,
+      "timestamp": "2026-05-18T22:52:34.191Z",
+      "level": "info",
+      "message": "Claiming via Playwright: N8CSZGZM",
+      "details": null
+    },
+    {
+      "id": 6909,
+      "timestamp": "2026-05-18T22:52:48.539Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6910,
+      "timestamp": "2026-05-18T22:52:48.560Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : N8CSZGZM → ? ?",
+      "details": null
+    },
+    {
+      "id": 6911,
+      "timestamp": "2026-05-18T22:52:48.585Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 9s...",
+      "details": null
+    },
+    {
+      "id": 6912,
+      "timestamp": "2026-05-18T22:52:58.162Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 7/143 : GLRXXB9R",
+      "details": null
+    },
+    {
+      "id": 6913,
+      "timestamp": "2026-05-18T22:52:58.179Z",
+      "level": "info",
+      "message": "Claiming via Playwright: GLRXXB9R",
+      "details": null
+    },
+    {
+      "id": 6914,
+      "timestamp": "2026-05-18T22:53:05.209Z",
+      "level": "info",
+      "message": "Workflow ignoré : bot déjà actif (claiming)",
+      "details": null
+    },
+    {
+      "id": 6915,
+      "timestamp": "2026-05-18T22:53:09.917Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6916,
+      "timestamp": "2026-05-18T22:53:09.931Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : GLRXXB9R → ? ?",
+      "details": null
+    },
+    {
+      "id": 6917,
+      "timestamp": "2026-05-18T22:53:09.947Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 13s...",
+      "details": null
+    },
+    {
+      "id": 6918,
+      "timestamp": "2026-05-18T22:53:23.076Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 8/143 : YRLRVP1E",
+      "details": null
+    },
+    {
+      "id": 6919,
+      "timestamp": "2026-05-18T22:53:23.084Z",
+      "level": "info",
+      "message": "Claiming via Playwright: YRLRVP1E",
+      "details": null
+    },
+    {
+      "id": 6920,
+      "timestamp": "2026-05-18T22:53:35.151Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6921,
+      "timestamp": "2026-05-18T22:53:35.162Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : YRLRVP1E → ? ?",
+      "details": null
+    },
+    {
+      "id": 6922,
+      "timestamp": "2026-05-18T22:53:35.173Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 10s...",
+      "details": null
+    },
+    {
+      "id": 6923,
+      "timestamp": "2026-05-18T22:53:45.280Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 9/143 : GWVIXP05",
+      "details": null
+    },
+    {
+      "id": 6924,
+      "timestamp": "2026-05-18T22:53:45.292Z",
+      "level": "info",
+      "message": "Claiming via Playwright: GWVIXP05",
+      "details": null
+    },
+    {
+      "id": 6925,
+      "timestamp": "2026-05-18T22:53:57.957Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6926,
+      "timestamp": "2026-05-18T22:53:57.972Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : GWVIXP05 → ? ?",
+      "details": null
+    },
+    {
+      "id": 6927,
+      "timestamp": "2026-05-18T22:53:57.988Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 10s...",
+      "details": null
+    },
+    {
+      "id": 6928,
+      "timestamp": "2026-05-18T22:54:08.048Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 10/143 : 8UPK6JJ3",
+      "details": null
+    },
+    {
+      "id": 6929,
+      "timestamp": "2026-05-18T22:54:08.076Z",
+      "level": "info",
+      "message": "Claiming via Playwright: 8UPK6JJ3",
+      "details": null
+    },
+    {
+      "id": 6930,
+      "timestamp": "2026-05-18T22:54:20.578Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6931,
+      "timestamp": "2026-05-18T22:54:20.588Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : 8UPK6JJ3 → ? ?",
+      "details": null
+    },
+    {
+      "id": 6932,
+      "timestamp": "2026-05-18T22:54:20.601Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 7s...",
+      "details": null
+    },
+    {
+      "id": 6933,
+      "timestamp": "2026-05-18T22:54:27.935Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 11/143 : DTCS3XBD",
+      "details": null
+    },
+    {
+      "id": 6934,
+      "timestamp": "2026-05-18T22:54:27.944Z",
+      "level": "info",
+      "message": "Claiming via Playwright: DTCS3XBD",
+      "details": null
+    },
+    {
+      "id": 6935,
+      "timestamp": "2026-05-18T22:54:40.777Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6936,
+      "timestamp": "2026-05-18T22:54:40.789Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : DTCS3XBD → ? ?",
+      "details": null
+    },
+    {
+      "id": 6937,
+      "timestamp": "2026-05-18T22:54:40.800Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 14s...",
+      "details": null
+    },
+    {
+      "id": 6938,
+      "timestamp": "2026-05-18T22:54:54.994Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 12/143 : RYXS4Y0U",
+      "details": null
+    },
+    {
+      "id": 6939,
+      "timestamp": "2026-05-18T22:54:55.001Z",
+      "level": "info",
+      "message": "Claiming via Playwright: RYXS4Y0U",
+      "details": null
+    },
+    {
+      "id": 6940,
+      "timestamp": "2026-05-18T22:55:06.485Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6941,
+      "timestamp": "2026-05-18T22:55:06.492Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : RYXS4Y0U → ? ?",
+      "details": null
+    },
+    {
+      "id": 6942,
+      "timestamp": "2026-05-18T22:55:06.501Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 12s...",
+      "details": null
+    },
+    {
+      "id": 6943,
+      "timestamp": "2026-05-18T22:55:18.862Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 13/143 : 9K6B1V0M",
+      "details": null
+    },
+    {
+      "id": 6944,
+      "timestamp": "2026-05-18T22:55:18.878Z",
+      "level": "info",
+      "message": "Claiming via Playwright: 9K6B1V0M",
+      "details": null
+    },
+    {
+      "id": 6945,
+      "timestamp": "2026-05-18T22:55:31.125Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6946,
+      "timestamp": "2026-05-18T22:55:31.132Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : 9K6B1V0M → ? ?",
+      "details": null
+    },
+    {
+      "id": 6947,
+      "timestamp": "2026-05-18T22:55:31.140Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 10s...",
+      "details": null
+    },
+    {
+      "id": 6948,
+      "timestamp": "2026-05-18T22:55:41.092Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 14/143 : 1HA7USC8",
+      "details": null
+    },
+    {
+      "id": 6949,
+      "timestamp": "2026-05-18T22:55:41.103Z",
+      "level": "info",
+      "message": "Claiming via Playwright: 1HA7USC8",
+      "details": null
+    },
+    {
+      "id": 6950,
+      "timestamp": "2026-05-18T22:55:52.861Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6951,
+      "timestamp": "2026-05-18T22:55:52.876Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : 1HA7USC8 → ? ?",
+      "details": null
+    },
+    {
+      "id": 6952,
+      "timestamp": "2026-05-18T22:55:52.888Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 7s...",
+      "details": null
+    },
+    {
+      "id": 6953,
+      "timestamp": "2026-05-18T22:56:00.155Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 15/143 : HJB8K3W0",
+      "details": null
+    },
+    {
+      "id": 6954,
+      "timestamp": "2026-05-18T22:56:00.186Z",
+      "level": "info",
+      "message": "Claiming via Playwright: HJB8K3W0",
+      "details": null
+    },
+    {
+      "id": 6955,
+      "timestamp": "2026-05-18T22:56:14.492Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6956,
+      "timestamp": "2026-05-18T22:56:14.510Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : HJB8K3W0 → ? ?",
+      "details": null
+    },
+    {
+      "id": 6957,
+      "timestamp": "2026-05-18T22:56:14.531Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 9s...",
+      "details": null
+    },
+    {
+      "id": 6958,
+      "timestamp": "2026-05-18T22:56:23.329Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 16/143 : IHKTO9P1",
+      "details": null
+    },
+    {
+      "id": 6959,
+      "timestamp": "2026-05-18T22:56:23.340Z",
+      "level": "info",
+      "message": "Claiming via Playwright: IHKTO9P1",
+      "details": null
+    },
+    {
+      "id": 6960,
+      "timestamp": "2026-05-18T22:56:35.356Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6961,
+      "timestamp": "2026-05-18T22:56:35.366Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : IHKTO9P1 → ? ?",
+      "details": null
+    },
+    {
+      "id": 6962,
+      "timestamp": "2026-05-18T22:56:35.379Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 8s...",
+      "details": null
+    },
+    {
+      "id": 6963,
+      "timestamp": "2026-05-18T22:56:43.078Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 17/143 : ZKDH4RKH",
+      "details": null
+    },
+    {
+      "id": 6964,
+      "timestamp": "2026-05-18T22:56:43.096Z",
+      "level": "info",
+      "message": "Claiming via Playwright: ZKDH4RKH",
+      "details": null
+    },
+    {
+      "id": 6965,
+      "timestamp": "2026-05-18T22:56:53.421Z",
+      "level": "warn",
+      "message": "Cron — tentative non autorisée",
+      "details": null
+    },
+    {
+      "id": 6966,
+      "timestamp": "2026-05-18T22:56:54.810Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6967,
+      "timestamp": "2026-05-18T22:56:54.821Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : ZKDH4RKH → ? ?",
+      "details": null
+    },
+    {
+      "id": 6968,
+      "timestamp": "2026-05-18T22:56:54.832Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 11s...",
+      "details": null
+    },
+    {
+      "id": 6969,
+      "timestamp": "2026-05-18T22:57:05.577Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 18/143 : GFMUKE5I",
+      "details": null
+    },
+    {
+      "id": 6970,
+      "timestamp": "2026-05-18T22:57:05.596Z",
+      "level": "info",
+      "message": "Claiming via Playwright: GFMUKE5I",
+      "details": null
+    },
+    {
+      "id": 6971,
+      "timestamp": "2026-05-18T22:57:21.146Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6972,
+      "timestamp": "2026-05-18T22:57:21.191Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : GFMUKE5I → ? ?",
+      "details": null
+    },
+    {
+      "id": 6973,
+      "timestamp": "2026-05-18T22:57:21.206Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 11s...",
+      "details": null
+    },
+    {
+      "id": 6974,
+      "timestamp": "2026-05-18T22:57:32.146Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 19/143 : 6ZVNOE8U",
+      "details": null
+    },
+    {
+      "id": 6975,
+      "timestamp": "2026-05-18T22:57:32.165Z",
+      "level": "info",
+      "message": "Claiming via Playwright: 6ZVNOE8U",
+      "details": null
+    },
+    {
+      "id": 6976,
+      "timestamp": "2026-05-18T22:57:53.306Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6977,
+      "timestamp": "2026-05-18T22:57:53.313Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : 6ZVNOE8U → ? ?",
+      "details": null
+    },
+    {
+      "id": 6978,
+      "timestamp": "2026-05-18T22:57:53.322Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 11s...",
+      "details": null
+    },
+    {
+      "id": 6979,
+      "timestamp": "2026-05-18T22:57:59.217Z",
+      "level": "info",
+      "message": "Cron scrape déclenché via API",
+      "details": null
+    },
+    {
+      "id": 6980,
+      "timestamp": "2026-05-18T22:57:59.225Z",
+      "level": "info",
+      "message": "Workflow ignoré : bot déjà actif (claiming)",
+      "details": null
+    },
+    {
+      "id": 6981,
+      "timestamp": "2026-05-18T22:58:04.681Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 20/143 : A2GB5TJ3",
+      "details": null
+    },
+    {
+      "id": 6982,
+      "timestamp": "2026-05-18T22:58:04.689Z",
+      "level": "info",
+      "message": "Claiming via Playwright: A2GB5TJ3",
+      "details": null
+    },
+    {
+      "id": 6983,
+      "timestamp": "2026-05-18T22:58:17.058Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6984,
+      "timestamp": "2026-05-18T22:58:17.072Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : A2GB5TJ3 → ? ?",
+      "details": null
+    },
+    {
+      "id": 6985,
+      "timestamp": "2026-05-18T22:58:17.086Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 13s...",
+      "details": null
+    },
+    {
+      "id": 6986,
+      "timestamp": "2026-05-18T22:58:29.926Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 21/143 : INVFN90Z",
+      "details": null
+    },
+    {
+      "id": 6987,
+      "timestamp": "2026-05-18T22:58:29.935Z",
+      "level": "info",
+      "message": "Claiming via Playwright: INVFN90Z",
+      "details": null
+    },
+    {
+      "id": 6988,
+      "timestamp": "2026-05-18T22:58:39.726Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6989,
+      "timestamp": "2026-05-18T22:58:39.740Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : INVFN90Z → ? ?",
+      "details": null
+    },
+    {
+      "id": 6990,
+      "timestamp": "2026-05-18T22:58:39.758Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 9s...",
+      "details": null
+    },
+    {
+      "id": 6991,
+      "timestamp": "2026-05-18T22:58:49.102Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 22/143 : 6NRTAM3P",
+      "details": null
+    },
+    {
+      "id": 6992,
+      "timestamp": "2026-05-18T22:58:49.111Z",
+      "level": "info",
+      "message": "Claiming via Playwright: 6NRTAM3P",
+      "details": null
+    },
+    {
+      "id": 6993,
+      "timestamp": "2026-05-18T22:59:02.814Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6994,
+      "timestamp": "2026-05-18T22:59:02.829Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : 6NRTAM3P → ? ?",
+      "details": null
+    },
+    {
+      "id": 6995,
+      "timestamp": "2026-05-18T22:59:02.841Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 14s...",
+      "details": null
+    },
+    {
+      "id": 6996,
+      "timestamp": "2026-05-18T22:59:17.312Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 23/143 : PRST26R3",
+      "details": null
+    },
+    {
+      "id": 6997,
+      "timestamp": "2026-05-18T22:59:17.329Z",
+      "level": "info",
+      "message": "Claiming via Playwright: PRST26R3",
+      "details": null
+    },
+    {
+      "id": 6998,
+      "timestamp": "2026-05-18T22:59:33.162Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 6999,
+      "timestamp": "2026-05-18T22:59:33.174Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : PRST26R3 → ? ?",
+      "details": null
+    },
+    {
+      "id": 7000,
+      "timestamp": "2026-05-18T22:59:33.192Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 13s...",
+      "details": null
+    },
+    {
+      "id": 7001,
+      "timestamp": "2026-05-18T22:59:46.546Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 24/143 : R98DKAXW",
+      "details": null
+    },
+    {
+      "id": 7002,
+      "timestamp": "2026-05-18T22:59:46.554Z",
+      "level": "info",
+      "message": "Claiming via Playwright: R98DKAXW",
+      "details": null
+    },
+    {
+      "id": 7003,
+      "timestamp": "2026-05-18T23:00:02.429Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 7004,
+      "timestamp": "2026-05-18T23:00:02.441Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : R98DKAXW → ? ?",
+      "details": null
+    },
+    {
+      "id": 7005,
+      "timestamp": "2026-05-18T23:00:02.454Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 11s...",
+      "details": null
+    },
+    {
+      "id": 7006,
+      "timestamp": "2026-05-18T23:00:13.030Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 25/143 : 7VTJKVKY",
+      "details": null
+    },
+    {
+      "id": 7007,
+      "timestamp": "2026-05-18T23:00:13.053Z",
+      "level": "info",
+      "message": "Claiming via Playwright: 7VTJKVKY",
+      "details": null
+    },
+    {
+      "id": 7008,
+      "timestamp": "2026-05-18T23:00:26.119Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 7009,
+      "timestamp": "2026-05-18T23:00:26.134Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : 7VTJKVKY → ? ?",
+      "details": null
+    },
+    {
+      "id": 7010,
+      "timestamp": "2026-05-18T23:00:26.146Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 7s...",
+      "details": null
+    },
+    {
+      "id": 7011,
+      "timestamp": "2026-05-18T23:00:33.622Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 26/143 : LYB7APR5",
+      "details": null
+    },
+    {
+      "id": 7012,
+      "timestamp": "2026-05-18T23:00:33.700Z",
+      "level": "info",
+      "message": "Claiming via Playwright: LYB7APR5",
+      "details": null
+    },
+    {
+      "id": 7013,
+      "timestamp": "2026-05-18T23:00:50.453Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 7014,
+      "timestamp": "2026-05-18T23:00:50.470Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : LYB7APR5 → ? ?",
+      "details": null
+    },
+    {
+      "id": 7015,
+      "timestamp": "2026-05-18T23:00:50.483Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 13s...",
+      "details": null
+    },
+    {
+      "id": 7016,
+      "timestamp": "2026-05-18T23:01:03.937Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 27/143 : PJI860JS",
+      "details": null
+    },
+    {
+      "id": 7017,
+      "timestamp": "2026-05-18T23:01:03.967Z",
+      "level": "info",
+      "message": "Claiming via Playwright: PJI860JS",
+      "details": null
+    },
+    {
+      "id": 7018,
+      "timestamp": "2026-05-18T23:01:15.152Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 7019,
+      "timestamp": "2026-05-18T23:01:15.162Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : PJI860JS → ? ?",
+      "details": null
+    },
+    {
+      "id": 7020,
+      "timestamp": "2026-05-18T23:01:15.173Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 14s...",
+      "details": null
+    },
+    {
+      "id": 7021,
+      "timestamp": "2026-05-18T23:01:29.415Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 28/143 : LCLRT9G8",
+      "details": null
+    },
+    {
+      "id": 7022,
+      "timestamp": "2026-05-18T23:01:29.435Z",
+      "level": "info",
+      "message": "Claiming via Playwright: LCLRT9G8",
+      "details": null
+    },
+    {
+      "id": 7023,
+      "timestamp": "2026-05-18T23:01:40.137Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 7024,
+      "timestamp": "2026-05-18T23:01:40.146Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : LCLRT9G8 → ? ?",
+      "details": null
+    },
+    {
+      "id": 7025,
+      "timestamp": "2026-05-18T23:01:40.155Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 14s...",
+      "details": null
+    },
+    {
+      "id": 7026,
+      "timestamp": "2026-05-18T23:01:54.283Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 29/143 : LHNXO89S",
+      "details": null
+    },
+    {
+      "id": 7027,
+      "timestamp": "2026-05-18T23:01:54.292Z",
+      "level": "info",
+      "message": "Claiming via Playwright: LHNXO89S",
+      "details": null
+    },
+    {
+      "id": 7028,
+      "timestamp": "2026-05-18T23:02:05.143Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 7029,
+      "timestamp": "2026-05-18T23:02:05.152Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : LHNXO89S → ? ?",
+      "details": null
+    },
+    {
+      "id": 7030,
+      "timestamp": "2026-05-18T23:02:05.161Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 11s...",
+      "details": null
+    },
+    {
+      "id": 7031,
+      "timestamp": "2026-05-18T23:02:16.449Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 30/143 : 4RG45CTX",
+      "details": null
+    },
+    {
+      "id": 7032,
+      "timestamp": "2026-05-18T23:02:16.457Z",
+      "level": "info",
+      "message": "Claiming via Playwright: 4RG45CTX",
+      "details": null
     }
   ],
   "settings": {
@@ -9241,8 +9262,8 @@
   "_nextId": {
     "accounts": 4,
     "codes": 1618,
-    "attempts": 142,
-    "logs": 6899
+    "attempts": 168,
+    "logs": 7033
   },
-  "bot_status": "claiming"
+  "bot_status": "idle"
 }
