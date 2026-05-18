@@ -182,3 +182,10 @@ export async function getLogs(limit = 100) {
 export async function getBotStatusAction() {
   return getBotStatus();
 }
+
+export async function purgeOldCodes() {
+  const { clearOldCodes } = await import("@/lib/db");
+  const count = clearOldCodes();
+  revalidatePath("/");
+  return { success: true, count };
+}

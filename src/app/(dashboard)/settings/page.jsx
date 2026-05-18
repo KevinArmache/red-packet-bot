@@ -2,6 +2,7 @@ import { getAccounts, getSettings } from "@/app/actions";
 import { AccountsList } from "@/components/accounts-list";
 import { AddAccountForm } from "@/components/add-account-form";
 import { SettingsForm } from "@/components/settings-form";
+import { DangerZone } from "@/components/danger-zone";
 import {
   Card,
   CardContent,
@@ -53,6 +54,7 @@ export default async function SettingsPage() {
         </CardHeader>
         <CardContent>
           <SettingsForm settings={settings} />
+          <DangerZone />
         </CardContent>
       </Card>
     </div>

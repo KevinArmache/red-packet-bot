@@ -198,6 +198,55 @@ export function getCodeById(id) {
   return db.red_packet_codes.find((c) => c.id === id) ?? null;
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// NETTOYAGE DES CODES OBSOLÈTES ET INVALIDES
+// ─────────────────────────────────────────────────────────────────────────────
+
+/**
+ * Nettoie les tentatives de claim pour éviter que l'historique ne gonfle.
+ */
+export function cleanOldClaimAttempts() {
+  const db = loadDb();
+  const ONE_DAY_MS = 24 * 60 * 60 * 1000;
+  const now = Date.now();
+
+  const originalLength = db.claim_attempts.length;
+  db.claim_attempts = db.claim_attempts.filter((attempt) => {
+    const age = now - new Date(attempt.attempted_at).getTime();
+    return age < ONE_DAY_MS;
+  });
+
+  if (db.claim_attempts.length < originalLength) {
+    saveDb(db);
+  }
+}
+
+/**
+ * Supprime de la base de données tous les codes qui sont dans un état "fini" et qui ne rapportent plus rien.
+ * Cela permet d'alléger le fichier JSON de la DB de façon agressive.
+ */
+export function clearOldCodes() {
+  const db = loadDb();
+  const removableStatuses = ["invalid", "expired", "already_claimed", "empty", "failed"];
+  
+  const initialLength = db.red_packet_codes.length;
+  db.red_packet_codes = db.red_packet_codes.filter(
+    (code) => !removableStatuses.includes(code.status)
+  );
+
+  const deletedCount = initialLength - db.red_packet_codes.length;
+  
+  if (deletedCount > 0) {
+    saveDb(db);
+    // On garde une trace dans les logs pour que l'utilisateur sache que le nettoyage a été fait
+    addScrapeLog("info", `Nettoyage DB : ${deletedCount} vieux code(s) supprimé(s).`);
+  }
+  
+  return deletedCount;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+
 export function recordClaimAttempt(codeId, success, errorMessage) {
   const db = loadDb();
   const attempt = {

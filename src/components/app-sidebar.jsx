@@ -49,15 +49,15 @@ export function AppSidebar({ children }) {
 
   return (
     <SidebarProvider>
-      <Sidebar variant="inset">
-        <SidebarHeader>
-          <div className="flex items-center gap-2 px-2 py-1">
-            <div className="flex size-8 items-center justify-center rounded-md bg-primary text-primary-foreground">
-              <Gift className="size-4" />
+      <Sidebar variant="inset" className="border-r border-white/5 bg-background/40 backdrop-blur-xl">
+        <SidebarHeader className="bg-transparent pt-4">
+          <div className="flex items-center gap-3 px-3 py-2 bg-gradient-to-r from-primary/20 to-transparent rounded-xl border border-primary/10">
+            <div className="flex size-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-amber-500 text-primary-foreground shadow-lg shadow-primary/20">
+              <Gift className="size-5" />
             </div>
             <div className="flex flex-col">
-              <span className="text-sm font-semibold">Red Packet</span>
-              <span className="text-xs text-muted-foreground">Monitor</span>
+              <span className="text-base font-bold tracking-tight text-foreground/90">Red Packet</span>
+              <span className="text-[10px] font-medium uppercase tracking-widest text-primary">Monitor</span>
             </div>
           </div>
         </SidebarHeader>
@@ -90,16 +90,18 @@ export function AppSidebar({ children }) {
           </div>
         </SidebarFooter>
       </Sidebar>
-      <SidebarInset>
-        <header className="flex h-14 items-center gap-2 border-b px-4">
-          <SidebarTrigger />
-          <Separator orientation="vertical" className="h-6" />
-          <h1 className="text-sm font-medium">
+      <SidebarInset className="bg-transparent">
+        <header className="flex h-16 items-center gap-4 border-b border-white/5 bg-background/40 backdrop-blur-xl px-6 sticky top-0 z-50">
+          <SidebarTrigger className="text-muted-foreground hover:text-foreground transition-colors" />
+          <Separator orientation="vertical" className="h-6 opacity-50" />
+          <h1 className="text-lg font-semibold tracking-tight text-foreground/90">
             {navigation.find((item) => item.href === pathname)?.name ||
               "Dashboard"}
           </h1>
         </header>
-        <main className="flex-1 overflow-auto p-4">{children}</main>
+        <main className="flex-1 overflow-auto p-4 md:p-8 bg-gradient-to-br from-background via-background to-muted/20">
+          {children}
+        </main>
       </SidebarInset>
     </SidebarProvider>
   );

@@ -1,12 +1,10 @@
-import { Geist } from "next/font/google";
+import { Outfit } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
-// Geist Mono est retiré — il cause un bug Turbopack dans Next.js 16
-// (Cannot resolve @vercel/turbopack-next/internal/font/google/font)
-const geist = Geist({
+const outfit = Outfit({
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-outfit",
 });
 
 export const metadata = {
@@ -18,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="fr"
-      className={`${geist.variable}`}
+      className={`${outfit.variable}`}
       suppressHydrationWarning
     >
       <body className="font-sans antialiased bg-background" suppressHydrationWarning={true}>
