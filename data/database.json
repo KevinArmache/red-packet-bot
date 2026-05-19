@@ -2367,10 +2367,10 @@
       "tweet_id": "nitter-nitter.net-4-1779120480000",
       "author": "binanceboxcode",
       "detected_at": "2026-05-19T13:33:50.194Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1839,
@@ -2379,10 +2379,10 @@
       "tweet_id": "nitter-nitter.net-4-1779120480000",
       "author": "binanceboxcode",
       "detected_at": "2026-05-19T13:33:50.227Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1840,
@@ -2391,10 +2391,10 @@
       "tweet_id": "nitter-nitter.net-4-1779120480000",
       "author": "binanceboxcode",
       "detected_at": "2026-05-19T13:33:50.256Z",
-      "status": "unverified",
-      "claim_result": null,
-      "claimed_asset": null,
-      "claimed_amount": null
+      "status": "claimed",
+      "claim_result": "Claimed via Playwright",
+      "claimed_asset": "?",
+      "claimed_amount": 0
     },
     {
       "id": 1841,
@@ -2538,114 +2538,30 @@
       "attempted_at": "2026-05-19T13:35:44.699Z",
       "success": true,
       "error_message": null
+    },
+    {
+      "id": 250,
+      "code_id": 1840,
+      "attempted_at": "2026-05-19T13:36:05.631Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 251,
+      "code_id": 1839,
+      "attempted_at": "2026-05-19T13:36:27.814Z",
+      "success": true,
+      "error_message": null
+    },
+    {
+      "id": 252,
+      "code_id": 1838,
+      "attempted_at": "2026-05-19T13:36:48.252Z",
+      "success": true,
+      "error_message": null
     }
   ],
   "scrape_logs": [
-    {
-      "id": 7823,
-      "timestamp": "2026-05-19T12:59:26.362Z",
-      "level": "info",
-      "message": "[Nitter] nitter.kavin.rocks → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 7824,
-      "timestamp": "2026-05-19T12:59:27.199Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.kavin.rocks → HTTP 502",
-      "details": null
-    },
-    {
-      "id": 7825,
-      "timestamp": "2026-05-19T12:59:27.211Z",
-      "level": "info",
-      "message": "[Nitter] nitter.privacydev.net → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 7826,
-      "timestamp": "2026-05-19T12:59:27.269Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.privacydev.net → erreur: connexion échouée",
-      "details": null
-    },
-    {
-      "id": 7827,
-      "timestamp": "2026-05-19T12:59:27.279Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.net → bloqué/vide pour @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 7828,
-      "timestamp": "2026-05-19T12:59:27.285Z",
-      "level": "info",
-      "message": "[Nitter] nitter.kavin.rocks → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 7829,
-      "timestamp": "2026-05-19T12:59:27.568Z",
-      "level": "info",
-      "message": "[Nitter] nitter.mint.lgbt → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 7830,
-      "timestamp": "2026-05-19T12:59:27.626Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.kavin.rocks → HTTP 502",
-      "details": null
-    },
-    {
-      "id": 7831,
-      "timestamp": "2026-05-19T12:59:27.649Z",
-      "level": "info",
-      "message": "[Nitter] nitter.1d4.us → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 7832,
-      "timestamp": "2026-05-19T12:59:27.758Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.mint.lgbt → erreur: connexion échouée",
-      "details": null
-    },
-    {
-      "id": 7833,
-      "timestamp": "2026-05-19T12:59:27.820Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.1d4.us → erreur: connexion échouée",
-      "details": null
-    },
-    {
-      "id": 7834,
-      "timestamp": "2026-05-19T12:59:28.403Z",
-      "level": "info",
-      "message": "[Nitter] nitter.poast.org → @muhammadtari55",
-      "details": null
-    },
-    {
-      "id": 7835,
-      "timestamp": "2026-05-19T12:59:28.440Z",
-      "level": "info",
-      "message": "[Nitter] nitter.42l.fr → @binanceboxcode",
-      "details": null
-    },
-    {
-      "id": 7836,
-      "timestamp": "2026-05-19T12:59:28.490Z",
-      "level": "warn",
-      "message": "[Nitter] nitter.poast.org → HTTP 403",
-      "details": null
-    },
-    {
-      "id": 7837,
-      "timestamp": "2026-05-19T12:59:28.507Z",
-      "level": "info",
-      "message": "[Nitter] nitter.privacydev.net → @redcode4869",
-      "details": null
-    },
     {
       "id": 7838,
       "timestamp": "2026-05-19T12:59:28.568Z",
@@ -9540,6 +9456,111 @@
       "level": "info",
       "message": "[Auto-Claim] Pause anti-détection de 11s...",
       "details": null
+    },
+    {
+      "id": 8823,
+      "timestamp": "2026-05-19T13:35:56.060Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 4/188 : 6J27NNH8",
+      "details": null
+    },
+    {
+      "id": 8824,
+      "timestamp": "2026-05-19T13:35:56.068Z",
+      "level": "info",
+      "message": "Claiming via Playwright: 6J27NNH8",
+      "details": null
+    },
+    {
+      "id": 8825,
+      "timestamp": "2026-05-19T13:36:05.640Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 8826,
+      "timestamp": "2026-05-19T13:36:05.649Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : 6J27NNH8 → ? ?",
+      "details": null
+    },
+    {
+      "id": 8827,
+      "timestamp": "2026-05-19T13:36:05.657Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 13s...",
+      "details": null
+    },
+    {
+      "id": 8828,
+      "timestamp": "2026-05-19T13:36:18.523Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 5/188 : KPZDE91M",
+      "details": null
+    },
+    {
+      "id": 8829,
+      "timestamp": "2026-05-19T13:36:18.542Z",
+      "level": "info",
+      "message": "Claiming via Playwright: KPZDE91M",
+      "details": null
+    },
+    {
+      "id": 8830,
+      "timestamp": "2026-05-19T13:36:27.823Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 8831,
+      "timestamp": "2026-05-19T13:36:27.832Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : KPZDE91M → ? ?",
+      "details": null
+    },
+    {
+      "id": 8832,
+      "timestamp": "2026-05-19T13:36:27.845Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 13s...",
+      "details": null
+    },
+    {
+      "id": 8833,
+      "timestamp": "2026-05-19T13:36:40.518Z",
+      "level": "info",
+      "message": "[Auto-Claim] Code 6/188 : OFOJ3CSN",
+      "details": null
+    },
+    {
+      "id": 8834,
+      "timestamp": "2026-05-19T13:36:40.538Z",
+      "level": "info",
+      "message": "Claiming via Playwright: OFOJ3CSN",
+      "details": null
+    },
+    {
+      "id": 8835,
+      "timestamp": "2026-05-19T13:36:48.261Z",
+      "level": "info",
+      "message": "Claimed ? ?",
+      "details": null
+    },
+    {
+      "id": 8836,
+      "timestamp": "2026-05-19T13:36:48.270Z",
+      "level": "info",
+      "message": "[Auto-Claim] ✅ Succès : OFOJ3CSN → ? ?",
+      "details": null
+    },
+    {
+      "id": 8837,
+      "timestamp": "2026-05-19T13:36:48.280Z",
+      "level": "info",
+      "message": "[Auto-Claim] Pause anti-détection de 11s...",
+      "details": null
     }
   ],
   "settings": {
@@ -9551,8 +9572,8 @@
   "_nextId": {
     "accounts": 8,
     "codes": 1844,
-    "attempts": 250,
-    "logs": 8823
+    "attempts": 253,
+    "logs": 8838
   },
   "bot_status": "claiming"
 }
