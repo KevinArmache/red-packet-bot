@@ -28,17 +28,7 @@ function killExistingChrome() {
   }
 }
 
-/**
- * Simule la frappe humaine caractère par caractère.
- */
-async function typeLikeHuman(locator, text) {
-  await locator.focus();
-  await locator.fill(""); // vider d'abord
-  for (const char of text) {
-    await locator.press(char);
-    await sleep(Math.floor(Math.random() * 141) + 80); // 80–220ms par caractère
-  }
-}
+
 
 // ─────────────────────────────────────────────────────────────────────────────
 // GESTION DU CONTEXTE PLAYWRIGHT
@@ -204,11 +194,8 @@ export async function claimBinanceRedPacketPlaywright(code) {
       console.log("[Playwright] ✅ Connexion détectée !");
     }
 
-    // ── Saisie humaine du code ──
-    await typeLikeHuman(inputLocator, code);
-
-    // Pause de réflexion (naturel)
-    await sleep(Math.floor(Math.random() * 1001) + 500); // 500–1500ms
+    // ── Saisie rapide du code ──
+    await inputLocator.fill(code);
 
     // ── Clic sur le bouton Claim avec simulation de survol ──
     const claimButton = page
@@ -216,7 +203,7 @@ export async function claimBinanceRedPacketPlaywright(code) {
       .filter({ hasText: /Claim|Réclamer|Redeem|Obtenir|Confirmer/i })
       .first();
 
-    await claimButton.hover().catch(() => {});
+    await claimButton.hover().catch(() => { });
     await sleep(Math.floor(Math.random() * 501) + 300); // 300–800ms
     await claimButton.click();
 
@@ -282,7 +269,7 @@ export async function claimBinanceRedPacketPlaywright(code) {
         const visible = await openButton.isVisible({ timeout: 2000 }).catch(() => false);
         if (!visible) break;
 
-        await openButton.hover().catch(() => {});
+        await openButton.hover().catch(() => { });
         await sleep(Math.floor(Math.random() * 501) + 200);
         await openButton.click({ force: true });
         console.log(`[Playwright] Clic Ouvrir n°${clickAttempt + 1}`);
@@ -300,7 +287,7 @@ export async function claimBinanceRedPacketPlaywright(code) {
             .waitForFunction(() => !document.querySelector('button:has-text("Ouvrir"), button:has-text("Open")'), {
               timeout: 30000,
             })
-            .catch(() => {}),
+            .catch(() => { }),
         ]);
       } catch {
         console.log("[Playwright] Pas d'indicateur de récompense après ouverture.");
@@ -349,7 +336,7 @@ export async function claimBinanceRedPacketPlaywright(code) {
   } finally {
     if (page) {
       await sleep(2000); // Laisser la page se stabiliser avant fermeture
-      await page.close().catch(() => {});
+      await page.close().catch(() => { });
       console.log(`[Playwright] Onglet fermé pour le code ${code}`);
     }
   }
