@@ -14,6 +14,8 @@ import {
   deleteAllRedPacketCodes,
   getBotStatus,
   setBotStatus,
+  setActivityMeta,
+  getActivityMeta,
 } from "@/lib/db";
 
 import { scrapeAccounts } from "@/lib/scraper";
@@ -101,6 +103,16 @@ export async function runCronWorkflow() {
     try {
       // Étape 1 : Scraping de tous les comptes surveillés
       const scrapeResult = await scrapeAccounts();
+      
+      // Sauvegarder les résultats pour l'UI temps réel
+      setActivityMeta({
+        currentAccount: null, // Scraping terminé
+        lastScrapeAt: new Date().toISOString(),
+        lastScrapeCodesFound: scrapeResult.codesFound,
+        lastScrapeAccountsScraped: scrapeResult.accountsScraped,
+        totalAccounts: getMonitoredAccounts().length,
+      });
+
       addScrapeLog(
         "info",
         `Scraping terminé — ${scrapeResult.codesFound} nouveau(x) code(s) sur ${scrapeResult.accountsScraped} compte(s)`

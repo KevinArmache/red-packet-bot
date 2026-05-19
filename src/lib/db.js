@@ -358,6 +358,7 @@ export function cleanupOldCodes() {
   return deletedCount;
 }
 
+
 // Bot status
 export function getBotStatus() {
   const db = loadDb();
@@ -368,4 +369,32 @@ export function setBotStatus(status) {
   const db = loadDb();
   db.bot_status = status;
   saveDb(db);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MÉTADONNÉES D'ACTIVITÉ — pour l'affichage temps réel du dashboard
+// ─────────────────────────────────────────────────────────────────────────────
+
+/**
+ * Met à jour les métadonnées d'activité du bot (compte en cours, résultats, etc.)
+ * @param {Object} meta - Les champs à mettre à jour (merge partiel)
+ */
+export function setActivityMeta(meta) {
+  const db = loadDb();
+  db.activity_meta = { ...(db.activity_meta ?? {}), ...meta };
+  saveDb(db);
+}
+
+/**
+ * Retourne les métadonnées d'activité actuelles.
+ */
+export function getActivityMeta() {
+  const db = loadDb();
+  return db.activity_meta ?? {
+    currentAccount: null,
+    lastScrapeAt: null,
+    lastScrapeCodesFound: 0,
+    lastScrapeAccountsScraped: 0,
+    totalAccounts: 0,
+  };
 }

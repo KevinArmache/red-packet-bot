@@ -1,18 +1,19 @@
 import { NextResponse } from "next/server";
-import { getBotStatus, getRedPacketCodes, getSetting } from "@/lib/db";
+import { getBotStatus, getRedPacketCodes, getSetting, getActivityMeta } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
 /**
  * GET /api/status
- * Retourne l'état du bot et les statistiques des codes.
- * Appelé en polling par les composants client (BotStatusBanner, CodesTable).
+ * Retourne l'état du bot, les statistiques des codes et les métadonnées d'activité.
+ * Appelé en polling adaptatif par les composants client.
  */
 export async function GET() {
   try {
     const botStatus = getBotStatus();
     const codes = getRedPacketCodes();
     const scrapingEnabled = getSetting("scraping_enabled") === "true";
+    const activityMeta = getActivityMeta();
 
     const stats = {
       total: codes.length,
@@ -29,6 +30,7 @@ export async function GET() {
       scrapingEnabled,
       stats,
       hasActiveCodes: stats.unverified > 0 || stats.claiming > 0,
+      activityMeta,
       timestamp: new Date().toISOString(),
     });
   } catch (err) {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition, useEffect, useCallback } from "react";
+import { useState, useTransition, useEffect, useCallback, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { formatDistanceToNow } from "date-fns";
 import { fr } from "date-fns/locale";
@@ -87,8 +87,36 @@ export function CodesTable({ codes }) {
   const [isPending, startTransition] = useTransition();
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
+  
+  // Suivi des nouveaux codes pour l'animation
+  const [newCodeIds, setNewCodeIds] = useState(new Set());
+  const prevCodesRef = useRef(codes);
 
-  // Polling via /api/status — ultra léger
+  useEffect(() => {
+    // Détecter les nouveaux codes
+    const prevIds = new Set(prevCodesRef.current.map(c => c.id));
+    const newIds = codes.filter(c => !prevIds.has(c.id)).map(c => c.id);
+    
+    if (newIds.length > 0) {
+      setNewCodeIds(prev => new Set([...prev, ...newIds]));
+      
+      // Retirer l'effet de surbrillance après 4 secondes
+      setTimeout(() => {
+        setNewCodeIds(prev => {
+          const next = new Set(prev);
+          newIds.forEach(id => next.delete(id));
+          return next;
+        });
+      }, 4000);
+    }
+    
+    prevCodesRef.current = codes;
+  }, [codes]);
+
+  // Polling adaptatif via /api/status — 3s si bot actif, 8s si en veille
+  const pollIntervalRef = useRef(null);
+  const pollDelayRef = useRef(8000);
+
   useEffect(() => {
     let tickCount = 0;
 
@@ -99,18 +127,30 @@ export function CodesTable({ codes }) {
         if (!res.ok) return;
         const { botStatus, hasActiveCodes } = await res.json();
 
+        // Rafraîchir si le bot est actif ou si des codes changent
         if (botStatus !== "idle" || hasActiveCodes) {
           router.refresh();
-        } else if (tickCount % 4 === 0) {
+        } else if (tickCount % 3 === 0) {
+          // Rafraîchissement de sécurité toutes les ~24s en veille
           router.refresh();
+        }
+
+        // Ajuster l'intervalle selon l'état
+        const targetDelay = botStatus !== "idle" ? 3000 : 8000;
+        if (pollDelayRef.current !== targetDelay) {
+          pollDelayRef.current = targetDelay;
+          clearInterval(pollIntervalRef.current);
+          pollIntervalRef.current = setInterval(checkAndRefresh, targetDelay);
         }
       } catch {
         // Ignorer les erreurs réseau silencieusement
       }
     };
 
-    const interval = setInterval(checkAndRefresh, 2000);
-    return () => clearInterval(interval);
+    checkAndRefresh();
+    pollDelayRef.current = 8000;
+    pollIntervalRef.current = setInterval(checkAndRefresh, 8000);
+    return () => clearInterval(pollIntervalRef.current);
   }, [router]);
 
   const copyToClipboard = useCallback(async (code, id) => {
@@ -192,11 +232,16 @@ export function CodesTable({ codes }) {
             {paginatedCodes.map((code) => {
               const status = statusConfig[code.status] ?? statusConfig.unverified;
               const StatusIcon = status.icon;
+              const isNew = newCodeIds.has(code.id);
 
               return (
                 <TableRow
                   key={code.id}
-                  className={cn(status.rowClass, "transition-all duration-300 border-b border-border/40 group")}
+                  className={cn(
+                    status.rowClass,
+                    isNew && "bg-emerald-500/10 dark:bg-emerald-500/20 shadow-[inset_0_0_30px_rgba(16,185,129,0.15)]",
+                    "transition-all duration-1000 border-b border-border/40 group animate-in fade-in slide-in-from-top-4"
+                  )}
                 >
                   {/* Code */}
                   <TableCell className="pl-4">

@@ -78,7 +78,7 @@ async function launchFreshContext() {
 
   try {
     globalContext = await chromium.launchPersistentContext(USER_DATA_DIR, {
-      headless: true,
+      headless: false,
       executablePath: EXECUTABLE_PATH,
       viewport: { width: 1280, height: 800 },
       timeout: 30000,
@@ -182,7 +182,7 @@ export async function claimBinanceRedPacketPlaywright(code) {
     });
 
     // ── Attente du champ de saisie du code ──
-    const inputSelector = 'input[placeholder*="Code"], input[placeholder*="code"], input[type="text"]';
+    const inputSelector = 'input[name="code"], input[placeholder*="Code"], input[placeholder*="code"], input[type="text"]';
     const inputLocator = page.locator(inputSelector).first();
 
     try {
@@ -194,12 +194,12 @@ export async function claimBinanceRedPacketPlaywright(code) {
       console.log("[Playwright] ✅ Connexion détectée !");
     }
 
-    // ── Saisie rapide du code ──
-    await inputLocator.fill(code);
+    // ── Saisie rapide du code (simule la frappe très rapidement pour React) ──
+    await inputLocator.pressSequentially(code, { delay: 15 });
 
     // ── Clic sur le bouton Claim avec simulation de survol ──
     const claimButton = page
-      .locator("button")
+      .locator('button, div[role="button"]')
       .filter({ hasText: /Claim|Réclamer|Redeem|Obtenir|Confirmer/i })
       .first();
 
@@ -259,7 +259,7 @@ export async function claimBinanceRedPacketPlaywright(code) {
 
     // ── Gestion du bouton "Ouvrir" / "Open" (boîte mystère) ──
     const openButton = page
-      .locator('button:has-text("Ouvrir"), button:has-text("Open")')
+      .locator('button:has-text("Ouvrir"), button:has-text("Open"), div[role="button"]:has-text("Ouvrir"), div[role="button"]:has-text("Open"), text=/^(Ouvrir|Open)$/i')
       .first();
 
     if (await openButton.isVisible({ timeout: 5000 }).catch(() => false)) {
